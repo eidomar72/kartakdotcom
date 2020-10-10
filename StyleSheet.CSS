@@ -13,6 +13,7 @@
   color: white;
   text-decoration: none;
   font-size: 17px;
+  width: 8%;
 }
 
 /* Navbar links on mouse-over */
@@ -30,5 +31,7 @@
   .navbar a {
     float: none;
     display: block;
+    width: 100%;
+    text-align: left;
   }
 }
