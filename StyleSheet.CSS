@@ -36,11 +36,9 @@ div a #space2{
 .navbar a:hover {
   background-color: #000;
 }
-
 .active {
   background-color: #4CAF50;
 }
-
 .navbar a:hover #home,
 .navbar a:hover #group,
 .navbar a:hover #tv,
@@ -49,7 +47,6 @@ div a #space2{
   color: #444;
   border-radius: 5px;
 }
-
 .active{
   color: #0B84ED!important;
 }
