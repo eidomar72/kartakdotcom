@@ -17,7 +17,16 @@
         </label>
       </div>
     </div>
-    <script src="SearchBar.js"></script>
+    <script>
+    $("#inpt_search").on('focus', function () {
+    	$(this).parent('label').addClass('active');
+    });
+
+    $("#inpt_search").on('blur', function () {
+    	if($(this).val().length == 0)
+    		$(this).parent('label').removeClass('active');
+    });
+  </script>
 <!--  <input id="search" type="text" placeholder="Search"><i class="icon_search"></i>Search</input> -->
     <a id="space2"></a>
     <a class="tooltip active" data-tooltip="Home" href="#" id="home"><i class="icon_home"></i>Home</a>
