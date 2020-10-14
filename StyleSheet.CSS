@@ -5,12 +5,14 @@
  --btn-width-100: 100px;
 }
 
+/** MAIN **/
 body {
   display: block;
   margin: 0px;
   padding: 0px;
 }
 
+/** -NAVIGATION BAR- **/
 nav {
   display: block;
   width: 100%;
@@ -20,33 +22,36 @@ nav {
   padding: 0px;
   box-shadow: 0 1px 8px rgba(0,0,0,0.3)
 }
-
 nav ul {
     margin: 0;
     padding: 0px 5px;
     list-style: none;
     display: flex;
 }
-
 nav ul li {
     padding: 3px;
 }
-
 nav ul li a {
   display: inline-block;
-  background-color: #f1f2f4;
   float: left;
   text-align: center;
   padding: 3px;
-  color: white;
   text-decoration: none;
   font-size: 10px;
 }
-
 nav ul li #space {
   flex: 1;
 }
+@media  screen and (max-width: 600px) {
+  #space {
+    display: none;
+  }
+  :root {
+    --btn-width-100: 60px;
+  }
+}
 
+/** NAVBAR - HOVER PROP **/
 nav ul li:hover #home,
 nav ul li:hover #MP,
 nav ul li:hover #aboutus{
@@ -58,9 +63,9 @@ nav ul li:hover #aboutus{
 .active {
   background-color: #4CAF50;
 }
-.navbar a:hover #home,
-.navbar a:hover #MP,
-.navbar a:hover #aboutus,{
+nav a:hover #home,
+nav a:hover #MP,
+nav a:hover #aboutus,{
   background: rgba(0, 0, 0, 0.138);
   color: #444;
   border-radius: 5px;
@@ -69,6 +74,7 @@ nav ul li:hover #aboutus{
   color: #0B84ED!important;
 }
 
+/**
 .tooltip{
   position: relative;
 }
@@ -92,16 +98,8 @@ nav ul li:hover #aboutus{
 .tooltip:hover::after{
   opacity: 1;
 }
-
-@media  screen and (max-width: 600px) {
-  #space {
-    display: none;
-  }
-  :root {
-    --btn-width-100: 60px;
-  }
-}
-
+**/
+/** NAVBAR - SEARCH BAR**/
 .searchbar{
   margin-right: 30px;
 }
@@ -147,21 +145,7 @@ nav ul li:hover #aboutus{
             background-position: -50% center;
         }
 
-/** SEARCH BAR
-.search {
-  margin-top: 1px;
-  padding: 3px;
-  text-decoration: none;
-  font-size: 10px;
-}
-input[type=text] {
-  width: 150px;
-  height: 28px;
-  border-radius: 30px;
-}
-**/
-
-/** NAV ICONS **/
+/** NAVBAR - NAV ICONS **/
 #logo {
   margin-right: 0px;
   padding-right: 0px;
