@@ -97,18 +97,14 @@ nav ul li:hover #aboutus{
   #space {
     display: none;
   }
-  .navbar a {
-    padding: 8px 10px;
-    min-width: 600px;
-  }
-  .search {
-
-  }
   :root {
     --btn-width-100: 60px;
   }
 }
 
+.searchbar{
+  margin-right: 30px;
+}
 .searchbar .search__title {
         font-size: 22px;
         font-weight: 900;
