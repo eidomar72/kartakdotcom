@@ -109,8 +109,9 @@ div a #space2{
 	border-radius: 25px;
 	transition: all 200ms ease;
 	cursor: text;
+}
 
-	&:after {
+	.search.after {
 		content: "";
 		position: absolute;
 		width: 3px;
@@ -123,12 +124,13 @@ div a #space2{
 		transition: all 200ms ease;
 	}
 
-	&.active,
-	&:hover {
+	.search.active,
+	.search:hover {
 		width: 200px;
 		margin-right: 0px;
+}
 
-		&:after {
+		.search:after {
 			height: 0px;
 		}
 	}
