@@ -10,24 +10,7 @@
 <body>
   <div class="navbar">
     <a href="#" id="logo"><i class="kartak-logo"></i>Logo</a>
-    <div class="cntr">
-      <div class="cntr-innr">
-        <label class="search" for="inpt_search">
-          <input id="inpt_search" type="text" />
-        </label>
-      </div>
-    </div>
-    <script>
-    $("#inpt_search").on('focus', function () {
-    	$(this).parent('label').addClass('active');
-    });
-
-    $("#inpt_search").on('blur', function () {
-    	if($(this).val().length == 0)
-    		$(this).parent('label').removeClass('active');
-    });
-  </script>
-<!--  <input id="search" type="text" placeholder="Search"><i class="icon_search"></i>Search</input> -->
+    <input name="search" type="text" placeholder=""></i></input>
     <a id="space2"></a>
     <a class="tooltip active" data-tooltip="Home" href="#" id="home"><i class="icon_home"></i>Home</a>
     <a class="tooltip" data-tooltip="Market Place" href="#" id="MP"><i class="icon_MP"></i>Market</a>
