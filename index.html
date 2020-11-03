@@ -4,6 +4,26 @@
 <html>
 
 <head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KARTAK</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="kartak, pokemon, TCG, trading card game, game, charizard, pikachu">
+  <meta property="og:image" content="#">
+  <meta property="og:title" content="KARTAK">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="http://www.kartak.co/">
+
+  <meta name="twitter:card" content="#">
+  <meta name="twitter:site" content="@#">
+  <meta name="twitter:title" content="#">
+  <meta name="twitter:description" content="#">
+  <meta name="twitter:image" content="#">
+  <meta name="twitter:url" content="#">
+
+  <link href="application-d1f8ab406be6147f30b2f1a604769eb7.css" media="all" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Raleway">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -11,201 +31,1833 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="StyleSheet.CSS">
 
-
 </head>
 
-<body style= "background-color: #b8c0c8">
+<body style= "background-color: #000">
 
-<!-- NAVIGATION BAR -->
-  <nav>
-    <ul>
-      <li> <a href="#" id="logo">
-        <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-flower1 text-info" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 1 1 1l-.002.03a4.997 4.997 0 0 1-.064.387c-.049.241-.122.542-.213.887a60.59 60.59 0 0 1-.676 2.314L8 5.762l-.045-.144a60.59 60.59 0 0 1-.676-2.314 16.705 16.705 0 0 1-.213-.887 4.99 4.99 0 0 1-.064-.386A1 1 0 0 1 8 1zM2 9a1 1 0 1 1 .03-1.998l.091.01c.077.012.176.029.296.054.241.049.542.122.887.213a60.59 60.59 0 0 1 2.314.676L5.762 8l-.144.045c-.8.248-1.626.494-2.314.676-.345.091-.646.164-.887.213a4.99 4.99 0 0 1-.386.064L2 9zm7 5a1 1 0 0 1-2 0l.002-.03a4.996 4.996 0 0 1 .064-.386c.049-.242.122-.543.213-.888.182-.688.428-1.513.676-2.314L8 10.238l.045.144c.248.8.494 1.626.676 2.314.091.345.164.646.213.887a5.005 5.005 0 0 1 .064.386L9 14zm-5.696-2.134a1 1 0 0 1-1-1.732l.027-.014c.02-.01.048-.021.084-.036a5.09 5.09 0 0 1 .283-.102c.233-.078.53-.165.874-.258a60.598 60.598 0 0 1 2.343-.572l.147-.033-.103.11a58.239 58.239 0 0 1-1.666 1.743c-.253.252-.477.465-.66.629a5.001 5.001 0 0 1-.304.248l-.025.017zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 1 .366 1.366l-.017.025a5.001 5.001 0 0 1-.248.303 17.01 17.01 0 0 1-.629.661A60.614 60.614 0 0 1 9.23 5.96l-.111.102.033-.147a60.62 60.62 0 0 1 .572-2.342c.093-.345.18-.642.258-.875a5.066 5.066 0 0 1 .138-.367l.014-.027a1 1 0 0 1 1.366-.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196A1 1 0 1 1 5.88 2.33c.01.02.021.048.036.084.029.072.063.166.102.283.078.233.165.53.258.875.186.687.387 1.524.572 2.342l.033.147-.11-.102a60.597 60.597 0 0 1-1.743-1.667 16.713 16.713 0 0 1-.629-.66 4.996 4.996 0 0 1-.248-.304l-.017-.025zm9.928 8.196a1 1 0 0 1-1.366.366l-.025-.017a4.946 4.946 0 0 1-.303-.248 16.71 16.71 0 0 1-.661-.629A60.73 60.73 0 0 1 10.04 9.23l-.102-.111.147.033c.818.185 1.655.386 2.342.572.345.093.642.18.875.258a5 5 0 0 1 .367.138 1 1 0 0 1 .394 1.38zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">
-  </path>
-</svg></a></li>
+  <main>
 
-<!-- SEARCHBAR -->
-<div class="searchbar">
-          <div class="search__container">
-              <input class="search__input" type="text" placeholder=" search kartak.co">
+    <div id="pages-wrapper">
+
+      <section id="home" class="page ib-component active" data-component="ib.Home" data-next-link="studio" style="opacity: 1;"><div class="container">
+        <h1>We believe in the impossible</h1>
+        <p>We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing.</p>
+        <nav>
+          <ul>
+            <li><a title="Studio - Impossible Bureau" href="/studio"></a></li>
+            <li><a title="Work - Impossible Bureau" href="/work"></a></li>
+            <li><a title="News - Impossible Bureau" href="/news"></a></li>
+            <li><a title="Contact - Impossible Bureau" href="/contact"></a></li>
+          </ul>
+        </nav>
+      </div></section>
+      <section id="studio" class="page ib-component" data-component="ib.Studio" data-previous-link="home" data-next-link="work"><div class="container">
+        <section class="marquee">
+        <div class="constrain">
+
+
+            <h1>Crafting the impossible since 2012</h1>
+
+            <span class="progress">1/4 STUDIO</span>
+
+            <p>We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing.</p>
+        </div>
+      </section>
+        <section id="photo-collage">
+          <div class="photos-container">
+            <div class="left col-2 row-2">
+              <div class="col-2 row-2">
+                <div class="landscape col-4 row-1"></div>
+                <div class="landscape col-4 row-1"></div>
+              </div>
+              <div class="square col-2 row-2"></div>
+            </div>
+
+            <div class="right col-2 row-2">
+              <div class="square col-1 row-1"></div>
+              <div class="square col-1 row-1"></div>
+              <div class="landscape col-2 row-1"></div>
+              <div class="square col-1 row-1"></div>
+              <div class="landscape col-2 row-1"></div>
+              <div class="square col-1 row-1"></div>
+            </div>
+          </div>
+          <div class="collage-size">
+            <img class="collage-desktop" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAMAAADO4v//AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjZERjE1NDQwRUVBMTFFNTk2QURBQTk1OTYyMDcwMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjZERjE1NDUwRUVBMTFFNTk2QURBQTk1OTYyMDcwMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2NkRGMTU0MjBFRUExMUU1OTZBREFBOTU5NjIwNzAyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo2NkRGMTU0MzBFRUExMUU1OTZBREFBOTU5NjIwNzAyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnzDNMgAAAAGUExURf///wAAAFXC034AAAAOSURBVHjaYmAAAoAAAwAABQAB24mT0gAAAABJRU5ErkJggg==">
+            <img class="collage-mobile" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAABCAMAAADD/I+4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUQ3OThBODcwRUU2MTFFNTk2QURBQTk1OTYyMDcwMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUQ3OThBODgwRUU2MTFFNTk2QURBQTk1OTYyMDcwMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3OTBBQTk0ODBFRTAxMUU1OTZBREFBOTU5NjIwNzAyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBRDc5OEE4NjBFRTYxMUU1OTZBREFBOTU5NjIwNzAyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgkGH5kAAAAGUExURf///wAAAFXC034AAAANSURBVHjaYmBgAAgwAAADAAHTY1G2AAAAAElFTkSuQmCC">
+            <img class="collage-mobile-small" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAMAAAAoyzS7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUQ3OThBOEIwRUU2MTFFNTk2QURBQTk1OTYyMDcwMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUQ3OThBOEMwRUU2MTFFNTk2QURBQTk1OTYyMDcwMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBRDc5OEE4OTBFRTYxMUU1OTZBREFBOTU5NjIwNzAyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBRDc5OEE4QTBFRTYxMUU1OTZBREFBOTU5NjIwNzAyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pgn4EHUAAAAGUExURf///wAAAFXC034AAAAMSURBVHjaYmAACDAAAAIAAU9tWeEAAAAASUVORK5CYII=">
+          </div>
+        </section>
+        <section id="principles">
+          <div class="constrain">
+            <h2>Principles</h2>
+            <p>Producing notable, original work requires more than a strategy, beautiful design, well structured development or a responsive layout. Remarkable work is created only when together, with our clients, we follow these three principles:</p>
+            <ol>
+              <li>
+                <div class="description">
+                  <hgroup>
+                    <mark>1</mark>
+                    <h3>Passion &amp; craftmanship</h3>
+                  </hgroup>
+                  <p>It feels amazing to craft and launch projects we‘re proud of, it feels awful to deliver anything but our very best.</p>
+                </div>
+                <figure><img src="/assets/studio/diagram-1.png" alt="Passion &amp; craftsmanship graphic"></figure>
+              </li>
+              <li>
+                <div class="description">
+                  <hgroup>
+                    <mark>2</mark>
+                    <h3>Duty &amp; assistance</h3>
+                  </hgroup>
+                  <p>Clients act as a part of our team by working together in collaboration, giving us all a shared goal.</p>
+                </div>
+                <figure><img src="/assets/studio/diagram-2.png" alt="Duty &amp; assistance graphic"></figure>
+              </li>
+              <li>
+                <div class="description">
+                  <hgroup>
+                    <mark>3</mark>
+                    <h3>Leading-edge &amp; departure</h3>
+                  </hgroup>
+                  <p>Innovation distinguishes between a leader and a follower. We aim to lead by creating uncommon experiences.</p>
+                </div>
+                <figure><img src="/assets/studio/diagram-3.png" alt="Leading-edge &amp; departure graphic"></figure>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section id="services">
+          <div class="constrain">
+            <h2>Services</h2>
+            <p>We are driven to create experiences that deliver results for your business and for your consumers. In short - we create solutions for any problem or opportunity, no matter how impossible.</p>
+            <figure class="graphics">
+              <div class="gradient-background"></div>
+              <img src="/assets/studio/services-graphics.png" alt="Impossible Bureau's services graphic">
+            </figure>
+            <ul>
+              <li>
+                <div class="mobile-graphic">
+                  <figure></figure>
+                  <div class="left-mask"></div>
+                  <div class="right-mask"></div>
+                </div>
+                <h3>Strategy</h3>
+                <ul>
+                  <li>Requirements gathering &amp; specifications</li>
+                  <li>Stakeholder workshops</li>
+                  <li>User research, experience strategy &amp; testing</li>
+                  <li>Content strategy</li>
+                  <li>Analytics &amp; SEO strategy</li>
+                </ul>
+              </li>
+              <li>
+                <div class="mobile-graphic">
+                  <figure></figure>
+                  <div class="left-mask"></div>
+                  <div class="right-mask"></div>
+                </div>
+                <h3>Design</h3>
+                <ul>
+                  <li>Creative direction</li>
+                  <li>Brand identity</li>
+                  <li>Creative concepting / ideation</li>
+                  <li>Cross-device visual &amp; interactive design</li>
+                  <li>Design specifications &amp; styleguides</li>
+                </ul>
+              </li>
+              <li>
+                <div class="mobile-graphic">
+                  <figure></figure>
+                </div>
+                <h3>Development</h3>
+                <ul>
+                  <li>Technical direction</li>
+                  <li>Prototyping</li>
+                  <li>Front end web &amp; application development</li>
+                  <li>Back end development</li>
+                  <li>Technical consulting &amp; documentation</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="clients" class="gray">
+          <div class="constrain">
+            <h2>Clients</h2>
+            <ul>
+              <li class="determine-hover enable-hover">
+                <figure></figure>
+              </li>
+              <li class="determine-hover enable-hover">
+                <figure></figure>
+              </li>
+              <li class="determine-hover enable-hover">
+                <figure></figure>
+              </li>
+              <li class="determine-hover enable-hover">
+                <figure></figure>
+              </li>
+              <li class="determine-hover enable-hover">
+                <figure></figure>
+              </li>
+              <li class="determine-hover enable-hover">
+                <figure></figure>
+              </li>
+              <li class="determine-hover enable-hover">
+                <figure></figure>
+              </li>
+              <li class="determine-hover enable-hover">
+                <figure></figure>
+              </li>
+              <li class="determine-hover enable-hover">
+                <figure></figure>
+              </li>
+              <li class="determine-hover enable-hover">
+                <figure></figure>
+              </li>
+              <li class="determine-hover enable-hover">
+                <figure></figure>
+              </li>
+              <li class="determine-hover enable-hover">
+                <figure></figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="team">
+          <div class="constrain">
+            <div class="particle-container"></div>
+            <div class="team-wrapper">
+        <h2 class="text-effect">Team</h2>
+        <ul>
+          <li class="determine-hover enable-hover" data-model="http://s3.amazonaws.com/s3.impossible-bureau.com/models/jeff.json" data-member-id="jeff-yamada">
+            <a class="history-link" title="Jeff Yamada - Impossible Bureau" href="/studio/jeff-yamada">
+              <figure style="background-image: url(/assets/studio/fallback/jeff-thumb.jpg)"></figure>
+              <figcaption>
+                <h6 class="text-effect">Jeff Yamada</h6>
+                <span class="text-effect">Managing Director</span>
+              </figcaption>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-model="http://s3.amazonaws.com/s3.impossible-bureau.com/models/blake.json" data-member-id="blake-carroll">
+            <a class="history-link" title="Blake Carroll - Impossible Bureau" href="/studio/blake-carroll">
+              <figure style="background-image: url(/assets/studio/fallback/blake-thumb.jpg)"></figure>
+              <figcaption>
+                <h6 class="text-effect">Blake Carroll</h6>
+                <span class="text-effect">Technical Director</span>
+              </figcaption>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-model="http://s3.amazonaws.com/s3.impossible-bureau.com/models/julia.json" data-member-id="julia-prior">
+            <a class="history-link" title="Julia Prior - Impossible Bureau" href="/studio/julia-prior">
+              <figure style="background-image: url(/assets/studio/fallback/julia-thumb.jpg)"></figure>
+              <figcaption>
+                <h6 class="text-effect">Julia Prior</h6>
+                <span class="text-effect">Director of Production &amp; Strategy</span>
+              </figcaption>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-model="http://s3.amazonaws.com/s3.impossible-bureau.com/models/nadya.json" data-member-id="nadya-bratt">
+            <a class="history-link" title="Nadya Bratt - Impossible Bureau" href="/studio/nadya-bratt">
+              <figure style="background-image: url(/assets/studio/fallback/nadya-thumb.jpg)"></figure>
+              <figcaption>
+                <h6 class="text-effect">Nadya Bratt</h6>
+                <span class="text-effect">Associate Design Director</span>
+              </figcaption>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-model="http://s3.amazonaws.com/s3.impossible-bureau.com/models/eric.json" data-member-id="eric-moncada">
+            <a class="history-link" title="Eric Moncada - Impossible Bureau" href="/studio/eric-moncada">
+              <figure style="background-image: url(/assets/studio/fallback/eric-thumb.jpg)"></figure>
+              <figcaption>
+                <h6 class="text-effect">Eric Moncada</h6>
+                <span class="text-effect">Associate Technical Director</span>
+              </figcaption>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-model="http://s3.amazonaws.com/s3.impossible-bureau.com/models/anthony.json" data-member-id="anthony-mariano">
+            <a class="history-link" title="Anthony Mariano - Impossible Bureau" href="/studio/anthony-mariano">
+              <figure style="background-image: url(/assets/studio/fallback/anthony-thumb.jpg)"></figure>
+              <figcaption>
+                <h6 class="text-effect">Anthony Mariano</h6>
+                <span class="text-effect">Developer</span>
+              </figcaption>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-model="http://s3.amazonaws.com/s3.impossible-bureau.com/models/bradee.json" data-member-id="bradee-markham">
+            <a class="history-link" title="Bradee Markham - Impossible Bureau" href="/studio/bradee-markham">
+              <figure style="background-image: url(/assets/studio/fallback/bradee-thumb.jpg)"></figure>
+              <figcaption>
+                <h6 class="text-effect">Bradee Markham</h6>
+                <span class="text-effect">Associate Producer</span>
+              </figcaption>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-model="http://s3.amazonaws.com/s3.impossible-bureau.com/models/artur.json" data-member-id="artur-napierajczyk">
+            <a class="history-link" title="Artur Napierajczyk - Impossible Bureau" href="/studio/artur-napierajczyk">
+              <figure style="background-image: url(/assets/studio/fallback/artur-thumb.jpg)"></figure>
+              <figcaption>
+                <h6 class="text-effect">Artur Napierajczyk</h6>
+                <span class="text-effect">Designer</span>
+              </figcaption>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-model="http://s3.impossible-bureau.com.s3.amazonaws.com/models/daniel.json" data-member-id="daniel-avila">
+            <a class="history-link" title="Daniel Avila - Impossible Bureau" href="/studio/daniel-avila">
+              <figure style="background-image: url(/assets/studio/fallback/daniel-thumb.jpg)"></figure>
+              <figcaption>
+                <h6 class="text-effect">Daniel Avila</h6>
+                <span class="text-effect">Associate Developer</span>
+              </figcaption>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="team-detail-wrapper">
+        <nav>
+          <div class="pill determine-hover enable-hover">
+            <a class="history-link" title="Studio - Impossible Bureau" href="/studio">All</a>
+          </div>
+          <ul class="common-pagination">
+            <li class="determine-hover enable-hover">
+              <figure>Previous</figure>
+              <a class="history-link" href="/studio/eric-moncada"></a>
+            </li>
+            <li class="determine-hover enable-hover">
+              <figure>Next</figure>
+              <a class="history-link" href="/studio/blake-carroll"></a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="team-members">
+          <li>
+            <div class="wrapper" style="background-image: url(/assets/studio/fallback/jeff-detail.jpg);">
+              <h1 class="text-effect">Jeff Yamada</h1>
+              <span class="sub text-effect">Managing Director</span>
+              <hr>
+              <h4 class="text-effect">Father, Worker, Author</h4>
+              <span class="text-effect">Hometown: Vancouver, BC</span>
+              <ul class="deets">
+                <li>
+                  <figure style="background-image: url(/assets/studio/jeff-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="132">132</span></h3>
+                    <span class="sub text-effect">Cups of coffee consumed in 2015</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/jeff-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="4532">4532</span></h3>
+                    <span class="sub text-effect">Golf strokes in 2015</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/jeff-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="205985">205,985</span></h3>
+                    <span class="sub text-effect">Lifetime Delta miles</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/jeff-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="61">61</span></h3>
+                    <span class="sub text-effect">Flights taken in 2015</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper" style="background-image: url(/assets/studio/fallback/blake-detail.jpg);">
+              <h1 class="text-effect">Blake Carroll</h1>
+              <span class="sub text-effect">Technical Director</span>
+              <hr>
+              <h4 class="text-effect">Teacher, Mathlete, Tinker. Loves nature, stays indoors. Not a bad guy.</h4>
+              <span class="text-effect">Hometown: Los Angeles, CA</span>
+              <ul class="deets">
+                <li>
+                  <figure style="background-image: url(/assets/studio/blake-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="150">150</span>+</h3>
+                    <span class="sub text-effect">Open water dives logged</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/blake-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="365">365</span></h3>
+                    <span class="sub text-effect">Aeropress coffee filters used in 2015</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/blake-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="14">14</span> <span class="smaller">Books</span></h3>
+                    <span class="sub text-effect">Longest single Sci-Fi/Fantasy novel series read</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/blake-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="2232">2,232</span></h3>
+                    <span class="sub text-effect">Commits to Github in 2015</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper" style="background-image: url(/assets/studio/fallback/julia-detail.jpg);">
+              <h1 class="text-effect">Julia Prior</h1>
+              <span class="sub text-effect">Director of Production &amp; Strategy</span>
+              <hr>
+              <h4 class="text-effect">Our multi-talented mastermind in the control tower who leads our production team and focuses on our process, UX, and strategem.</h4>
+              <span class="text-effect">Hometown: Sydney, Australia</span>
+              <ul class="deets">
+                <li>
+                  <figure style="background-image: url(/assets/studio/julia-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="40">40</span></h3>
+                    <span class="sub text-effect">Grape varieties sampled</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/julia-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="28">28</span></h3>
+                    <span class="sub text-effect">Countries visited</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/julia-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="12">12</span></h3>
+                    <span class="sub text-effect">Pies baked in 2015</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/julia-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="23963">23,963</span></h3>
+                    <span class="sub text-effect">High score in Big Buck Hunter Gemsbok Safari</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper" style="background-image: url(/assets/studio/fallback/nadya-detail.jpg);">
+              <h1 class="text-effect">Nadya Bratt</h1>
+              <span class="sub text-effect">Associate Design Director</span>
+              <hr>
+              <h4 class="text-effect">Loves cooking. And dead things. And cooking dead things.</h4>
+              <span class="text-effect">Hometown: Barcelona, Spain</span>
+              <ul class="deets">
+                <li>
+                  <figure style="background-image: url(/assets/studio/nadya-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="4">4</span></h3>
+                    <span class="sub text-effect">Languages spoken</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/nadya-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="0">0</span></h3>
+                    <span class="sub text-effect">Tacos eaten</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/nadya-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="22">22</span></h3>
+                    <span class="sub text-effect">Modern art museums visited</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/nadya-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="83">83</span></h3>
+                    <span class="sub text-effect">Flame emojis earned</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper" style="background-image: url(/assets/studio/fallback/eric-detail.jpg);">
+              <h1 class="text-effect">Eric Moncada</h1>
+              <span class="sub text-effect">Associate Technical Director</span>
+              <hr>
+              <h4 class="text-effect">Dad, developer, determined and sometimes dapper.</h4>
+              <span class="text-effect">Hometown: Victorville, CA</span>
+              <ul class="deets">
+                <li>
+                  <figure style="background-image: url(/assets/studio/eric-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="14">14</span></h3>
+                    <span class="sub text-effect">Years playing soccer</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/eric-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="10">10</span></h3>
+                    <span class="sub text-effect">Rounds of golf played in 2015</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/eric-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="90">90</span></h3>
+                    <span class="sub text-effect">Different beers tasted (and counting)</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/eric-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="65">65</span></h3>
+                    <span class="sub text-effect">Highest Flappy Bird score</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper" style="background-image: url(/assets/studio/fallback/anthony-detail.jpg);">
+              <h1 class="text-effect">Anthony Mariano</h1>
+              <span class="sub text-effect">Developer</span>
+              <hr>
+              <h4 class="text-effect">Sound interpreting, wisdom seeking, perspective bending, Radiohead-head. Pursuing truths, balance and progress.</h4>
+              <span class="text-effect">Hometown: Victorville, CA</span>
+              <ul class="deets">
+                <li>
+                  <figure style="background-image: url(/assets/studio/anthony-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="13427">13,427</span></h3>
+                    <span class="sub text-effect">Songs in iTunes</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/anthony-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="381">381</span></h3>
+                    <span class="sub text-effect">Live music events attended</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/anthony-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="139">139</span> <span class="smaller">Days</span> <span class="count" data-count="16">16</span> <span class="smaller">Hours</span></h3>
+                    <span class="sub text-effect">Played on mage in World of Warcraft</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/anthony-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="5908">5,908</span></h3>
+                    <span class="sub text-effect">Tracks scrobbled in 2015</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper" style="background-image: url(/assets/studio/fallback/bradee-detail.jpg);">
+              <h1 class="text-effect">Bradee Markham</h1>
+              <span class="sub text-effect">Associate Producer</span>
+              <hr>
+              <h4 class="text-effect">IB's resident fashionista and keeper of the house. A pair of new shoes, a glass of good booze...it's the small things in life.</h4>
+              <span class="text-effect">Hometown: Murray, UT</span>
+              <ul class="deets">
+                <li>
+                  <figure style="background-image: url(/assets/studio/bradee-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="208">208</span></h3>
+                    <span class="sub text-effect">College football games attended</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/bradee-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="15">15</span></h3>
+                    <span class="sub text-effect">Years vegetarian</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/bradee-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="24">24</span></h3>
+                    <span class="sub text-effect">Shades of lipstick owned</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/bradee-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="2">2</span></h3>
+                    <span class="sub text-effect">Dogs' mom</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper" style="background-image: url(/assets/studio/fallback/artur-detail.jpg);">
+              <h1 class="text-effect">Artur Napierajczyk</h1>
+              <span class="sub text-effect">Designer</span>
+              <hr>
+              <h4 class="text-effect">Designer and sports fanatic. Loves to be surrounded by forests, lakes, and quiet.</h4>
+              <span class="text-effect">Hometown: Stargard Szczecinski, Poland</span>
+              <ul class="deets">
+                <li>
+                  <figure style="background-image: url(/assets/studio/artur-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="20">20</span></h3>
+                    <span class="sub text-effect">Years playing soccer</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/artur-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="13">13</span></h3>
+                    <span class="sub text-effect">Countries visited</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/artur-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="0">0</span></h3>
+                    <span class="sub text-effect">Aston Martin cars owned - yet</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/artur-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="5000">5000</span>+</h3>
+                    <span class="sub text-effect">Photos taken this year</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="wrapper" style="background-image: url(/assets/studio/fallback/daniel-detail.jpg);">
+              <h1 class="text-effect">Daniel Avila</h1>
+              <span class="sub text-effect">Associate Developer</span>
+              <hr>
+              <h4 class="text-effect">Builder, Thinker, Reader.</h4>
+              <span class="text-effect">Hometown: Victorville, CA</span>
+              <ul class="deets">
+                <li>
+                  <figure style="background-image: url(/assets/studio/daniel-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="24">24</span></h3>
+                    <span class="sub text-effect">Digital Ocean droplets created in 2015</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/daniel-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="70">70</span></h3>
+                    <span class="sub text-effect">Lifetime miles recorded on Fitbit</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/daniel-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="463">463</span></h3>
+                    <span class="sub text-effect">Goals scored in Rocket League</span>
+                  </div>
+                </li>
+                <li>
+                  <figure style="background-image: url(/assets/studio/daniel-sprite.png);"></figure>
+                  <div>
+                    <h3><span class="count" data-count="1511">1,511</span></h3>
+                    <span class="sub text-effect">Tweets tweeted on Twitter</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+          </div>
+        </section>
+        <section class="get-in-touch flexible-height" data-ratio=".27" style="height: 224px;">
+        <div class="canvas-background">
+          <div class="stalker-wrap" data-scheme-type="getInTouch"></div>
+        </div>
+        <div class="constrain">
+          <div class="inner">
+              <h2>Interested in more?</h2>
+
+              <p>Get in touch and we’ll walk you through the rest.</p>
+
+            <div class="pill alt-hover-1 determine-hover enable-hover">
+                <a href="mailto:info@impossible-bureau.com">Get In Touch</a>
+            </div>
           </div>
         </div>
-    </div>
-
-        <li id="space1"></li>
-
-      <li>
-        <div href="#" id="home">
-          <a>
-            <svg style="margin-top:10px; margin-bottom:10px; margin-left:40px; margin-right:40px;" width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-house-fill text-secondary" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"></path>
-              <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"></path>
-            </svg>
-          </a>
+      </section>
+        <footer class="page-footer flexible-height" data-ratio=".27" style="height: 224px;">
+        <div class="constrain footer-wrapper">
+          <div class="info">
+            <a class="determine-hover hover-pink enable-hover" href="mailto:info@impossible-bureau.com">info@impossible-bureau.com</a>
+            <br>
+            <a class="determine-hover hover-pink enable-hover" href="tel:18018498683">1&nbsp;801&nbsp;849&nbsp;8683</a>
+          </div>
+          <div class="share desktop">
+            <ul>
+              <li class="dribbble determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="//dribbble.com/impossible-bureau" target="_blank"></a>
+              </li>
+              <li class="facebook determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="//www.facebook.com/impossible.bureau" target="_blank"></a>
+              </li>
+              <li class="twitter determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="//twitter.com/WeAreImpossible" target="_blank"></a>
+              </li>
+              <li class="instagram determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="https://www.instagram.com/impossiblebureau/" target="_blank"></a>
+              </li>
+              <li class="medium determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="https://medium.com/impossible-bureau" target="_blank"></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </li>
-      <li>
-        <div href="#" id="MarketPlace">
-          <a>
-            <svg style="margin-top:10px; margin-bottom:10px; margin-left:40px; margin-right:40px;" width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-basket-fill text-secondary" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z"></path>
-            </svg>
-          </a>
+        <div class="form-wrapper constrain">
+          <h2>Get the scoop, subscribe to our newsletter.</h2>
+          <form method="POST" action="http://impossible-bureau.us9.list-manage.com/subscribe/post-json?u=9dd39ab261a397c9a7ccdbbe0&amp;id=48fa28146b">
+            <input type="email" name="MERGE0" value="" class="email" placeholder="Enter your email here">
+            <input type="submit" name="subscribe" value="Subscribe" class="button determine-hover enable-hover">
+          </form>
         </div>
-      </li>
-      <li>
-        <div href="#" id="AboutUs">
-          <a>
-            <svg style="margin-top:10px; margin-bottom:10px; margin-left:40px; margin-right:40px;" width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-award-fill text-secondary" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"></path>
-              <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"></path>
-            </svg>
-          </a>
+        <div class="share mobile">
+          <ul>
+            <li class="dribbble determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="//dribbble.com/impossible-bureau" target="_blank"></a>
+            </li>
+            <li class="facebook determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="//www.facebook.com/impossible.bureau" target="_blank"></a>
+            </li>
+            <li class="twitter determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="//twitter.com/WeAreImpossible" target="_blank"></a>
+            </li>
+            <li class="instagram determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="https://www.instagram.com/impossiblebureau/" target="_blank"></a>
+            </li>
+            <li class="medium determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="https://medium.com/impossible-bureau" target="_blank"></a>
+            </li>
+          </ul>
         </div>
-      </li>
-
-        <li id="space2"></li>
-
-      <li>
-        <a href="#" class="nav-item nav-link">
-          <i class="fa fa-facebook" style="font-size:24px; color:blue"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-item nav-link">
-          <i class="fa fa-twitter" style="font-size:24px; color:blue"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-item nav-link">
-          <i class="fa fa-instagram" style="font-size:24px; color:blue"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-
-<!-- SLIDER CONTAINER -->
-<div id="slideshow" data-component="slideshow">
-	<div role="list">
-		<div class="slide">
-      <div class="Slide1">
-        <img src="Imgs\Slideshow Container\img1.jpg" alt="">
+        <span class="copyright">©Impossible Bureau 2016. <div class="mobile-break"></div>All rights reserved.</span>
+        <figure class="bottom-gradient"></figure>
+      </footer>
       </div>
-		</div>
-    <div class="slide">
-      <div class="Slide2">
-        <img src="Imgs\Slideshow Container\img2.jpg" alt="">
-      </div>
-    </div>
-    <div class="slide">
-      <div class="Slide3">
-        <img src="Imgs\Slideshow Container\img3.jpg" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-<script src="slideshowcontainer01.js"></script>
+      </section>
+      <section id="work" class="page ib-component" data-component="ib.Work" data-previous-link="studio" data-next-link="news"><div class="container">
+        <section class="marquee">
+        <div class="constrain">
 
-<!-- COLLECTION -->
-<div class="content-wrapper" id="yui_01">
-  <div class="content" id="yui_02">
-    <div class="sqs-layout" data-type="page-section" id="page-section-01">
-      <div class="row sqs-row" id="yui_03">
-        <div class="col sqs-col-12 span-12" id="yui_04">
-          <div class="row sqs-row" id="yui_05">
-            <div class="col sqs-col-4 span-4" id="yui_06">
-              <div class="sqs-block image-block sqs-block-image sqs-text-ready" data-block-type="5" id="block-8e786a99f2fe0492fff6">
-                <div class="sqs-block-content" id="yui_07">
-                  <figure class="sqs-block-image-figure image-block-outer-wrapper image-block-v2 design-layout-poster combination-animation-none individual-animation-none individual-text-animation-none image-position-left sqs-text-ready sqs-narrow-width" data-scrolled="" data-test="image-block-v2-outer-wrapper" id="yui_3_17_2_1_1603142624448_300">
-                    <div class="intrinsic" id="yui_08">
-                      <div style="padding-bottom: 100%; overflow: hidden;" class="image-inset content-fill has-aspect-ratio" data-animation-role="image" data-description="" id="yui_09">
-                        <noscript>
-                          <img src="https://static1.squarespace.com/static/5f8dfe9896a0bd35978737c8/t/5f8dffad43b2537d793fa44d/1590012714761/" alt=" - Planters" />
-                        </noscript>
-                        <img data-src="https://static1.squarespace.com/static/5f8dfe9896a0bd35978737c8/t/5f8dffad43b2537d793fa44d/1590012714761/" data-image="https://static1.squarespace.com/static/5f8dfe9896a0bd35978737c8/t/5f8dffad43b2537d793fa44d/1590012714761/" data-image-dimensions="1500x1500" data-image-focal-point="0.5,0.5" alt="" style="left: 0px; top: 0px; width: 240px; height: 240px; position: absolute;" class="loaded" data-image-resolution="750w" src="https://static1.squarespace.com/static/5f8dfe9896a0bd35978737c8/t/5f8dffad43b2537d793fa44d/1590012714761/?format=750w" data-parent-ratio="1.0">
-                        <div class="image-overlay">
-                        </div>
+
+            <h1>We build digital experiences</h1>
+
+            <span class="progress">2/4 WORK</span>
+
+            <p>Our work is our mark on the world, our dent in the universe, and here's where we share it with you.</p>
+        </div>
+      </section>
+        <section class="info-grid">
+          <ul>
+              <li class="flexible-height" data-ratio="0.27" style="height: 224px;">
+                <div class="constrain">
+                  <div class="wrapper">
+                    <div class="inner">
+                      <h3>Falcon Northwest</h3>
+                      <p>Assembled in the USA</p>
+                      <div class="pill alt-hover-2 determine-hover enable-hover">
+                        <a class="history-link" title="Falcon Northwest Case Study - Impossible Bureau" href="/work/falcon">View Project</a>
                       </div>
                     </div>
-                    <figcaption class="image-card-wrapper" data-width-ratio="">
-                      <div class="image-card sqs-dynamic-text-container">
-                        <div class="image-subtitle-wrapper">
-                          <div class="image-subtitle sqs-dynamic-text" data-width-percentage="19.6" style="font-size: 19.6%;">
-                            <h3 style="white-space:pre-wrap;">
-                              <a href="http://squarespace.com" target="_blank">Planters</a>
-                            </h3>
-                          </div>
-                        </div>
-                      </div>
-                    </figcaption>
-                  </figure>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col sqs-col-4 span-4" id="yui_10">
-              <div class="sqs-block image-block sqs-block-image sqs-text-ready" data-block-type="5" id="block-be72a2918ee20e24cf15">
-                <div class="sqs-block-content" id="yui_11">
-                  <figure class="sqs-block-image-figure image-block-outer-wrapper image-block-v2 design-layout-poster combination-animation-none individual-animation-none individual-text-animation-none image-position-left sqs-text-ready sqs-narrow-width" data-scrolled="" data-test="image-block-v2-outer-wrapper" id="yui_3_17_2_1_1603142624448_328">
-                    <div class="intrinsic" id="yui_12">
-                      <div style="padding-bottom: 100%; overflow: hidden;" class="image-inset content-fill has-aspect-ratio" data-animation-role="image" data-description="" id="yui_13">
-                        <noscript>
-                          <img src="https://static1.squarespace.com/static/5f8dfe9896a0bd35978737c8/t/5f8dffad43b2537d793fa450/1590012718443/" alt=" - Cups" />
-                        </noscript>
-                        <img data-src="https://static1.squarespace.com/static/5f8dfe9896a0bd35978737c8/t/5f8dffad43b2537d793fa450/1590012718443/" data-image="https://static1.squarespace.com/static/5f8dfe9896a0bd35978737c8/t/5f8dffad43b2537d793fa450/1590012718443/" data-image-dimensions="1500x1500" data-image-focal-point="0.5,0.5" alt="" style="left: 0px; top: 0px; width: 240px; height: 240px; position: absolute;" class="loaded" data-image-resolution="750w" src="https://static1.squarespace.com/static/5f8dfe9896a0bd35978737c8/t/5f8dffad43b2537d793fa450/1590012718443/?format=750w" data-parent-ratio="1.0">
-                        <div class="image-overlay">
-                        </div>
+                <div class="gradient-background"></div>
+                <figure class="parallax-wrapper">
+                  <img src="http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/016/original/falcon.jpg?1481934240">
+                </figure>
+                <div class="border-hover"></div>
+              </li>
+              <li class="flexible-height" data-ratio="0.27" style="height: 224px;">
+                <div class="constrain">
+                  <div class="wrapper">
+                    <div class="inner">
+                      <h3>Microsoft</h3>
+                      <p>Universal Windows Platform Design Language</p>
+                      <div class="pill alt-hover-2 determine-hover enable-hover">
+                        <a class="history-link" title="Microsoft Case Study - Impossible Bureau" href="/work/microsoft">View Project</a>
                       </div>
                     </div>
-                    <figcaption class="image-card-wrapper" data-width-ratio="">
-                      <div class="image-card sqs-dynamic-text-container">
-                        <div class="image-subtitle-wrapper">
-                          <div class="image-subtitle sqs-dynamic-text" data-width-percentage="19.6" style="font-size: 19.6%;">
-                            <h3 style="white-space:pre-wrap;">
-                              <a href="http://squarespace.com" target="_blank">Cups</a>
-                            </h3>
-                          </div>
-                        </div>
-                      </div>
-                    </figcaption>
-                  </figure>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col sqs-col-4 span-4" id="yui_14">
-              <div class="sqs-block image-block sqs-block-image sqs-text-ready" data-block-type="5" id="block-48cd846b433660472da0">
-                <div class="sqs-block-content" id="yui_15">
-                  <figure class="sqs-block-image-figure image-block-outer-wrapper image-block-v2 design-layout-poster combination-animation-none individual-animation-none individual-text-animation-none image-position-left sqs-text-ready sqs-narrow-width" data-scrolled="" data-test="image-block-v2-outer-wrapper" id="yui_16">
-                    <div class="intrinsic" id="yui_17">
-                      <div style="padding-bottom: 100%; overflow: hidden;" class="image-inset content-fill has-aspect-ratio" data-animation-role="image" data-description="" id="yui_18">
-                        <noscript>
-                          <img src="https://static1.squarespace.com/static/5f8dfe9896a0bd35978737c8/t/5f8dffad43b2537d793fa453/1590012722856/" alt=" - Bowls" /></noscript>
-                          <img data-src="https://static1.squarespace.com/static/5f8dfe9896a0bd35978737c8/t/5f8dffad43b2537d793fa453/1590012722856/" data-image="https://static1.squarespace.com/static/5f8dfe9896a0bd35978737c8/t/5f8dffad43b2537d793fa453/1590012722856/" data-image-dimensions="1500x1500" data-image-focal-point="0.5,0.5" alt="" style="left: 0px; top: 0px; width: 240px; height: 240px; position: absolute;" class="loaded" data-image-resolution="750w" src="https://static1.squarespace.com/static/5f8dfe9896a0bd35978737c8/t/5f8dffad43b2537d793fa453/1590012722856/?format=750w" data-parent-ratio="1.0">
-                          <div class="image-overlay">
-                          </div>
-                        </div>
+                <div class="gradient-background"></div>
+                <figure class="parallax-wrapper">
+                  <img src="http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/015/original/micro-thumb.jpg?1459210294">
+                </figure>
+                <div class="border-hover"></div>
+              </li>
+              <li class="flexible-height" data-ratio="0.27" style="height: 224px;">
+                <div class="constrain">
+                  <div class="wrapper">
+                    <div class="inner">
+                      <h3>Botched Face Mashup</h3>
+                      <p>Plastic Makes Perfect</p>
+                      <div class="pill alt-hover-2 determine-hover enable-hover">
+                        <a class="history-link" title="Botched Face Mashup Case Study - Impossible Bureau" href="/work/botched">View Project</a>
                       </div>
-                      <figcaption class="image-card-wrapper" data-width-ratio="">
-                        <div class="image-card sqs-dynamic-text-container">
-                          <div class="image-subtitle-wrapper">
-                            <div class="image-subtitle sqs-dynamic-text" data-width-percentage="19.6" style="font-size: 19.6%;">
-                              <h3 style="white-space:pre-wrap;">
-                                <a href="http://squarespace.com" target="_blank">Bowls</a>
-                              </h3>
-                            </div>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </figure>
+                    </div>
+                  </div>
+                </div>
+                <div class="gradient-background"></div>
+                <figure class="parallax-wrapper">
+                  <img src="http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/014/original/botched-thumb.jpg?1456373241">
+                </figure>
+                <div class="border-hover"></div>
+              </li>
+              <li class="flexible-height" data-ratio="0.27" style="height: 224px;">
+                <div class="constrain">
+                  <div class="wrapper">
+                    <div class="inner">
+                      <h3>Compass Hunt</h3>
+                      <p>Scavenger Hunt Made Easy</p>
+                      <div class="pill alt-hover-2 determine-hover enable-hover">
+                        <a class="history-link" title="Compass Hunt Case Study - Impossible Bureau" href="/work/compass-hunt">View Project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gradient-background"></div>
+                <figure class="parallax-wrapper">
+                  <img src="http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/013/original/compss-hunt-thumb.jpg?1456277002">
+                </figure>
+                <div class="border-hover"></div>
+              </li>
+              <li class="flexible-height" data-ratio="0.27" style="height: 224px;">
+                <div class="constrain">
+                  <div class="wrapper">
+                    <div class="inner">
+                      <h3>Hewlett-Packard</h3>
+                      <p>Snapfish Digital Printing</p>
+                      <div class="pill alt-hover-2 determine-hover enable-hover">
+                        <a class="history-link" title="Hewlett-Packard Case Study - Impossible Bureau" href="/work/snapfish">View Project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gradient-background"></div>
+                <figure class="parallax-wrapper">
+                  <img src="http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/012/original/snapfish-hero-thumb.jpg?1456277074">
+                </figure>
+                <div class="border-hover"></div>
+              </li>
+              <li class="flexible-height" data-ratio="0.27" style="height: 224px;">
+                <div class="constrain">
+                  <div class="wrapper">
+                    <div class="inner">
+                      <h3>Ubisoft</h3>
+                      <p>Watch Dogs: CTOS Chicago</p>
+                      <div class="pill alt-hover-2 determine-hover enable-hover">
+                        <a class="history-link" title="Ubisoft Case Study - Impossible Bureau" href="/work/ctos">View Project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gradient-background"></div>
+                <figure class="parallax-wrapper">
+                  <img src="http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/011/original/ctos-thumb2.jpg?1415389450">
+                </figure>
+                <div class="border-hover"></div>
+              </li>
+              <li class="flexible-height" data-ratio="0.27" style="height: 224px;">
+                <div class="constrain">
+                  <div class="wrapper">
+                    <div class="inner">
+                      <h3>Bentley</h3>
+                      <p>The New Flying Spur</p>
+                      <div class="pill alt-hover-2 determine-hover enable-hover">
+                        <a class="history-link" title="Bentley Case Study - Impossible Bureau" href="/work/bentley">View Project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gradient-background"></div>
+                <figure class="parallax-wrapper">
+                  <img src="http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/009/original/bentley-hero-thumb.jpg?1456276853">
+                </figure>
+                <div class="border-hover"></div>
+              </li>
+              <li class="flexible-height" data-ratio="0.27" style="height: 224px;">
+                <div class="constrain">
+                  <div class="wrapper">
+                    <div class="inner">
+                      <h3>Project Pie</h3>
+                      <p>Pizza Gone Digital</p>
+                      <div class="pill alt-hover-2 determine-hover enable-hover">
+                        <a class="history-link" title="Project Pie Case Study - Impossible Bureau" href="/work/project-pie">View Project</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gradient-background"></div>
+                <figure class="parallax-wrapper">
+                  <img src="http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/010/original/projectpie-case-study-0-thumbnail.jpg?1456277722">
+                </figure>
+                <div class="border-hover"></div>
+              </li>
+          </ul>
+        </section>
+        <section class="get-in-touch flexible-height" data-ratio=".27" style="height: 224px;">
+        <div class="canvas-background">
+          <div class="stalker-wrap" data-scheme-type="getInTouch"></div>
+        </div>
+        <div class="constrain">
+          <div class="inner">
+              <h2>Interested in more?</h2>
+
+              <p>Get in touch and we’ll walk you through the rest.</p>
+
+            <div class="pill alt-hover-1 determine-hover enable-hover">
+                <a href="mailto:info@impossible-bureau.com">Get In Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+        <footer class="page-footer flexible-height" data-ratio=".27" style="height: 224px;">
+        <div class="constrain footer-wrapper">
+          <div class="info">
+            <a class="determine-hover hover-pink enable-hover" href="mailto:info@impossible-bureau.com">info@impossible-bureau.com</a>
+            <br>
+            <a class="determine-hover hover-pink enable-hover" href="tel:18018498683">1&nbsp;801&nbsp;849&nbsp;8683</a>
+          </div>
+          <div class="share desktop">
+            <ul>
+              <li class="dribbble determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="//dribbble.com/impossible-bureau" target="_blank"></a>
+              </li>
+              <li class="facebook determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="//www.facebook.com/impossible.bureau" target="_blank"></a>
+              </li>
+              <li class="twitter determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="//twitter.com/WeAreImpossible" target="_blank"></a>
+              </li>
+              <li class="instagram determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="https://www.instagram.com/impossiblebureau/" target="_blank"></a>
+              </li>
+              <li class="medium determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="https://medium.com/impossible-bureau" target="_blank"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-wrapper constrain">
+          <h2>Get the scoop, subscribe to our newsletter.</h2>
+          <form method="POST" action="http://impossible-bureau.us9.list-manage.com/subscribe/post-json?u=9dd39ab261a397c9a7ccdbbe0&amp;id=48fa28146b">
+            <input type="email" name="MERGE0" value="" class="email" placeholder="Enter your email here">
+            <input type="submit" name="subscribe" value="Subscribe" class="button determine-hover enable-hover">
+          </form>
+        </div>
+        <div class="share mobile">
+          <ul>
+            <li class="dribbble determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="//dribbble.com/impossible-bureau" target="_blank"></a>
+            </li>
+            <li class="facebook determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="//www.facebook.com/impossible.bureau" target="_blank"></a>
+            </li>
+            <li class="twitter determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="//twitter.com/WeAreImpossible" target="_blank"></a>
+            </li>
+            <li class="instagram determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="https://www.instagram.com/impossiblebureau/" target="_blank"></a>
+            </li>
+            <li class="medium determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="https://medium.com/impossible-bureau" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+        <span class="copyright">©Impossible Bureau 2016. <div class="mobile-break"></div>All rights reserved.</span>
+        <figure class="bottom-gradient"></figure>
+      </footer>
+      </div></section>
+      <section id="news" class="page ib-component" data-component="ib.News" data-previous-link="work" data-next-link="contact"><div class="container">
+        <section class="marquee">
+        <div class="constrain">
+
+
+            <h1>News</h1>
+
+            <span class="progress">3/4 NEWS</span>
+
+            <p>Thoughts and opinions on industry topics and company updates.</p>
+        </div>
+      </section>
+        <section class="info-list gray">
+          <ul class="news-list">
+          <li class="determine-hover enable-hover" data-type="article">
+            <a class="history-link" title="FWA Win - Impossible Bureau" href="/news/fwa-for-wind-and-words">
+              <div class="canvas-background">
+                <div class="stalker-wrap" data-scheme-type="infoList"></div>
+              </div>
+              <div class="gradient-hover gradient-1"></div>
+              <div class="constrain">
+                <span class="date">30 Dec 2016</span>
+                <p>FWA Win</p>
+              </div>
+              <div class="gradient-hover gradient-2"></div>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-type="article">
+            <a class="history-link" title="Wind and Words data visualization in Beta - Impossible Bureau" href="/news/wind-and-words">
+              <div class="canvas-background">
+                <div class="stalker-wrap" data-scheme-type="infoList"></div>
+              </div>
+              <div class="gradient-hover gradient-1"></div>
+              <div class="constrain">
+                <span class="date">21 Oct 2016</span>
+                <p>Wind and Words data visualization in Beta</p>
+              </div>
+              <div class="gradient-hover gradient-2"></div>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-type="article">
+            <a class="history-link" title="Meet Blake - Impossible Bureau" href="/news/meet-blake">
+              <div class="canvas-background">
+                <div class="stalker-wrap" data-scheme-type="infoList"></div>
+              </div>
+              <div class="gradient-hover gradient-1"></div>
+              <div class="constrain">
+                <span class="date">30 Sep 2016</span>
+                <p>Meet Blake</p>
+              </div>
+              <div class="gradient-hover gradient-2"></div>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-type="article">
+            <a class="history-link" title="Data is coming - Impossible Bureau" href="/news/got-preview">
+              <div class="canvas-background">
+                <div class="stalker-wrap" data-scheme-type="infoList"></div>
+              </div>
+              <div class="gradient-hover gradient-1"></div>
+              <div class="constrain">
+                <span class="date">08 Jul 2016</span>
+                <p>Data is coming</p>
+              </div>
+              <div class="gradient-hover gradient-2"></div>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-type="article">
+            <a class="history-link" title="Meet Eric - Impossible Bureau" href="/news/meet-eric">
+              <div class="canvas-background">
+                <div class="stalker-wrap" data-scheme-type="infoList"></div>
+              </div>
+              <div class="gradient-hover gradient-1"></div>
+              <div class="constrain">
+                <span class="date">30 Jun 2016</span>
+                <p>Meet Eric</p>
+              </div>
+              <div class="gradient-hover gradient-2"></div>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-type="article">
+            <a class="history-link" title="Polish: the art of, not the country - Impossible Bureau" href="/news/polish">
+              <div class="canvas-background">
+                <div class="stalker-wrap" data-scheme-type="infoList"></div>
+              </div>
+              <div class="gradient-hover gradient-1"></div>
+              <div class="constrain">
+                <span class="date">24 Feb 2016</span>
+                <p>Polish: the art of, not the country</p>
+              </div>
+              <div class="gradient-hover gradient-2"></div>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-type="article">
+            <a class="history-link" title=" Lessons from the Property Brothers - Impossible Bureau" href="/news/lessons-from-property-brothers">
+              <div class="canvas-background">
+                <div class="stalker-wrap" data-scheme-type="infoList"></div>
+              </div>
+              <div class="gradient-hover gradient-1"></div>
+              <div class="constrain">
+                <span class="date">01 Sep 2015</span>
+                <p> Lessons from the Property Brothers</p>
+              </div>
+              <div class="gradient-hover gradient-2"></div>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-type="article">
+            <a class="history-link" title="Meet Julia - Impossible Bureau" href="/news/meet-julia">
+              <div class="canvas-background">
+                <div class="stalker-wrap" data-scheme-type="infoList"></div>
+              </div>
+              <div class="gradient-hover gradient-1"></div>
+              <div class="constrain">
+                <span class="date">15 Jan 2016</span>
+                <p>Meet Julia</p>
+              </div>
+              <div class="gradient-hover gradient-2"></div>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-type="article">
+            <a class="history-link" title="What makes a great producer - Impossible Bureau" href="/news/what-makes-a-great-producer">
+              <div class="canvas-background">
+                <div class="stalker-wrap" data-scheme-type="infoList"></div>
+              </div>
+              <div class="gradient-hover gradient-1"></div>
+              <div class="constrain">
+                <span class="date">21 Aug 2015</span>
+                <p>What makes a great producer</p>
+              </div>
+              <div class="gradient-hover gradient-2"></div>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-type="article">
+            <a class="history-link" title="We're hiring in Salt Lake City - Impossible Bureau" href="/news/salt-lake-city-jobs">
+              <div class="canvas-background">
+                <div class="stalker-wrap" data-scheme-type="infoList"></div>
+              </div>
+              <div class="gradient-hover gradient-1"></div>
+              <div class="constrain">
+                <span class="date">10 Oct 2014</span>
+                <p>We're hiring in Salt Lake City</p>
+              </div>
+              <div class="gradient-hover gradient-2"></div>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-type="article">
+            <a class="history-link" title="New Salt Lake City headquarters - Impossible Bureau" href="/news/new-hq">
+              <div class="canvas-background">
+                <div class="stalker-wrap" data-scheme-type="infoList"></div>
+              </div>
+              <div class="gradient-hover gradient-1"></div>
+              <div class="constrain">
+                <span class="date">29 Aug 2014</span>
+                <p>New Salt Lake City headquarters</p>
+              </div>
+              <div class="gradient-hover gradient-2"></div>
+            </a>
+          </li>
+          <li class="determine-hover enable-hover" data-type="article">
+            <a class="history-link" title="Our Mission - Impossible Bureau" href="/news/mission">
+              <div class="canvas-background">
+                <div class="stalker-wrap" data-scheme-type="infoList"></div>
+              </div>
+              <div class="gradient-hover gradient-1"></div>
+              <div class="constrain">
+                <span class="date">27 Sep 2014</span>
+                <p>Our Mission</p>
+              </div>
+              <div class="gradient-hover gradient-2"></div>
+            </a>
+          </li>
+      </ul>
+        </section>
+        <section id="twitter-feed" class="bottom">
+          <div class="constrain">
+            <h1><a class="hover-pink" href="//twitter.com/WeAreImpossible" target="_blank">@WeAreImpossible</a></h1>
+            <ul class="feed">
+                <li style="opacity: 1; left: 0px; transform: matrix(1, 0, 0, 1, 0, 0); z-index: 1;">
+                  <span>28 Oct 2019</span>
+                  <p>We’re hiring a contract-to-perm position for our SLC office. You'll be primarily responsible for a single project u… <a href="https://t.co/x4x3N0xHcd" rel="nofollow">https://t.co/x4x3N0xHcd</a></p>
+                  <hr style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: right center 0px;">
+                </li>
+                <li style="opacity: 0; left: 410px; transform: matrix(1, 0, 0, 1, -40, 0); z-index: 0;">
+                  <span>27 Mar 2018</span>
+                  <p>@<a class="tweet-url username" href="https://twitter.com/jamesscoville" rel="nofollow">jamesscoville</a> With lots of love and a little javascript. We're using @<a class="tweet-url username" href="https://twitter.com/pixijs" rel="nofollow">pixijs</a> and the rest is magic!</p>
+                  <hr style="transform: matrix(1, 0, 0, 1, 0, 0); transform-origin: right center 0px;">
+                </li>
+                <li style="z-index: 0; opacity: 0; transform: matrix(1, 0, 0, 1, -40, 0);">
+                  <span>21 Dec 2017</span>
+                  <p>We've been nominated as Studio of the Year! Hop in and vote! <a href="https://t.co/zuTyHXe02J" rel="nofollow">https://t.co/zuTyHXe02J</a> <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23AwwwardsBerlin" rel="nofollow" title="#AwwwardsBerlin">#AwwwardsBerlin</a> via @<a class="tweet-url username" href="https://twitter.com/awwwards" rel="nofollow">awwwards</a></p>
+                  <hr>
+                </li>
+                <li style="z-index: 0; opacity: 0; transform: matrix(1, 0, 0, 1, -40, 0);">
+                  <span>14 Dec 2017</span>
+                  <p>Working on some new <a class="tweet-url hashtag" href="https://twitter.com/#!/search?q=%23dat" rel="nofollow" title="#dat">#dat</a> viz explorations for a new secret project. <a href="https://t.co/5I2GypKv58" rel="nofollow">https://t.co/5I2GypKv58</a></p>
+                  <hr>
+                </li>
+                <li style="z-index: 0; opacity: 0; transform: matrix(1, 0, 0, 1, -40, 0);">
+                  <span>20 Nov 2017</span>
+                  <p>Are you a senior developer looking for a new challenge? We'd love to talk to you! <a href="https://t.co/GuroU25hRv" rel="nofollow">https://t.co/GuroU25hRv</a> <a href="https://t.co/eEfZRPUOh8" rel="nofollow">https://t.co/eEfZRPUOh8</a></p>
+                  <hr>
+                </li>
+                <li style="z-index: 0; opacity: 0; transform: matrix(1, 0, 0, 1, -40, 0);">
+                  <span>16 Nov 2017</span>
+                  <p>@<a class="tweet-url username" href="https://twitter.com/Patio0321" rel="nofollow">Patio0321</a> Thanks! Big smiles in the office today knowing you enjoyed your scrolling!</p>
+                  <hr>
+                </li>
+                <li style="z-index: 0; opacity: 0; transform: matrix(1, 0, 0, 1, -40, 0);">
+                  <span>16 Nov 2017</span>
+                  <p>We're seeking passionate technical leaders in SLC.
+      <a href="https://t.co/AkqawjBTZQ" rel="nofollow">https://t.co/AkqawjBTZQ</a> <a href="https://t.co/s1r4qWa7he" rel="nofollow">https://t.co/s1r4qWa7he</a></p>
+                  <hr>
+                </li>
+                <li style="z-index: 0; opacity: 0; transform: matrix(1, 0, 0, 1, -40, 0);">
+                  <span>16 Nov 2017</span>
+                  <p>@<a class="tweet-url username" href="https://twitter.com/swyx" rel="nofollow">swyx</a> @<a class="tweet-url username" href="https://twitter.com/AWWWARDS" rel="nofollow">AWWWARDS</a> Thanks! It was made w/ ❤️</p>
+                  <hr>
+                </li>
+                <li style="z-index: 0; opacity: 0; transform: matrix(1, 0, 0, 1, -40, 0);">
+                  <span>16 Nov 2017</span>
+                  <p>@<a class="tweet-url username" href="https://twitter.com/AWWWARDS" rel="nofollow">AWWWARDS</a> We’re honored to win SOTD by @<a class="tweet-url username" href="https://twitter.com/AWWWARDS" rel="nofollow">AWWWARDS</a>! This started as a small internal experiment but obviously got a little out of hand!</p>
+                  <hr>
+                </li>
+                <li style="z-index: 0; opacity: 0; transform: matrix(1, 0, 0, 1, -40, 0);">
+                  <span>13 Nov 2017</span>
+                  <p>We are looking for an enthusiastic and skilled senior developer to join our team. Check out the job description her… <a href="https://t.co/Gr6EhfjMkJ" rel="nofollow">https://t.co/Gr6EhfjMkJ</a></p>
+                  <hr>
+                </li>
+            </ul>
+            <ul class="common-pagination">
+              <li class="determine-hover enable-hover disabled">
+                <figure>Previous</figure>
+              </li>
+              <li class="determine-hover enable-hover">
+                <figure>Next</figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="get-in-touch flexible-height" data-ratio=".27" style="height: 224px;">
+        <div class="canvas-background">
+          <div class="stalker-wrap" data-scheme-type="getInTouch"></div>
+        </div>
+        <div class="constrain">
+          <div class="inner">
+              <h2>Interested in more?</h2>
+
+              <p>Get in touch and we’ll walk you through the rest.</p>
+
+            <div class="pill alt-hover-1 determine-hover enable-hover">
+                <a href="mailto:info@impossible-bureau.com">Get In Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+        <footer class="page-footer flexible-height" data-ratio=".27" style="height: 224px;">
+        <div class="constrain footer-wrapper">
+          <div class="info">
+            <a class="determine-hover hover-pink enable-hover" href="mailto:info@impossible-bureau.com">info@impossible-bureau.com</a>
+            <br>
+            <a class="determine-hover hover-pink enable-hover" href="tel:18018498683">1&nbsp;801&nbsp;849&nbsp;8683</a>
+          </div>
+          <div class="share desktop">
+            <ul>
+              <li class="dribbble determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="//dribbble.com/impossible-bureau" target="_blank"></a>
+              </li>
+              <li class="facebook determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="//www.facebook.com/impossible.bureau" target="_blank"></a>
+              </li>
+              <li class="twitter determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="//twitter.com/WeAreImpossible" target="_blank"></a>
+              </li>
+              <li class="instagram determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="https://www.instagram.com/impossiblebureau/" target="_blank"></a>
+              </li>
+              <li class="medium determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="https://medium.com/impossible-bureau" target="_blank"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-wrapper constrain">
+          <h2>Get the scoop, subscribe to our newsletter.</h2>
+          <form method="POST" action="http://impossible-bureau.us9.list-manage.com/subscribe/post-json?u=9dd39ab261a397c9a7ccdbbe0&amp;id=48fa28146b">
+            <input type="email" name="MERGE0" value="" class="email" placeholder="Enter your email here">
+            <input type="submit" name="subscribe" value="Subscribe" class="button determine-hover enable-hover">
+          </form>
+        </div>
+        <div class="share mobile">
+          <ul>
+            <li class="dribbble determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="//dribbble.com/impossible-bureau" target="_blank"></a>
+            </li>
+            <li class="facebook determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="//www.facebook.com/impossible.bureau" target="_blank"></a>
+            </li>
+            <li class="twitter determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="//twitter.com/WeAreImpossible" target="_blank"></a>
+            </li>
+            <li class="instagram determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="https://www.instagram.com/impossiblebureau/" target="_blank"></a>
+            </li>
+            <li class="medium determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="https://medium.com/impossible-bureau" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+        <span class="copyright">©Impossible Bureau 2016. <div class="mobile-break"></div>All rights reserved.</span>
+        <figure class="bottom-gradient"></figure>
+      </footer>
+      </div></section>
+      <section id="contact" class="page ib-component" data-component="ib.Contact" data-previous-link="work"><div class="container">
+        <section class="marquee">
+        <div class="constrain">
+
+
+            <h1>Reach out, we’d love to hear from you!</h1>
+
+            <span class="progress">4/4 CONTACT</span>
+
+            <p><a class="determine-hover hover-pink enable-hover" href="tel:18018498683">1&nbsp;801&nbsp;849&nbsp;8683</a><br><a class="determine-hover hover-pink enable-hover" href="mailto:info@impossible-bureau.com">info@impossible-bureau.com</a></p>
+        </div>
+      </section>
+        <section class="info-grid">
+          <ul>
+            <li class="flexible-height" data-ratio="0.27" style="height: 224px;">
+              <div class="constrain">
+                <div class="wrapper">
+                  <div class="inner">
+                    <h5>Head Office</h5>
+                    <h3>Salt Lake City</h3>
+                    <address>
+                      314 W Broadway Suite 222<br>
+                      Salt Lake City, UT 84101<br>
+                    </address>
+                    <div class="pill alt-hover-2 determine-hover enable-hover">
+                      <a href="https://www.google.com/maps/preview?q=314+W+Broadway,+Salt+Lake+City,+UT+84101&amp;ie=UTF-8&amp;hq=&amp;hnear=0x8752f50306ab80e9:0x667eb83b52c764ee,314+W+Broadway,+Salt+Lake+City,+UT+84101&amp;gl=us&amp;ei=3VziU_vCPMiAogTonID4DA&amp;ved=0CCEQ8gEwAA" target="_blank">View Map</a>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="gradient-background"></div>
+              <figure class="parallax-wrapper">
+                <img src="/assets/contact/salt-lake-city.jpg">
+              </figure>
+              <div class="border-hover"></div>
+            </li>
+            <li class="flexible-height" data-ratio="0.27" style="height: 224px;">
+              <div class="constrain">
+                <div class="wrapper">
+                  <div class="inner">
+                    <h3>Seattle</h3>
+                    <address>
+                      500 Yale Avenue North<br>
+                      Seattle, WA 98109
+                    </address>
+                    <div class="pill alt-hover-2 determine-hover enable-hover">
+                      <a href="https://www.google.com/maps/preview?q=500+Yale+Ave+N,+Seattle,+WA+98109&amp;ie=UTF-8&amp;hq=&amp;hnear=0x54901530fb19794f:0x16d37dea4a624e97,500+Yale+Ave+N,+Seattle,+WA+98109&amp;gl=us&amp;ei=3VziU_vCPMiAogTonID4DA&amp;ved=0CCEQ8gEwAA" target="_blank">View Map</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gradient-background"></div>
+              <figure class="parallax-wrapper">
+                <img src="/assets/contact/seattle.jpg">
+              </figure>
+              <div class="border-hover"></div>
+            </li>
+            <li class="flexible-height" data-ratio="0.27" style="height: 224px;">
+              <div class="constrain">
+                <div class="wrapper">
+                  <div class="inner">
+                    <h3>San Francisco</h3>
+                    <address>
+                      1161 Mission Street, Suite 503<br>
+                      San Francisco, CA 94103
+                    </address>
+                    <div class="pill alt-hover-2 determine-hover enable-hover">
+                      <a href="https://www.google.com/maps/place/156+2nd+St,+San+Francisco,+CA+94105/@37.7871905,-122.3990266,17z/data=!3m1!4b1!4m2!3m1!1s0x8085807d24573f87:0x7bf6f7dc8840a684" target="_blank">View Map</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gradient-background"></div>
+              <figure class="parallax-wrapper">
+                <img src="/assets/contact/sf.jpg">
+              </figure>
+              <div class="border-hover"></div>
+            </li>
+          </ul>
+        </section>
+        <section id="job-openings" class="info-list">
+          <div class="constrain">
+            <h2>Career Opportunities</h2>
+            <p>We are a tight-knit team of digital specialists who know how to have fun, get the job done and deliver the impossible. Want to join us? Then check out our open positions or send your details to <a class="determine-hover enable-hover" href="mailto:jobs@impossible-bureau.com">jobs@impossible-bureau.com</a> for future opportunities - we’re always on the lookout for talented and passionate people to join our growing team.</p>
+          </div>
+          <ul>
+              <li class="determine-hover enable-hover">
+                <a class="history-link" title="Web Developer Career Opportunity - Impossible Bureau" href="/contact/web-developer-slc">
+                  <div class="canvas-background">
+                    <div class="stalker-wrap" data-scheme-type="infoList"></div>
+                  </div>
+                  <div class="gradient-hover gradient-1">
+                  </div>
+                  <div class="constrain">
+                    <p>Web Developer</p>
+                    <span>Salt Lake City</span>
+                  </div>
+                  <div class="gradient-hover gradient-2"></div>
+                </a>
+              </li>
+          </ul>
+        </section>
+        <section class="get-in-touch flexible-height" data-ratio=".27" style="height: 224px;">
+        <div class="canvas-background">
+          <div class="stalker-wrap" data-scheme-type="getInTouch"></div>
+        </div>
+        <div class="constrain">
+          <div class="inner">
+              <h2>Interested in more?</h2>
+
+              <p>Get in touch and we’ll walk you through the rest.</p>
+
+            <div class="pill alt-hover-1 determine-hover enable-hover">
+                <a href="mailto:info@impossible-bureau.com">Get In Touch</a>
+            </div>
+          </div>
+        </div>
+      </section>
+        <footer class="page-footer flexible-height" data-ratio=".27" style="height: 224px;">
+        <div class="constrain footer-wrapper">
+          <div class="info">
+            <a class="determine-hover hover-pink enable-hover" href="mailto:info@impossible-bureau.com">info@impossible-bureau.com</a>
+            <br>
+            <a class="determine-hover hover-pink enable-hover" href="tel:18018498683">1&nbsp;801&nbsp;849&nbsp;8683</a>
+          </div>
+          <div class="share desktop">
+            <ul>
+              <li class="dribbble determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="//dribbble.com/impossible-bureau" target="_blank"></a>
+              </li>
+              <li class="facebook determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="//www.facebook.com/impossible.bureau" target="_blank"></a>
+              </li>
+              <li class="twitter determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="//twitter.com/WeAreImpossible" target="_blank"></a>
+              </li>
+              <li class="instagram determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="https://www.instagram.com/impossiblebureau/" target="_blank"></a>
+              </li>
+              <li class="medium determine-hover enable-hover">
+                <div class="background"></div>
+                <a href="https://medium.com/impossible-bureau" target="_blank"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-wrapper constrain">
+          <h2>Get the scoop, subscribe to our newsletter.</h2>
+          <form method="POST" action="http://impossible-bureau.us9.list-manage.com/subscribe/post-json?u=9dd39ab261a397c9a7ccdbbe0&amp;id=48fa28146b">
+            <input type="email" name="MERGE0" value="" class="email" placeholder="Enter your email here">
+            <input type="submit" name="subscribe" value="Subscribe" class="button determine-hover enable-hover">
+          </form>
+        </div>
+        <div class="share mobile">
+          <ul>
+            <li class="dribbble determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="//dribbble.com/impossible-bureau" target="_blank"></a>
+            </li>
+            <li class="facebook determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="//www.facebook.com/impossible.bureau" target="_blank"></a>
+            </li>
+            <li class="twitter determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="//twitter.com/WeAreImpossible" target="_blank"></a>
+            </li>
+            <li class="instagram determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="https://www.instagram.com/impossiblebureau/" target="_blank"></a>
+            </li>
+            <li class="medium determine-hover enable-hover">
+              <div class="background"></div>
+              <a href="https://medium.com/impossible-bureau" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+        <span class="copyright">©Impossible Bureau 2016. <div class="mobile-break"></div>All rights reserved.</span>
+        <figure class="bottom-gradient"></figure>
+      </footer>
+      </div>
+      </section>
+
+      <!-- Subsection templates -->
+      <section id="case-study" class="article page"></section>
+      <section id="news-article" class="article page"></section>
+      <section id="career" class="article page"></section>
+
+
+            </div>
+            <div id="menu-background" style="">
+        <div class="background"></div>
+        <div class="constrain mobile-hide">
+          <h1>Impossible Bureau</h1>
+          <span>SLC <small>+</small> SEA <small>+</small> SF</span>
+        </div>
+      </div>
+      <figure id="menu-button" class="logo has-hover" style="display: block;">
+        <div class="wrap light">
+        <svg class="svg-logo" viewBox="0 0 41 37.52">
+          <path class="svg-logo-path-top" style="fill: none; stroke-miterlimit: 10; stroke-width: 3.42px; stroke-dasharray: 88, 90; stroke-dashoffset: 0;" d="M3.51,14.05l11.56,5.27,0.05,0a12.12,12.12,0,0,0,10.76,0l0.05,0L37.51,14a3.23,3.23,0,0,0,0-5.78L25.93,3,25.88,3A12.11,12.11,0,0,0,15.13,3L15.08,3,3.51,8.26A3.23,3.23,0,0,0,3.51,14.05Z"></path>
+          <path class="svg-logo-path-bottom" style="fill: none; stroke-miterlimit: 10; stroke-width: 3.42px; stroke-dasharray: 96, 98; stroke-dashoffset: 0;" d="M20.5,27.63A15.39,15.39,0,0,1,13.62,26L1.71,20.6v5.76a3.22,3.22,0,0,0,1.78,2.89l11.58,5.28,0.05,0a12.12,12.12,0,0,0,10.76,0l0.05,0,11.57-5.28a3.22,3.22,0,0,0,1.78-2.89V20.6L27.39,26A15.38,15.38,0,0,1,20.5,27.63Z"></path>
+        </svg>
+
+        <svg class="svg-logo svg-logo-gradient" viewBox="0 0 40 37.52">
+          <defs>
+            <linearGradient id="menu-svg-logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#31388d"></stop>
+              <stop offset="16.67%" stop-color="#753fa9"></stop>
+              <stop offset="33.34%" stop-color="#ff0762"></stop>
+              <stop offset="50%" stop-color="#f25632"></stop>
+              <stop offset="66.67%" stop-color="#ff0762"></stop>
+              <stop offset="83.34%" stop-color="#753fa9"></stop>
+              <stop offset="100%" stop-color="#31388d"></stop>
+            </linearGradient>
+            <pattern class="svg-gradient-pattern" id="menu-svg-gradient-pattern" x="0" y="0" width="300%" height="100%" patternUnits="userSpaceOnUse">
+              <path class="svg-repeat-pattern-left" width="150%" height="100%" fill="url(#menu-svg-logo-gradient)" d="M0 0 L150 0 L150 100 L0 100 Z" style="stroke-dasharray: 500, 502; stroke-dashoffset: 0;"></path>
+              <path class="svg-repeat-pattern-right" width="150%" height="100%" fill="url(#menu-svg-logo-gradient)" d="M0 0 L150 0 L150 100 L0 100 Z" style="stroke-dasharray: 500, 502; stroke-dashoffset: 0;"></path>
+            </pattern>
+          </defs>
+          <path class="svg-logo-path-top" style="fill: none; stroke-miterlimit: 10; stroke-width: 3.42px; stroke: url(&quot;#menu-svg-gradient-pattern&quot;); stroke-dasharray: 88, 90; stroke-dashoffset: 0;" d="M3.51,14.05l11.56,5.27,0.05,0a12.12,12.12,0,0,0,10.76,0l0.05,0L37.51,14a3.23,3.23,0,0,0,0-5.78L25.93,3,25.88,3A12.11,12.11,0,0,0,15.13,3L15.08,3,3.51,8.26A3.23,3.23,0,0,0,3.51,14.05Z"></path>
+          <path class="svg-logo-path-bottom" style="fill: none; stroke-miterlimit: 10; stroke-width: 3.42px; stroke: url(&quot;#menu-svg-gradient-pattern&quot;); stroke-dasharray: 96, 98; stroke-dashoffset: 0;" d="M20.5,27.63A15.39,15.39,0,0,1,13.62,26L1.71,20.6v5.76a3.22,3.22,0,0,0,1.78,2.89l11.58,5.28,0.05,0a12.12,12.12,0,0,0,10.76,0l0.05,0,11.57-5.28a3.22,3.22,0,0,0,1.78-2.89V20.6L27.39,26A15.38,15.38,0,0,1,20.5,27.63Z"></path>
+        </svg>
+      </div>
+      </figure>
+      <div id="menu" class="ib-component" data-component="ib.Menu">
+        <div class="canvas-background" style="z-index: 2;">
+          <div class="stalker-wrap active" data-scheme-type="menu" style="width: 793px; height: 793px; margin: -396.5px 0px 0px -396.5px;"><div class="stalker hide" style="transform: matrix(1, 0, 0, 1, 17.5, -405.21);"><div class="grad" style="background-image: -webkit-radial-gradient(center center, rgba(255, 34, 97, 0.4) 10px, rgba(255, 34, 97, 0) 60%), -webkit-radial-gradient(center center, rgba(241, 90, 41, 0.3) 10px, rgba(241, 90, 41, 0) 70%);"></div><div class="grad active" style="background-image: -webkit-radial-gradient(center center, rgba(126, 68, 181, 0.4) 10px, rgba(126, 68, 181, 0) 60%), -webkit-radial-gradient(center center, rgba(49, 56, 141, 0.3) 10px, rgba(49, 56, 141, 0) 70%);"></div></div></div>
+        </div>
+        <nav>
+          <ul>
+            <li class="determine-hover enable-hover">
+              <div class="background" style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"></div>
+              <div class="content-wrapper show" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                <a class="history-link description" title="Studio - Impossible Bureau" href="/studio">
+                  <hgroup>
+                    <div class="table-cell">
+                      <h1>Studio</h1>
+                      <hr>
+                    </div>
+                  </hgroup>
+                  <p>Our principles, services, clients, accolades and team members.</p>
+                </a>
+              </div>
+            </li>
+            <li class="ib-component determine-hover enable-hover" data-component="ib.NestedMenu">
+              <div class="background" style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"></div>
+              <div class="content-wrapper show" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                <div class="title-bar">
+                  <h1 style="transform: matrix(1, 0, 0, 1, 0, 15);">Work</h1>
+                </div>
+                <a class="history-link description" title="Work - Impossible Bureau" href="/work">
+                  <hgroup>
+                    <div class="table-cell">
+                      <h1>Work</h1>
+                      <hr>
+                    </div>
+                  </hgroup>
+                  <p>A handful of case studies for our favorite projects.</p>
+                </a>
+                <div class="nested-menu" style="transform: matrix(1, 0, 0, 1, 0, -115);">
+                  <div class="menu-items">
+                    <ul class="sub-sections">
+                        <li class="work flexible-height determine-hover enable-hover" data-ratio=".14" style="background-image: url(&quot;http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/016/original/falcon.jpg?1481934240&quot;); height: 116px;">
+                          <div class="overlay"></div>
+                          <div class="active-overlay"></div>
+                          <a class="history-link" title="Falcon Northwest Case Study - Impossible Bureau" href="/work/falcon">
+                            <span class="date">Falcon Northwest</span>
+                            <p>Assembled in the USA</p>
+                          </a>
+                        </li>
+                        <li class="work flexible-height determine-hover enable-hover" data-ratio=".14" style="background-image: url(&quot;http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/015/original/micro-thumb.jpg?1459210294&quot;); height: 116px;">
+                          <div class="overlay"></div>
+                          <div class="active-overlay"></div>
+                          <a class="history-link" title="Microsoft Case Study - Impossible Bureau" href="/work/microsoft">
+                            <span class="date">Microsoft</span>
+                            <p>Universal Windows Platform Design Language</p>
+                          </a>
+                        </li>
+                        <li class="work flexible-height determine-hover enable-hover" data-ratio=".14" style="background-image: url(&quot;http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/014/original/botched-thumb.jpg?1456373241&quot;); height: 116px;">
+                          <div class="overlay"></div>
+                          <div class="active-overlay"></div>
+                          <a class="history-link" title="Botched Face Mashup Case Study - Impossible Bureau" href="/work/botched">
+                            <span class="date">Botched Face Mashup</span>
+                            <p>Plastic Makes Perfect</p>
+                          </a>
+                        </li>
+                        <li class="work flexible-height determine-hover enable-hover" data-ratio=".14" style="background-image: url(&quot;http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/013/original/compss-hunt-thumb.jpg?1456277002&quot;); height: 116px;">
+                          <div class="overlay"></div>
+                          <div class="active-overlay"></div>
+                          <a class="history-link" title="Compass Hunt Case Study - Impossible Bureau" href="/work/compass-hunt">
+                            <span class="date">Compass Hunt</span>
+                            <p>Scavenger Hunt Made Easy</p>
+                          </a>
+                        </li>
+                        <li class="work flexible-height determine-hover enable-hover" data-ratio=".14" style="background-image: url(&quot;http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/012/original/snapfish-hero-thumb.jpg?1456277074&quot;); height: 116px;">
+                          <div class="overlay"></div>
+                          <div class="active-overlay"></div>
+                          <a class="history-link" title="Hewlett-Packard Case Study - Impossible Bureau" href="/work/snapfish">
+                            <span class="date">Hewlett-Packard</span>
+                            <p>Snapfish Digital Printing</p>
+                          </a>
+                        </li>
+                        <li class="work flexible-height determine-hover enable-hover" data-ratio=".14" style="background-image: url(&quot;http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/011/original/ctos-thumb2.jpg?1415389450&quot;); height: 116px;">
+                          <div class="overlay"></div>
+                          <div class="active-overlay"></div>
+                          <a class="history-link" title="Ubisoft Case Study - Impossible Bureau" href="/work/ctos">
+                            <span class="date">Ubisoft</span>
+                            <p>Watch Dogs: CTOS Chicago</p>
+                          </a>
+                        </li>
+                        <li class="work flexible-height determine-hover enable-hover" data-ratio=".14" style="background-image: url(&quot;http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/009/original/bentley-hero-thumb.jpg?1456276853&quot;); height: 116px;">
+                          <div class="overlay"></div>
+                          <div class="active-overlay"></div>
+                          <a class="history-link" title="Bentley Case Study - Impossible Bureau" href="/work/bentley">
+                            <span class="date">Bentley</span>
+                            <p>The New Flying Spur</p>
+                          </a>
+                        </li>
+                        <li class="work flexible-height determine-hover enable-hover" data-ratio=".14" style="background-image: url(&quot;http://s3.amazonaws.com/s3.impossible-bureau.com/case_studies/thumbnails/000/000/010/original/projectpie-case-study-0-thumbnail.jpg?1456277722&quot;); height: 116px;">
+                          <div class="overlay"></div>
+                          <div class="active-overlay"></div>
+                          <a class="history-link" title="Project Pie Case Study - Impossible Bureau" href="/work/project-pie">
+                            <span class="date">Project Pie</span>
+                            <p>Pizza Gone Digital</p>
+                          </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="scroll-indicator down">
+                  <div class="arrow-wrap up">
+                    <figure></figure>
+                  </div>
+                  <div class="arrow-wrap down">
+                    <figure></figure>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="ib-component determine-hover enable-hover" data-component="ib.NestedMenu">
+              <div class="background" style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"></div>
+              <div class="content-wrapper show" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                <div class="title-bar">
+                  <h1 style="transform: matrix(1, 0, 0, 1, 0, 15);">News</h1>
+                </div>
+                <a class="history-link description" title="News - Impossible Bureau" href="/news">
+                  <hgroup>
+                    <div class="table-cell">
+                      <h1>News</h1>
+                      <hr>
+                    </div>
+                  </hgroup>
+                  <p>Thoughts and opinions on industry topics and company updates.</p>
+                </a>
+                <div class="nested-menu" style="transform: matrix(1, 0, 0, 1, 0, -115);">
+                  <div class="menu-items">
+                    <ul class="sub-sections">
+                        <li class="news flexible-height determine-hover enable-hover" data-ratio=".14" style="height: 116px;">
+                          <a class="history-link" title="FWA Win - Impossible Bureau" href="/news/fwa-for-wind-and-words">
+                            <span class="date">30 Dec 2016</span>
+                            <p style="overflow-wrap: break-word;">FWA Win</p>
+                          </a>
+                        </li>
+                        <li class="news flexible-height determine-hover enable-hover" data-ratio=".14" style="height: 116px;">
+                          <a class="history-link" title="Wind and Words data visualization in Beta - Impossible Bureau" href="/news/wind-and-words">
+                            <span class="date">21 Oct 2016</span>
+                            <p style="overflow-wrap: break-word;">Wind and Words data visualization in Beta</p>
+                          </a>
+                        </li>
+                        <li class="news flexible-height determine-hover enable-hover" data-ratio=".14" style="height: 116px;">
+                          <a class="history-link" title="Meet Blake - Impossible Bureau" href="/news/meet-blake">
+                            <span class="date">30 Sep 2016</span>
+                            <p style="overflow-wrap: break-word;">Meet Blake</p>
+                          </a>
+                        </li>
+                        <li class="news flexible-height determine-hover enable-hover" data-ratio=".14" style="height: 116px;">
+                          <a class="history-link" title="Data is coming - Impossible Bureau" href="/news/got-preview">
+                            <span class="date">08 Jul 2016</span>
+                            <p style="overflow-wrap: break-word;">Data is coming</p>
+                          </a>
+                        </li>
+                        <li class="news flexible-height determine-hover enable-hover" data-ratio=".14" style="height: 116px;">
+                          <a class="history-link" title="Meet Eric - Impossible Bureau" href="/news/meet-eric">
+                            <span class="date">30 Jun 2016</span>
+                            <p style="overflow-wrap: break-word;">Meet Eric</p>
+                          </a>
+                        </li>
+                        <li class="news flexible-height determine-hover enable-hover" data-ratio=".14" style="height: 116px;">
+                          <a class="history-link" title="Polish: the art of, not the country - Impossible Bureau" href="/news/polish">
+                            <span class="date">24 Feb 2016</span>
+                            <p style="overflow-wrap: break-word;">Polish: the art of, not the country</p>
+                          </a>
+                        </li>
+                        <li class="news flexible-height determine-hover enable-hover" data-ratio=".14" style="height: 116px;">
+                          <a class="history-link" title=" Lessons from the Property Brothers - Impossible Bureau" href="/news/lessons-from-property-brothers">
+                            <span class="date">01 Sep 2015</span>
+                            <p style="overflow-wrap: break-word;"> Lessons from the Property Brothers</p>
+                          </a>
+                        </li>
+                        <li class="news flexible-height determine-hover enable-hover" data-ratio=".14" style="height: 116px;">
+                          <a class="history-link" title="Meet Julia - Impossible Bureau" href="/news/meet-julia">
+                            <span class="date">15 Jan 2016</span>
+                            <p style="overflow-wrap: break-word;">Meet Julia</p>
+                          </a>
+                        </li>
+                        <li class="news flexible-height determine-hover enable-hover" data-ratio=".14" style="height: 116px;">
+                          <a class="history-link" title="What makes a great producer - Impossible Bureau" href="/news/what-makes-a-great-producer">
+                            <span class="date">21 Aug 2015</span>
+                            <p style="overflow-wrap: break-word;">What makes a great producer</p>
+                          </a>
+                        </li>
+                        <li class="news flexible-height determine-hover enable-hover" data-ratio=".14" style="height: 116px;">
+                          <a class="history-link" title="We're hiring in Salt Lake City - Impossible Bureau" href="/news/salt-lake-city-jobs">
+                            <span class="date">10 Oct 2014</span>
+                            <p style="overflow-wrap: break-word;">We're hiring in Salt Lake City</p>
+                          </a>
+                        </li>
+                        <li class="news flexible-height determine-hover enable-hover" data-ratio=".14" style="height: 116px;">
+                          <a class="history-link" title="New Salt Lake City headquarters - Impossible Bureau" href="/news/new-hq">
+                            <span class="date">29 Aug 2014</span>
+                            <p style="overflow-wrap: break-word;">New Salt Lake City headquarters</p>
+                          </a>
+                        </li>
+                        <li class="news flexible-height determine-hover enable-hover" data-ratio=".14" style="height: 116px;">
+                          <a class="history-link" title="Our Mission - Impossible Bureau" href="/news/mission">
+                            <span class="date">27 Sep 2014</span>
+                            <p style="overflow-wrap: break-word;">Our Mission</p>
+                          </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="scroll-indicator down">
+                  <div class="arrow-wrap up">
+                    <figure></figure>
+                  </div>
+                  <div class="arrow-wrap down">
+                    <figure></figure>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="determine-hover enable-hover">
+              <div class="background" style="transform: matrix(1, 0, 0, 1, 0, 0); opacity: 1;"></div>
+              <div class="content-wrapper show" style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
+                <a class="history-link description" title="Contact - Impossible Bureau" href="/contact">
+                  <hgroup>
+                    <div class="table-cell">
+                      <h1>Contact</h1>
+                      <hr>
+                    </div>
+                  </hgroup>
+                  <p>Our studio locations and career opportunities.</p>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <figure class="bottom-gradient"></figure>
+      </div>
+
+            <div id="splash" style="opacity: 0; display: none;">
+        <div class="wrapper">
+          <div class="content">
+            <figure class="load-priority" data-frames="82" data-stop-frame="59" style="display: block; background-position: 0px -6561px;"></figure>
+            <div class="constrain">
+              <h1 class="text-effect"><span aria-label="Impossible Bureau" style="visibility: hidden;"><span class="word1" aria-hidden="true" aria-label="Impossible" style="display: inline-block; transform: translate3d(0px, 0px, 0px);"><span class="char1" aria-hidden="true" style="display: inline-block; visibility: visible;">I</span><span class="char2" aria-hidden="true" style="display: inline-block; visibility: visible;">m</span><span class="char3" aria-hidden="true" style="display: inline-block; visibility: visible;">p</span><span class="char4" aria-hidden="true" style="display: inline-block; visibility: visible;">o</span><span class="char5" aria-hidden="true" style="display: inline-block; visibility: visible;">s</span><span class="char6" aria-hidden="true" style="display: inline-block; visibility: visible;">s</span><span class="char7" aria-hidden="true" style="display: inline-block; visibility: visible;">i</span><span class="char8" aria-hidden="true" style="display: inline-block; visibility: visible;">b</span><span class="char9" aria-hidden="true" style="display: inline-block; visibility: visible;">l</span><span class="char10" aria-hidden="true" style="display: inline-block; visibility: visible;">e</span></span> <span class="word2" aria-hidden="true" aria-label="Bureau" style="display: inline-block; transform: translate3d(0px, 0px, 0px);"><span class="char1" aria-hidden="true" style="display: inline-block; visibility: visible;">B</span><span class="char2" aria-hidden="true" style="display: inline-block; visibility: visible;">u</span><span class="char3" aria-hidden="true" style="display: inline-block; visibility: visible;">r</span><span class="char4" aria-hidden="true" style="display: inline-block; visibility: visible;">e</span><span class="char5" aria-hidden="true" style="display: inline-block; visibility: visible;">a</span><span class="char6" aria-hidden="true" style="display: inline-block; visibility: visible;">u</span></span> </span><ul class="texts" style="display: none;"><li class="current">Impossible Bureau</li></ul></h1>
+              <p class="text-effect" style="visibility: visible; opacity: 1;"></p>
+              <p class="text-effect" style="visibility: visible; opacity: 1;">We go forward. Only forward.</p>
+              <div class="pill alt-hover-2 determine-hover enable-hover" style="opacity: 1;"><span>Continue</span></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+
+            <div id="preloader-overlay" class="ib-component" data-component="ib.PreloaderOverlay">
+        <div class="wrapper">
+          <figure class="logo">
+            <div class="wrap">
+        <svg class="svg-logo" viewBox="0 0 41 37.52">
+          <path class="svg-logo-path-top" style="fill: none; stroke-miterlimit: 10; stroke-width: 3.42px; stroke-dasharray: 88, 90; stroke-dashoffset: 89;" d="M3.51,14.05l11.56,5.27,0.05,0a12.12,12.12,0,0,0,10.76,0l0.05,0L37.51,14a3.23,3.23,0,0,0,0-5.78L25.93,3,25.88,3A12.11,12.11,0,0,0,15.13,3L15.08,3,3.51,8.26A3.23,3.23,0,0,0,3.51,14.05Z"></path>
+          <path class="svg-logo-path-bottom" style="fill: none; stroke-miterlimit: 10; stroke-width: 3.42px; stroke-dasharray: 96, 98; stroke-dashoffset: 97;" d="M20.5,27.63A15.39,15.39,0,0,1,13.62,26L1.71,20.6v5.76a3.22,3.22,0,0,0,1.78,2.89l11.58,5.28,0.05,0a12.12,12.12,0,0,0,10.76,0l0.05,0,11.57-5.28a3.22,3.22,0,0,0,1.78-2.89V20.6L27.39,26A15.38,15.38,0,0,1,20.5,27.63Z"></path>
+        </svg>
+
+        <svg class="svg-logo svg-logo-gradient" viewBox="0 0 40 37.52">
+          <defs>
+            <linearGradient id="preload-svg-logo-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#31388d"></stop>
+              <stop offset="16.67%" stop-color="#753fa9"></stop>
+              <stop offset="33.34%" stop-color="#ff0762"></stop>
+              <stop offset="50%" stop-color="#f25632"></stop>
+              <stop offset="66.67%" stop-color="#ff0762"></stop>
+              <stop offset="83.34%" stop-color="#753fa9"></stop>
+              <stop offset="100%" stop-color="#31388d"></stop>
+            </linearGradient>
+            <pattern class="svg-gradient-pattern" id="preload-svg-gradient-pattern" x="0" y="0" width="300%" height="100%" patternUnits="userSpaceOnUse">
+              <path class="svg-repeat-pattern-left" width="150%" height="100%" fill="url(#preload-svg-logo-gradient)" d="M0 0 L150 0 L150 100 L0 100 Z" style="stroke-dasharray: 500, 502; stroke-dashoffset: 501;"></path>
+              <path class="svg-repeat-pattern-right" width="150%" height="100%" fill="url(#preload-svg-logo-gradient)" d="M0 0 L150 0 L150 100 L0 100 Z" style="stroke-dasharray: 500, 502; stroke-dashoffset: 501;"></path>
+            </pattern>
+          </defs>
+          <path class="svg-logo-path-top" style="fill: none; stroke-miterlimit: 10; stroke-width: 3.42px; stroke: url(&quot;#preload-svg-gradient-pattern&quot;); stroke-dasharray: 88, 90; stroke-dashoffset: 89;" d="M3.51,14.05l11.56,5.27,0.05,0a12.12,12.12,0,0,0,10.76,0l0.05,0L37.51,14a3.23,3.23,0,0,0,0-5.78L25.93,3,25.88,3A12.11,12.11,0,0,0,15.13,3L15.08,3,3.51,8.26A3.23,3.23,0,0,0,3.51,14.05Z"></path>
+          <path class="svg-logo-path-bottom" style="fill: none; stroke-miterlimit: 10; stroke-width: 3.42px; stroke: url(&quot;#preload-svg-gradient-pattern&quot;); stroke-dasharray: 96, 98; stroke-dashoffset: 97;" d="M20.5,27.63A15.39,15.39,0,0,1,13.62,26L1.71,20.6v5.76a3.22,3.22,0,0,0,1.78,2.89l11.58,5.28,0.05,0a12.12,12.12,0,0,0,10.76,0l0.05,0,11.57-5.28a3.22,3.22,0,0,0,1.78-2.89V20.6L27.39,26A15.38,15.38,0,0,1,20.5,27.63Z"></path>
+        </svg>
+      </div>
+          </figure>
+          <h5>Loading</h5>
+        </div>
+      </div>
+          </main>
+
+          <script src="/assets/application-8ffd85c86ec01a84dcdead9bdf32de44.js"></script>
+          <script type="text/javascript">
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-55491410-1', 'auto');
+            ga('send', 'pageview');
+          </script>
+
 
 </body>
 </html>
