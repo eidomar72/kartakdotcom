@@ -97,10 +97,10 @@ main{position:absolute;top:0;left:0;height:100%;width:100%;font-family:"Conv_Cir
     opacity:1;
     position:absolute;
     top:0;
-    left:-2px;
-    right:-1px;
+    left:-5px;
+    right:0px;
     top:0px;
-    width:100%;
+    width:101.5%;
     height:110%;
     -moz-backface-visibility:hidden;
     -webkit-backface-visibility:hidden;
