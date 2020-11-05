@@ -34,8 +34,8 @@ main{position:absolute;top:0;left:0;height:100%;width:100%;font-family:"Conv_Cir
 @media (max-width: 880px){
   #menu-button{
     height:29px;
-    margin-left:-15px;
-    width:30px
+    margin-left:-10px;
+    width:5px
     }
   }
 #menu{
@@ -87,7 +87,6 @@ main{position:absolute;top:0;left:0;height:100%;width:100%;font-family:"Conv_Cir
     transform:translateY(0);
     filter:progid:DXImageTransform.Microsoft.Alpha(enabled=false);opacity:1
 }
-
 #menu nav>ul>li .background{
     background-color:#000000;
     -moz-transition:opacity 750ms;
@@ -128,7 +127,6 @@ main{position:absolute;top:0;left:0;height:100%;width:100%;font-family:"Conv_Cir
     -webkit-transform:translateX(0);
     transform:translateX(0)
 }
-
 #menu nav>ul>li .description{text-decoration:none;position:relative;width:100%;height:100%;text-align:center;display:block}
 #menu nav>ul>li .description hgroup{position:relative;width:100%;height:50%;display:table}
 #menu nav>ul>li .description hgroup .table-cell{display:table-cell;vertical-align:bottom}
