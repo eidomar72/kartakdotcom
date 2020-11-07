@@ -14,12 +14,19 @@ main{position:absolute;top:0;left:0;height:100%;width:100%;font-family:"Conv_Cir
   z-index:1;
   overflow:hidden
 }
+
+#menu .canvas-background{
+    background-image: url("1.jpg");
+}
+
+/**
 #menu .canvas-background{
     background-image:-moz-linear-gradient(top left, #31388d 0%, #753fa9 33.333%, #ff0762 66%, #f25632 100%);
     background-image:-webkit-linear-gradient(top left, #31388d 0%, #753fa9 33.333%, #ff0762 66%, #f25632 100%);
     background-image:linear-gradient(to bottom right, #31388d 0%, #753fa9 33.333%, #ff0762 66%, #f25632 100%);
     z-index:3
 }
+**/
 
 #kartak-logo{
   position:absolute;
@@ -34,16 +41,17 @@ main{position:absolute;top:0;left:0;height:100%;width:100%;font-family:"Conv_Cir
 @media (max-width: 880px){
   #menu-button{
     height:29px;
-    margin-left:-10px;
-    width:5px
+    margin-left:-5px;
+    width:4px
     }
   }
 #menu{
     font-size:16px;
     z-index:2;
     position:absolute;
-    top:0;
-    left:1px;
+    top:+4px;
+    left:-1px;
+    right:+10px;
     height:100%;
     width:100%
 }
