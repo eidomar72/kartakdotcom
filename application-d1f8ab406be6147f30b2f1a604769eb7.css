@@ -19,6 +19,7 @@ main{position:absolute;top:0;left:0;height:100%;width:100%;font-family:"Press St
     background-image: url("1.jpg");
     box-shadow: inset 0 0 20px rgba(0, 0, 0, .1);
     filter: blur(0.5px);
+    filter: grayscale(70%);
 }
 
 /**
