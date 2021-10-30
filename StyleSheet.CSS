@@ -14,6 +14,13 @@ div {
   height: 42.5vh;
 }
 
+.headerquote {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  size: 25px;
+}
+
 .row1, .row2 {
   display: flex;
   flex-direction: row;
