@@ -1,6 +1,6 @@
 html {
   background-color: #E3E2DF;
-  border: 45px;
+  border: 45px #666;
 }
 
 body {
@@ -10,6 +10,7 @@ body {
 div.Logo {
   font-size: 25px;
   text-align: left;
+  border: 45px #666;
 }
 
 div.header1 {
