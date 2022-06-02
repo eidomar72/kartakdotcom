@@ -4,7 +4,7 @@ html {
 
 /*body border_start*/
 #top, #bottom, #left, #right {
-	background: black;
+	background-color: #1e222d;
 	position: fixed;
 	}
 #left, #right {
@@ -15,10 +15,14 @@ html {
 #right { right: 0; }
 #top, #bottom {
 		left: 0; right: 0;
-		height: 20px;
+    z-index: -1;
 		}
-#top { top: 0; }
-#bottom { bottom: 0; }
+#top {top: 0;
+      height: 65px;
+      }
+#bottom {bottom: 0;
+        height: 20px;
+        }
 /*body border_end*/
 
 head {
@@ -26,24 +30,32 @@ head {
 
 body {
     background-color: white;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 19px;
-    border-left: 1.5px solid #000;
-    border-right: 1.5px solid #000;
+    /*border-left: 1.5px solid #000;
+    border-right: 1.5px solid #000;*/
 }
 
 div.Logo {
-  padding-top: 30px;
-  padding-bottom: 10px;
-  border-bottom: 1.5px solid #000;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-bottom-width: thin;
+  border-bottom-style: inset;
+  border-bottom-color: black;
+  padding-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  padding-left: 20px;
 }
 
-.Logo a {
-  padding-left: 20px;
-  padding-top: 30px;
-  padding-bottom: 5px;
+#logomain {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
+  font-weight: 700;
   color: black;
   text-decoration: none;
 }
@@ -60,6 +72,8 @@ div.navBar {
   padding: 12px;
   color: black;
   font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
   width: 30%;
   text-align: center;
   display: inline-block;

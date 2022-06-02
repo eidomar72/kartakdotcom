@@ -7,6 +7,54 @@
   <link rel="stylesheet" type="text/css" href="StyleSheet.CSS">
 </head>
 
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+<div class="tradingview-widget-container__widget"></div>
+<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+{
+"symbols": [
+  {
+    "description": "",
+    "proName": "AMEX:SPY"
+  },
+  {
+    "description": "",
+    "proName": "NASDAQ:QQQ"
+  },
+  {
+    "description": "",
+    "proName": "AMEX:IWM"
+  },
+  {
+    "description": "",
+    "proName": "NASDAQ:AAPL"
+  },
+  {
+    "description": "",
+    "proName": "NASDAQ:AMD"
+  },
+  {
+    "description": "",
+    "proName": "NASDAQ:NVDA"
+  },
+  {
+    "description": "",
+    "proName": "NASDAQ:MSFT"
+  },
+  {
+    "description": "",
+    "proName": "NASDAQ:TSLA"
+  }
+],
+"showSymbolLogo": true,
+"colorTheme": "dark",
+"isTransparent": false,
+"displayMode": "regular",
+"locale": "en"
+}
+</script>
+</div>
+<!-- TradingView Widget END -->
 <body>
 
   <div id="left"></div>
@@ -15,18 +63,19 @@
   <div id="bottom"></div>
 
   <div class="Logo">
-    <a href="http://wwww.kartak.co">Kartak</a>
+    <a id="logomain" href="http://wwww.kartak.co">KARTAK</a>
+    <br id="cahe">Personal Trading Blog</br>
   </div>
 
   <div class="navBar">
-    <a id="Blog" href="home.asp">Home</a>
-    <a id="Merch" href="blog.asp">Blog</a>
+    <a id="Blog" href="home.asp">Blog</a>
+    <a id="Merch" href="blog.asp">Shop</a>
     <a id="About" href="about.asp">About</a>
   </div>
 
   <div class="block3">
     <div class="featured-blog-image">
-      <img src="Imgs\image-1.jpg" alt="" style="width:400px;height:300px;"></image>
+      <img src="Imgs\image-1.jpg" alt="" style="max-width:150%;height:auto;"></image>
       <figcaption>Fig.1</figcaption>
     </div>
 
@@ -34,7 +83,11 @@
       <br>
       <time id="time-stamp">Time Stamp</time>
     </div>
-    <div class="more-titles"> more titles</div>
+    <div class="more-titles">
+      <a>more titles1</a>
+      <a>more titles2</a>
+      <a>more titles3</a>
+    </div>
   </div>
 
 </body>
