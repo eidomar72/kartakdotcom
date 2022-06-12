@@ -1,30 +1,6 @@
 html {
   background-color: white;
 }
-
-/*body border_start*/
-#top, #bottom, #left, #right {
-	background-color: #1e222d;
-	position: fixed;
-	}
-#left, #right {
-		top: 0; bottom: 0;
-		width: 10px;
-		}
-#left { left: 0; }
-#right { right: 0; }
-#top, #bottom {
-		left: 0; right: 0;
-    z-index: -1;
-		}
-#top {top: 0;
-      height: 18px;
-      }
-#bottom {bottom: 0;
-        height: 20px;
-        }
-/*body border_end*/
-
 head {
 }
 
@@ -43,6 +19,8 @@ div.Logo {
   border-bottom-width: thin;
   border-bottom-style: inset;
   border-bottom-color: black;
+  border-left: 1.5px solid #000;
+  border-right: 1.5px solid #000;
   padding-left: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
@@ -62,7 +40,8 @@ div.Logo {
 
 div.navBar {
   border-bottom: 1.5px solid #000;
-  width: 100%;
+  border-left: 1.5px solid #000;
+  border-right: 1.5px solid #000;
   background-color: white;
   overflow: auto;
 }
@@ -89,8 +68,6 @@ div.navBar {
 }
 
 .column11 {
-  float: left;
-  width: 0%;
 }
 
 .latestupdate {
@@ -103,6 +80,7 @@ div.navBar {
   border-bottom: 1.5px solid #000;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin-left: 15px;
   text-align: center;
 }
 .row1category1 {
@@ -111,10 +89,11 @@ div.navBar {
   font-weight: 200;
   color: blue;
   text-decoration: none;
-  /*border-top: 1.5px solid #000;
-  border-bottom: 1.5px solid #000;*/
+  /*border-top: 1.5px solid #000;*/
+  border-bottom: 1.5px solid #a9a9a9;
   padding-top: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 15px;
+  margin-left: 15px;
 }
 .row1cat1link1 {
   font-family: Verdana, Helvetica, sans-serif;
@@ -145,10 +124,11 @@ div.navBar {
   font-weight: 200;
   color: blue;
   text-decoration: none;
-  /*border-top: 1.5px solid #000;
-  border-bottom: 1.5px solid #000;*/
-  padding-top: 20px;
-  padding-bottom: 0px;
+  /*border-top: 1.5px solid #000;*/
+  border-bottom: 1.5px solid #a9a9a9;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 15px;
 }
 .row1cat2link1 {
   font-family: Verdana, Helvetica, sans-serif;
@@ -181,8 +161,9 @@ div.navBar {
   text-decoration: none;
   /*border-top: 1.5px solid #000;
   border-bottom: 1.5px solid #000;*/
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 0px;
+  margin-left: 15px;
 }
 .row1cat3link1 {
   font-family: Verdana, Helvetica, sans-serif;
@@ -209,7 +190,7 @@ div.navBar {
 
 .column21 {
   float: left;
-  width: 35%;
+  width: 38%;
   /*border-bottom: 1.5px solid #000;*/
 }
 
@@ -232,7 +213,7 @@ figcaption {
 
 .column31 {
   float: left;
-  width: 65%;
+  width: 60%;
   /*border-bottom: 1.5px solid #000;
   border-right: 1.5px solid #000;*/
 }
@@ -294,6 +275,8 @@ figcaption {
   padding-top: 20px;
   padding-bottom: 10px;
 }
+object.column31 {
+}
 
 .column41 {
   float: left;
@@ -331,4 +314,143 @@ figcaption {
   border-bottom: 1.5px solid #000;*/
   padding-top: 20px;
   padding-bottom: 10px;
+}
+
+div.row2 {
+  padding-top: 25px;
+  border-left: 1.5px solid #000;
+  border-right: 1.5px solid #000;
+  border-top: 1.5px solid #000;
+}
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column12 {
+  float: left;
+  width: 15%;
+}
+
+.column22 {
+  float: left;
+  width: 80%;
+  border-left: 1.5px solid #000;
+  margin-left: 25px;
+  padding-left: 10px;
+}
+
+.row2middletitle {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: blue;
+  text-decoration: none;
+  /*border-top: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;*/
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.UCRrow1column1 {
+  padding-top: 0px;
+  float: left;
+  width: 35%;
+}
+.UCRrow1column2 {
+  float: left;
+  width: 60%;
+}
+.usefulSPYrevision {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  /*border-top: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;*/
+  margin-top: 15%;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-left: 5%;
+  float: left;
+}
+.usefulSPYimage, .usefulQQQimage, .usefulAMDimage {
+  padding-top: 30px;
+}
+.usefulSPYtitle {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  /*border-top: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;*/
+  padding-top: 18%;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  margin-bottom: 10%;
+}
+.usefSPYdescription, .usefQQQdescription, .usefAMDdescription {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  color: blacl;
+  text-decoration: none;
+  /*border-top: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;*/
+  padding-top: 20px;
+  padding-bottom: 0px;
+  text-align: justify;
+  margin-right: 2%;
+}
+
+.UCRrow2column1 {
+  padding-top: 0px;
+  float: left;
+  width: 35%;
+}
+.UCRrow2column2 {
+  float: left;
+  width: 60%;
+}
+
+.UCRrow3column1 {
+  padding-top: 0px;
+  float: left;
+  width: 35%;
+}
+.UCRrow3column2 {
+  float: left;
+  width: 60%;
+}
+
+.usefulQQQrevision, .usefulAMDrevision {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  /*border-top: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;*/
+  margin-top: 15%;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-left: 5%;
+  float: left;
+}
+
+.usefulQQQtitle, .usefulAMDtitle {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  /*border-top: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;*/
+  padding-top: 18%;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  margin-bottom: 10%;
 }
