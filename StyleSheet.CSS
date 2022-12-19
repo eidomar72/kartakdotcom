@@ -8,342 +8,115 @@
       }
 
 html {
-  background-color: white;
+  background-color: #082032;
 }
+
 head {
+
 }
 
-.tradingview-widget-container {
+body{
+
 }
-div.Logo {
-  padding-top: 15px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  border-bottom-width: thin;
-  border-bottom-style: inset;
-  border-bottom-color: black;
-  border-left: 1.5px solid #000;
-  border-right: 1.5px solid #000;
-  text-decoration: none;
-  font-family: Calibri;
-  font-size: 18px;
-  font-weight: 20;
-  color: black;
-  text-decoration: none;
+
+footer {
+
+}
+
+#NarBar {
+}
+
+@media screen and (min-width: 800px) {
+  .NavPicV01 {
+    width: 125px;
+    margin-left: 45px;
+    margin-top: 30px;
+    transition: transform 0.2s;
   }
-#logomain {
-  font-family: Neue Haas Grotesk;
-  font-size: 40px;
-  font-weight: 800;
-  color: black;
-  text-decoration: none;
+  .NavPicV01:hover {
+    cursor: pointer;
+    transform: scale(1.2);
   }
-
-div.navBar {
-  border-bottom: 1.5px solid #000;
-  border-left: 1.5px solid #000;
-  border-right: 1.5px solid #000;
-  background-color: white;
-  overflow: auto;
-  position: sticky;
-  position: -webkit-sticky;
+  .NavPicV02 {
+    width: 125px;
+    margin-left: 45px;
+    margin-top: 30px;
+    transition: transform 0.2s;
   }
-
-.navBar.fixed-top {
-  position: fixed;
-  top: 0;
-  width: 100%;
+  .NavPicV02:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
-
-.navBar a {
-  float: left;
-  padding: 12px;
-  color: black;
-  font-size: 20px;
-  font-family: Calibri;
-  text-decoration: none;
-  width: 30%;
-  text-align: center;
-  display: inline-block;
+.NavPicV03 {
+  width: 125px;
+  margin-left: 45px;
+  margin-top: 30px;
+  transition: transform 0.2s;
+}
+.NavPicV03:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.NavPicV04 {
+  width: 125px;
+  margin-left: 45px;
+  margin-top: 30px;
+  transition: transform 0.2s;
+}
+.NavPicV04:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+}
+@media screen and (max-width: 799px) {
+  .NavPicV01 {
+    width: 75%;
+    margin-left: 12%;
+    margin-top: 30px;
+    transition: transform 0.2s;
   }
-
-.row1 {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  border-left: 1.5px solid #000;
-  border-right: 1.5px solid #000;
-  background-color: #a9a9a9;
+  .NavPicV01:hover {
+    cursor: pointer;
+    transform: scale(1.2);
   }
-.row1:after {
-  content: "";
-  display: table;
-  clear: both;
+  .NavPicV02 {
+    width: 75%;
+    margin-left: 12%;
+    margin-top: 30px;
+    transition: transform 0.2s;
   }
-
-body {
-    background-color: white;
-    margin-left: 17%;
-    margin-right: 17%;
-    margin-top: 0px;
-    /*border-left: 1.5px solid #000;
-    border-right: 1.5px solid #000;*/
-}
-
-.column21 {
-  float: left;
-  width: 38%;
-  /*border-bottom: 1.5px solid #000;*/
-}
-.featured-blog-image {
-  float: left;
-  display: inline-block;
-  padding-left: 30px;
-  width: 50%;
-}
-figcaption {
-  font-family: Calibri;
-  font-size: 15px;
-  font-weight: 400;
-  color: black;
-  text-decoration: none;
-  padding-bottom: 10px;
-  text-align: left;
-}
-.column31 {
-  float: left;
-  width: 60%;
-  /*border-bottom: 1.5px solid #000;
-  border-right: 1.5px solid #000;*/
-}
-.featuredblog {
-  /*border-top: 1.5px solid #000;
-  border-bottom: 1.5px solid #000;*/
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-#featuredblogblocktitle {
-  font-family: Neue Haas Grotesk;
-  font-size: 25px;
-  font-weight: 200;
-  color: #FF5C5C;
-}
-div.featuredblogcat {
-  font-family: Neue Haas Grotesk;
-  font-size: 12px;
-  font-weight: 200;
-  color: #1B1BE4;
-  text-decoration: none;
-  /*border-top: 1.5px solid #000;
-  border-bottom: 1.5px solid #000;*/
-  padding-top: 20px;
-  padding-bottom: 0px;
-}
-.featuredblogtitle {
-  font-family: Neue Haas Grotesk;
-  font-size: 40px;
-  font-weight: 700;
-  color: black;
-  text-decoration: none;
-  text-align: left;
-  /*border-top: 1.5px solid #000;
-  border-bottom: 1.5px solid #000;*/
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.featuredblogdescription {
-  font-family: calibri;
-  font-size: 18px;
-  font-weight: 200;
-  color: blacl;
-  text-decoration: none;
-  /*border-top: 1.5px solid #000;
-  border-bottom: 1.5px solid #000;*/
-  padding-top: 20px;
-  padding-bottom: 0px;
-  text-align: justify;
-  margin-right: 2%;
-}
-
-.latestupdate {
-  font-family: Neue Haas Grotesk;
-  font-size: 22px;
-  color: #FF5C5C;
-  text-decoration: none;
-  border-top: 1.5px solid #000;
-  border-bottom: 1.5px solid #000;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: 15px;
-  text-align: left;
-}
-.row1category1, .row1category2, .row1category3 {
-  font-family: Neue Haas Grotesk;
-  font-size: 12px;
-  font-weight: 200;
-  color: #1B1BE4;
-  text-decoration: none;
-  /*border-top: 1.5px solid #000;*/
-  border-bottom: 1.5px solid #a9a9a9;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 15px;
-}
-
-.row1cat4link1time1 {
-  font-family: Neue Haas Grotesk;
-  font-size: 12px;
-  color: grey;
-  text-decoration: none;
-  /*border-top: 1.5px solid #000;
-  border-bottom: 1.5px solid #000;*/
-  padding-top: 10px;
-  padding-bottom: 1px;
-}
-
-.row1cat1link1, .row1cat2link1, .row1cat3link1 {
-  font-family: Neue Haas Grotesk;
-  font-size: 20px;
-  font-weight: 400;
-  color: black;
-  text-decoration: none;
-  /*border-top: 1.5px solid #000;
-  border-bottom: 1.5px solid #000;*/
-  padding-top: 0px;
-  padding-bottom: 1px;
-}
-.row1cat1link1time1, .row1cat2link1time1, .row1cat3link1time1 {
-  font-family: calibri;
-  font-size: 12px;
-  font-weight: 400;
-  color: black;
-  text-decoration: none;
-  /*border-top: 1.5px solid #000;
-  border-bottom: 1.5px solid #000;*/
-  padding-top: 0px;
-  padding-bottom: 5px;
-}
-
-div.row2 {
-  padding-top: 25px;
-  border-left: 1.5px solid #000;
-  border-right: 1.5px solid #000;
-  border-top: 1.5px solid #000;
-}
-.row2:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.row2middletitle {
-  font-family: Neue Haas Grotesk;
-  font-size: 30px;
-  font-weight: 700;
-  color: #1B1BE4;
-  text-decoration: none;
-  /*border-top: 1.5px solid #000;
-  border-bottom: 1.5px solid #000;*/
-  padding-bottom: 10px;
-  padding-left: 30px;
-}
-
-.column12 {
-  float: left;
-  width: 15%;
-}
-
-.column22 {
-  float: left;
-  width: 80%;
-  border-left: 1.5px solid #000;
-  margin-left: 25px;
-  padding-left: 10px;
-}
-
-.usefulSPYrevision1 {
-  font-family: Calibri;
-  font-size: 30px;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  /*border-top: 1.5px solid #000;
-  border-bottom: 1.5px solid #000;*/
-  margin-top: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  margin-left: 3%;
-  float: left;
-  width: 90%;
-}
-.usefulSPYrevision2 {
-  font-family: Calibri;
-  font-size: 20px;
-  font-weight: 500;
-  color: black;
-  text-decoration: none;
-  /*border-top: 1.5px solid #000;
-  border-bottom: 1.5px solid #000;*/
-  margin-top: 20px;;
-  padding-bottom: 10px;
-}
-.UCRrow1column1 {
-  float: left;
-  width: 30%;
-}
-
-
-.usefulSPYimage {
-  padding-top: 30px;
-}
-.usefulSPYtitle, .usefulQQQtitle, .usefulAMDtitle {
-  font-family: Neue Haas Grotesk;
-  font-size: 20px;
-  font-weight: 700;
-  color: black;
-  text-decoration: none;
-  padding-bottom: 10px;
-  text-align: left;
-}
-
-.scrolling-wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-
-.card1 {
-    display: inline-block;
+  .NavPicV02:hover {
+    cursor: pointer;
+    transform: scale(1.2);
   }
-
-.usefulSPYtitlecard {
-  font-size: 20px;
-  width: 250px;
-  white-space: initial;
-  text-align: justify;
+  .NavPicV02 {
+    width: 75%;
+    margin-left: 12%;
+    margin-top: 30px;
+    transition: transform 0.2s;
+  }
+  .NavPicV02:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  .NavPicV03 {
+    width: 75%;
+    margin-left: 12%;
+    margin-top: 30px;
+    transition: transform 0.2s;
+  }
+  .NavPicV03:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  .NavPicV04 {
+    width: 75%;
+    margin-left: 12%;
+    margin-top: 30px;
+    transition: transform 0.2s;
+  }
+  .NavPicV04:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
 }
-
-.card {
-    display: inline-block;
-    margin-left: 30px;
-  }
-
-.usefulqqqrevision1 {
-  font-family: Calibri;
-  font-size: 30px;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  /*border-top: 1.5px solid #000;
-  border-bottom: 1.5px solid #000;*/
-  margin-top: 20px;
-  padding-bottom: 10px;
-  float: left;
-  width: 100%;
-  }
-
-.footer {
-  font-family: Calibri;
-  text-decoration: none;
-  border-left: 1.5px solid #000;
-  border-right: 1.5px solid #000;
-  border-top: 1.5px solid #000;
-  }
