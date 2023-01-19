@@ -64,10 +64,10 @@ footer {
 
 .img01 {
   display: contents;
-  height: 100%;
+  height: 30%;
 }
 .center-fit {
-  min-width: 100%;
-  min-height: 100%;
-  margin: -30px;
+  height: 1200px;
+  margin-top: -25px;
+  margin-left: 170px;
 }
