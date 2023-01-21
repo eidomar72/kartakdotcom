@@ -10,10 +10,9 @@
 html {
   background-image: url("Imgs/background-1.png");
   background-size: cover;
-  background-position-x: 70px;
   height: 100%;
   width: 100%;
-  margin-top: -25px;
+  margin-top: -50px;
 }
 
 head {
@@ -67,9 +66,55 @@ footer {
     }
 }
 
-.img01 {
-  display: contents;
+.rhombus-block-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.center-fit {
 
+.rhombus-block {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  z-index: 1;
+  padding-right: 50px;
+}
+
+.rhombus-block:before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 70px;
+  transform: skew(-20deg);
+  background: #CC3333;
+}
+
+.rhombus-content {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 2.2em;
+  font-family: 'Futura', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+}
+.rhombus-content:hover {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #FFFF00;
+  font-size: 2.2em;
+  font-family: 'Futura', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  cursor: pointer;
 }
