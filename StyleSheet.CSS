@@ -27,32 +27,6 @@ footer {
 
 }
 
-.nav {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 50px;
-}
-
-.nav a {
-  padding: 10px 10px 10px 20px;
-  text-decoration: none;
-  font-size: 40px;
-  color: #818181;
-  display: block;
-  font-weight: 600;
-  font-family: sans-serif;
-}
-
-.nav a:hover {
-  color: #f1f1f1;
-}
-
 @media screen and (max-width: 600px) {
   .nav {
     height: 100%;
@@ -104,6 +78,7 @@ footer {
   font-family: 'Futura', sans-serif;
   font-style: italic;
   font-weight: bolder;
+  text-decoration: none;
 }
 .rhombus-content:hover {
   position: absolute;
@@ -112,9 +87,10 @@ footer {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #FFFF00;
-  font-size: 2.2em;
+  font-size: 2.25em;
   font-family: 'Futura', sans-serif;
   font-style: italic;
   font-weight: bolder;
   cursor: pointer;
+  text-decoration: none;
 }
