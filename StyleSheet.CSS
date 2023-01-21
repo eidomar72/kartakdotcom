@@ -8,7 +8,12 @@
       }
 
 html {
-  background-color: #082032;
+  background-image: url("Imgs/background-1.png");
+  background-size: cover;
+  background-position-x: 70px;
+  height: 100%;
+  width: 100%;
+  margin-top: -25px;
 }
 
 head {
@@ -24,7 +29,15 @@ footer {
 }
 
 .nav {
-
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 50px;
 }
 
 .nav a {
@@ -56,10 +69,7 @@ footer {
 
 .img01 {
   display: contents;
-  height: 30%;
 }
 .center-fit {
-  height: 1200px;
-  margin-top: -25px;
-  margin-left: 170px;
+
 }
