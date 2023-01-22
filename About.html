@@ -33,17 +33,32 @@
 <body>
 
 <div class="about-page-container">
-  <div class="about-container">
-    <div class="about-block">
-      <a class="about-content-link" href="index.html"><span style='font-size:50px;'>&#8592;</span> Back</a>
+  <div class="container-backbutton">
+    <div class="block-backbutton">
+      <div class="content-backbutton" href='index.html'><span style='font-size:45px;'>&#8592;</span> Back</div>
     </div>
-    <div class="about-block">
-      <a class="about-content-text">About Me</a>
+  </div>
+
+  <script>
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(function() {
+      alert("Copied to clipboard: " + text);
+    }, function(err) {
+      alert("Failed to copy text: " + err);
+    });
+  }
+  </script>
+
+  <div class="container-About">
+    <div class="block-About">
+      <div class="content-About">About Me</div>
     </div>
-</div>
-  <div class="Rectanlge-About">
+  </div>
+
+  <div class="container-About-main">
     <div class="Rectanlge-block-About">
-      <a class="Rectanlge-content-About" target="_blank">I’m nothing more than a risk taker. A mere image of what a passionate yet lost man is. Being lost is nothing more than a powerful agent to the uninitiated…but since you are here, you and I are both initiated, are we? We’re both fighting like appalled warriors with nothing holding us back. Admirable but mistaken…The only difference between us is that you think risk is your ally, but you merely adopted that darkness. My guts are smeared with it, molded by it. I didn’t see the light until I was already a man, by then it was nothing to me but blinding. <br>
+      <a class="Rectanlge-content-About" target="_blank">I’m nothing more than a risk taker. A mere image of what a passionate yet lost man is. Being lost is nothing more than a powerful agent to the uninitiated…but since you are here, you and I are both initiated, are we?
+        <br><br>We’re both fighting like appalled warriors with nothing holding us back. Admirable but mistaken…The only difference between us is that you think risk is your ally, but you merely adopted that darkness. My guts are smeared with it, molded by it. I didn’t see the light until I was already a man, by then it was nothing to me but blinding. <br><br>
 This darkness will eventually betray us because it belongs to them. But I will show you where I built my home, so you can too. To them, you're just a freak, like me!<br><br>
 Welcome to the dark side.<br><br>
 Best Regards,<br>
