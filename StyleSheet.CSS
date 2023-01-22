@@ -94,3 +94,97 @@ footer {
   cursor: pointer;
   text-decoration: none;
 }
+
+.rhombus-About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  transform: translate(-70%, -10%);
+}
+
+.rhombus-block-About{
+  position: relative;
+  width: 250px;
+  height: 100px;
+  z-index: 1;
+  padding-right: 50px;
+}
+.rhombus-block-About:before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  transform: skew(-20deg);
+  background: #CC3333;
+}
+.rhombus-content-About {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 2.2em;
+  font-family: 'Futura', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.rhombus-backbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  transform: translate(-30%, -10%);
+}
+.rhombus-block-backbutton{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  padding-right: 30px;
+}
+.rhombus-block-backbutton:before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  transform: skew(-20deg);
+  background: #CC3333;
+}
+.rhombus-content-backbutton {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 2.2em;
+  font-family: 'Futura', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.rhombus-content-backbutton:hover {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #FFFF00;
+  font-size: 2.2em;
+  font-family: 'Futura', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  cursor: pointer;
+  text-decoration: none;
+}
+.backbutton {
+  font-size: 60px;
+}
