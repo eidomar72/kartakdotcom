@@ -46,15 +46,7 @@
   <div class="Rectanlge-About">
     <div class="Rectanlge-block-Contact">
 
-  <script>
-  function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(function() {
-      alert("Copied to clipboard: " + text);
-    }, function(err) {
-      alert("Failed to copy text: " + err);
-    });
-  }
-</script>
+
 
       <a class="Rectanlge-content-Contact">
         <ul class="Email1">Email - <li class="Email2" href="mailto:wolffbrands@dr.com" onclick="copyToClipboard('wolffbrands@dr.com')">&#8594; wolffbrands@dr.com</li></ul>
@@ -66,6 +58,16 @@
       </a>
     </div>
   </div>
+
+  <script>
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(function() {
+      alert("Copied to clipboard: " + text);
+    }, function(err) {
+      alert("Failed to copy text: " + err);
+    });
+  }
+</script>
 </body>
 
 <footer>
