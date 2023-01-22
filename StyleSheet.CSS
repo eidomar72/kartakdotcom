@@ -38,6 +38,30 @@ footer {
     font-size: 30px;
     transition: ease all .5s;
     }
+    .Rectanlge-About {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 40%;
+      left: 44%;
+      transform: translate(-40%, -40%);
+    }
+    .Rectanlge-block-About{
+      position: relative;
+      width: 450px;
+      height: 500px;
+      z-index: 1;
+      padding-right: 50px;
+    }
+    .Rectanlge-block-About:before {
+      content: "";
+      position: absolute;
+      width: 450px;
+      height: 500px;
+      transform: skew(0deg);
+      background: #FAF9F6;
+    }
 }
 
 .rhombus-block-container {
@@ -187,4 +211,42 @@ footer {
 }
 .backbutton {
   font-size: 60px;
+}
+
+.Rectanlge-About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-40%, -40%);
+}
+.Rectanlge-block-About{
+  position: relative;
+  width: 600px;
+  height: 700px;
+  z-index: 1;
+  padding-right: 100px;
+}
+.Rectanlge-block-About:before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 700px;
+  transform: skew(0deg);
+  background: #FAF9F6;
+}
+.Rectanlge-content-About {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: black;
+  font-size: 1.2em;
+  font-family: 'Futura', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  text-decoration: none;
 }
