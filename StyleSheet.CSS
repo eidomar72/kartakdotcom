@@ -195,35 +195,10 @@ footer {
   }
 }
 
-.Rectanlge-Contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 45%;
-  transform: translate(-40%, -40%);
-}
-.Rectanlge-block-Contact{
-  position: relative;
-  width: 600px;
-  height: 500px;
-  z-index: 1;
-  padding-right: 100px;
-}
-.Rectanlge-block-Contact:before {
-  content: "";
-  position: absolute;
-  width: 600px;
-  height: 500px;
-  transform: skew(0deg);
-  background: #FAF9F6;
-}
 .Rectanlge-content-Contact {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 40%;
   text-align: left;
   color: black;
   font-size: 1.2em;
