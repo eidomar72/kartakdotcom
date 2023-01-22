@@ -285,3 +285,13 @@ li {
 .Facebook2:hover {
   cursor: pointer;
 }
+.Instagram2 {
+  background-color: #E23CB0;
+  color: white;
+}
+.Instagram2:hover {
+  cursor: pointer;
+}
+.ComingSoon2 {
+  background-color: #E2C13C;
+}
