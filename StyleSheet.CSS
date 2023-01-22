@@ -250,6 +250,22 @@ footer {
   font-weight: bolder;
   text-decoration: none;
 }
+
+.Rectanlge-block-Contact{
+  position: relative;
+  width: 600px;
+  height: 500px;
+  z-index: 1;
+  padding-right: 100px;
+}
+.Rectanlge-block-Contact:before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  transform: skew(0deg);
+  background: #FAF9F6;
+}
 .Rectanlge-content-Contact {
   position: absolute;
   top: 50%;
