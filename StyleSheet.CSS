@@ -159,7 +159,7 @@ footer {
   content: "";
   position: absolute;
   width: 600px;
-  height: 700px;
+  height: 600px;
   transform: skew(0deg);
   background: #FAF9F6;
 }
@@ -186,12 +186,17 @@ footer {
     font-size: 2em;
   }
   .container-backbutton {
-    margin-left: 85px;
+    margin-left:80px;
   }
   .container-About {
     position: static;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-top: 10px;
+  }
+  .Rectanlge-content-About {
+    top: 8%;
+    padding-right: 15px;
+    font-size: 1em;
   }
 }
 
