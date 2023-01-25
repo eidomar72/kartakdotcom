@@ -633,3 +633,41 @@ li {
   top: 70%;
   left: 0%;
 }
+
+
+/* ABOUT PAGE */
+.AboutMe-Block {
+  position: relative;
+  width: 00px;
+  height: 00px;
+  z-index: 1;
+  padding-right: 100px;
+}
+.AboutMe-Block:before {
+  content: "";
+  position: absolute;
+  width: 800px;
+  height: 380px;
+  transform: skew(0deg);
+  background-color: rgba(250, 249, 246, 0.9);
+}
+.AboutMe-SubBlock {
+  position: relative;
+  width: 660px;
+  height: 100px;
+  z-index: 1;
+  padding-right: 100px;
+}
+.AboutMe-content {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  text-align: left;
+  background-color: rgba(250, 249, 246, 0.95);
+  color: black;
+  font-size: 1.0em;
+  font-family: 'Futura', sans-serif;
+  font-style: italic;
+  font-weight: bolder;
+  text-decoration: none;
+}
