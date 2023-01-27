@@ -63,7 +63,7 @@
 <!-- Blog Post Title -->
       <div class="blogpost-maintitle">
         <div class="blogpost-maintitle-block">
-          <a class="blogpost-maintitle-content">Filter</a>
+          <a class="blogpost-maintitle-content">All That I Wrote So Far</a>
         </div>
       </div>
 <!-- /Blog Post Title -->
@@ -72,78 +72,156 @@
           <div class="index-menu-container1">
             <div class="blogpost-writeup1-block">
               <a class="blogpost-writeup1-content">
-                <table class="table1">
+                <table class="archivetable">
+                  <thead>
+                    <tr>
+                      <td>
+                        <select style="width: 70px;height: 20px;" id="filter1">
+                          <option value="">All</option>
+                          <option value="value1">January</option>
+                          <option value="value2">February</option>
+                          <option value="value3">March</option>
+                          <option value="value3">April</option>
+                          <option value="value3">May</option>
+                          <option value="value3">June</option>
+                          <option value="value3">July</option>
+                          <option value="value3">August</option>
+                          <option value="value3">September</option>
+                          <option value="value3">October</option>
+                          <option value="value3">November</option>
+                          <option value="value3">December</option>
+                        </select>
+                      </td>
+                      <th style="width: 70px;"></th>
+                      <td>
+                        <select style="width: 70px;height: 20px;" id="filter2">
+                          <option value="">All</option>
+                          <option value="value1">2023</option>
+                        </select>
+                      </td>
+                      <th style="width: 260px;"></th>
+                      <td style="width: 150px;">
+                        <select style="width: 70px;height: 20px;" id="filter3">
+                          <option value="">All</option>
+                          <option value="value1">Market Commentary</option>
+                          <option value="value1">How To's</option>
+                        </select>
+                      </td>
+                      <td>
+                        <select style="width: 70px;height: 20px;" id="filter4">
+                          <option value="">All</option>
+                          <option value="value1">Wolff</option>
+                        </select>
+                      </td>
+                    </tr>
                   <tr>
-                  <th style="width: 70px;">Month
-                  </th>
-                  <th style="width: 70px;">Day
-                  </th>
-                  <th style="width: 70px;">Year
-                  </th>
-                  <th style="width: 260px;">Title
-                  </th>
-                  <th style="width: 150px;">Category
-                  </th>
-                  <th style="width: 70px;">Author
-                  </th>
-                </tr>
-                <tr>
-                <td>January
-                </td>
-                <td>25
-                </td>
-                <td>2023
-                </td>
-                <td> <a href="20230125.html">Guidance Who? Nothing Stoping The Rally</a>
-                </td>
-                <td>Market Commentary
-                </td>
-                <td>Wolff
-                </td>
-              </tr>
+                    <th style="width: 70px;height: 20px;">Month</th>
+                    <th style="width: 70px;">Day</th>
+                    <th style="width: 70px;">Year</th>
+                    <th style="width: 260px;">Title</th>
+                    <th style="width: 150px;">Category</th>
+                    <th style="width: 70px;">Author</th>
+                  </tr>
+                  </thead>
+                  <tr>
+                    <td style="width: 70px;height: 18px;">January</td>
+                    <td style="width: 70px;">25</td>
+                    <td style="width: 70px;">2023</td>
+                    <td style="width: 260px;"><a href="20230125.html">Guidance Who? Nothing Stoping The Rally</a></td>
+                    <td style="width: 150px;">Market Commentary</td>
+                    <td style="width: 70px;">Wolff</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 70px;height: 18px;">January</td>
+                    <td style="width: 70px;">24</td>
+                    <td style="width: 70px;">2023</td>
+                    <td style="width: 260px;"><a href="">Fatoush Salad For Today's Action</a></td>
+                    <td style="width: 150px;">Market Commentary</td>
+                    <td style="width: 70px;">Wolff</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 70px;height: 18px;">January</td>
+                    <td style="width: 70px;">23</td>
+                    <td style="width: 70px;">2023</td>
+                    <td style="width: 260px;"><a href="">Bears Matter Too</a></td>
+                    <td style="width: 150px;">Market Commentary</td>
+                    <td style="width: 70px;">Wolff</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 70px;height: 18px;">January</td>
+                    <td style="width: 70px;">20</td>
+                    <td style="width: 70px;">2023</td>
+                    <td style="width: 260px;"><a href="">Good Old Low Volume Rally...Why?...IDK</a></td>
+                    <td style="width: 150px;">Market Commentary</td>
+                    <td style="width: 70px;">Wolff</td>
+                  </tr>
+                  <tr>
+                    <td style="width: 70px;height: 18px;">December</td>
+                    <td style="width: 70px;">15</td>
+                    <td style="width: 70px;">2022</td>
+                    <td style="width: 260px;"><a href="">What Are Movering Averages and How To Use Them</a></td>
+                    <td style="width: 150px;">How To's</td>
+                    <td style="width: 70px;">Wolff</td>
+                  </tr>
+                  <script>
+                  // Get references to the filter select elements
+                  var filter1 = document.getElementById("filter1");
+                  var filter2 = document.getElementById("filter2");
+                  var filter3 = document.getElementById("filter3");
+                  var filter3 = document.getElementById("filter4");
+
+                  // Attach event listeners to the filter select elements
+                  filter1.addEventListener("change", filterTable);
+                  filter2.addEventListener("change", filterTable);
+                  filter3.addEventListener("change", filterTable);
+                  filter4.addEventListener("change", filterTable);
+
+                  function filterTable() {
+                  // Get the table
+                    var table = document.getElementById("archivetable");
+                    // Get the rows in the table
+                    var rows = table.getElementsByTagName("tr");
+                    // Loop through all the rows
+                    for (var i = 0; i < rows.length; i++) {
+                      var row = rows[i];
+                      // Check if the row is a data row (skip the header and filter rows)
+                      if (i > 1) {
+                        // Get the cells in the current row
+                        var cells = row.getElementsByTagName("td");
+                        // Check if the values in the cells match the selected filter values
+                        if ((filter1.value == "" || cells[0].innerHTML == filter1.value) &&
+                            (filter2.value == "" || cells[1].innerHTML == filter2.value) &&
+                            (filter3.value == "" || cells[2].innerHTML == filter3.value) &&
+                            (filter4.value == "" || cells[3].innerHTML == filter4.value)) {
+                              // Show the row
+                              row.style.display = "";
+                            } else {
+                              // Hide the row
+                              row.style.display = "none";
+                        }
+                      }
+                    }
+                  }
+                  </script>
                 </table>
               </a>
             </div>
-            <div class="blogpost-writeup2-block">
-              <a class="blogpost-writeup2-content">
 
-              </a>
-            </div>
-            <div class="blogpost-writeup3-block">
-              <a class="blogpost-writeup3-content">
-            </div>
+
+
+
+
           </div>
-<!-- /Blog Post Write Up -->
-
-
-
 
       </div>
     </div>
   </div>
-
-
-
   </div>
 </div>
 
-<!--
-
--->
 </body>
 
 <footer>
 </footer>
 
 </html>
-
-<!--
-  <div class="container-About-main">
-    <div class="Rectanlge-block-About">
-      <a class="Rectanlge-content-About" target="_blank">I’m nothing more than a risk taker. A mere image of what a passionate yet lost man is. Being lost is nothing more than a powerful agent to the uninitiated…but since you are here, you and I are both initiated, are we?
-        <br><br>We’re both fighting like appalled warriors with nothing holding us back. Admirable but mistaken…The only difference between us is that you think risk is your ally, but you merely adopted that darkness. My guts are smeared with it, molded by it. I didn’t see the light until I was already a man, by then it was nothing to me but blinding. <br><br>
-This darkness will eventually betray us because it belongs to them. But I will show you where I built my home, so you can too. To them, you're just a freak, like me!<br><br>
-Welcome to the dark side.<br><br>
-Best Regards,<br>
--Wolff
-</a>
