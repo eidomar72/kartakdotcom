@@ -530,8 +530,8 @@ li {
 
 /* *BLOG PAGE CONTENT2-ARCHIVEBLOCKS_IMGS* */
 .archive-blog-img {
-  width: 200px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   margin-left: 38px;
 }
 /* *BLOG PAGE CONTENT2-ARCHIVEBLOCKS_TITLES* */
@@ -540,7 +540,7 @@ li {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 0%;
 }
 .archive-Block-Post-Title {
