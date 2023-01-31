@@ -22,7 +22,6 @@ footer {
   width: 90%;
   height: 15%;
 }
-
 .cornerlogo-block {
   display: grid;
   margin-top: 1.5em;
@@ -299,6 +298,70 @@ footer {
   .index-container {
     display: none;
   }
+}
+
+/* FEATURED MENU */
+.featured-container {
+  display: flex;
+  position: fixed;
+  margin-top: 10em;
+  left: 17%;
+}
+.featured-block {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 150px;
+  z-index: 1;
+  padding-right: 40%;
+}
+.featured-block:before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  transform: skew(0deg);
+}
+.featured-content {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  text-align: left;
+  color: black;
+  font-size: 1.4em;
+  font-family: 'Futura', sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.featured-content:hover {
+  color: red;
+}
+
+.featured-Post-Time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 26%;
+  left: 0%;
+}
+.featured-Block-Post-Time {
+  position: relative;
+  width: 230px;
+  height: 100px;
+  z-index: 1;
+  padding-right: 50px;
+}
+.featured-content-Post-Time {
+  position: absolute;
+  top: 50%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: black;
+  font-size: 0.7em;
+  background-color: rgba(250, 249, 246, 0.95);
+  font-family: 'Futura', sans-serif;
 }
 
 /* FOOTER */
