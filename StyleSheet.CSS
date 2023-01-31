@@ -331,7 +331,7 @@ footer {
   font-size: 1.4em;
   font-family: 'Futura', sans-serif;
   font-weight: bolder;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .featured-content:hover {
   color: red;
@@ -361,6 +361,32 @@ footer {
   color: black;
   font-size: 0.7em;
   background-color: rgba(250, 249, 246, 0.95);
+  font-family: 'Futura', sans-serif;
+}
+
+.featured-Post-Desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  left: 0%;
+}
+.featured-Block-Post-Desc {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  z-index: 1;
+  padding-right: 100px;
+}
+.featured-content-Post-Desc {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  text-align: justify;
+  color: black;
+  background-color: rgba(250, 249, 246, 0.95);
+  font-size: 0.9em;
   font-family: 'Futura', sans-serif;
 }
 
