@@ -390,6 +390,10 @@ footer {
   font-family: 'Futura', sans-serif;
 }
 
+@media only screen and (max-width: 1300px) {
+
+}
+
 /* FOOTER */
 .footer-COPYRIGHT {
   position: absolute;
