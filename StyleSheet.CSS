@@ -304,7 +304,7 @@ footer {
 * {
   box-sizing: border-box;
 }
-.row {
+.featured-posts {
   display: flex;
   flex-wrap: wrap;
   padding-top: 10em;
@@ -315,6 +315,7 @@ footer {
   flex: 25%;
   padding: 5px;
   height: 15%;
+  border-top: solid;
 }
 .featured-container {
   display: block;
@@ -365,12 +366,17 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+  .featured-posts {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
   .column {
     flex: 50%;
+    height: 10%;
   }
 }
 @media screen and (max-width: 600px) {
-  .row {
+  .featured-posts {
     flex-direction: column;
     padding-right: 2em;
     padding-left: 2em;
