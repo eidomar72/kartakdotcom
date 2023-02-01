@@ -301,34 +301,43 @@ footer {
 }
 
 /* FEATURED MENU */
-.featured-container {
+* {
+  box-sizing: border-box;
+}
+.row {
   display: flex;
-  position: fixed;
+  flex-wrap: wrap;
+  padding-top: 10em;
+  padding-right: 5em;
+  padding-left: 5em;
+}
+.column {
+  flex: 25%;
+  padding: 5px;
+  height: 200px;
+}
+
+.featured-container {
+  display: block;
+  position: absolute;
   margin-top: 10em;
-  left: 17%;
 }
 .featured-block {
-  display: inline-block;
+  display: grid;
   position: relative;
-  width: 200px;
-  height: 150px;
+  width: 95%;
+  height: 100%;
   z-index: 1;
-  padding-right: 40%;
-}
-.featured-block:before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 150px;
-  transform: skew(0deg);
+  padding: 1px;
 }
 .featured-content {
   position: absolute;
-  top: 10%;
-  left: 5%;
+  top: 10px;
+  left: 10px;
+  width: 90%;
   text-align: left;
   color: black;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-family: 'Futura', sans-serif;
   font-weight: bolder;
   text-decoration: underline;
@@ -336,48 +345,14 @@ footer {
 .featured-content:hover {
   color: red;
 }
-
-.featured-Post-Time {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 26%;
-  left: 0%;
-}
-.featured-Block-Post-Time {
-  position: relative;
-  width: 230px;
-  height: 100px;
-  z-index: 1;
-  padding-right: 50px;
-}
 .featured-content-Post-Time {
-  position: absolute;
-  top: 50%;
-  left: 36%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  padding-top: 160px;
+  left: 10px;
   text-align: left;
   color: black;
   font-size: 0.7em;
-  background-color: rgba(250, 249, 246, 0.95);
   font-family: 'Futura', sans-serif;
-}
-
-.featured-Post-Desc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 40%;
-  left: 0%;
-}
-.featured-Block-Post-Desc {
-  position: relative;
-  width: 200px;
-  height: 100px;
-  z-index: 1;
-  padding-right: 100px;
 }
 .featured-content-Post-Desc {
   position: absolute;
@@ -385,11 +360,20 @@ footer {
   left: 4%;
   text-align: justify;
   color: black;
-  background-color: rgba(250, 249, 246, 0.95);
   font-size: 0.9em;
   font-family: 'Futura', sans-serif;
 }
 
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width: 1300px) {
 
 }
