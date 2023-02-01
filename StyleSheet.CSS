@@ -234,17 +234,17 @@ footer {
 @media only screen and (max-width: 1300px) {
   .index-block_contact {
     top: 2.5em;
-    right: 27.5em;
+    right: 21.7em;
   }
 }
 @media only screen and (max-width: 1000px) {
   .index-block_contact {
     top: 2.5em;
-    right: 20.5em;
+    right: 16.7em;
   }
   .index-block_merch {
     top: 2.5em;
-    right: 20.7em;
+    right: 16.8em;
   }
 }
 
@@ -314,9 +314,8 @@ footer {
 .column {
   flex: 25%;
   padding: 5px;
-  height: 200px;
+  height: 15%;
 }
-
 .featured-container {
   display: block;
   position: absolute;
@@ -332,6 +331,7 @@ footer {
 }
 .featured-content {
   position: absolute;
+  z-index: 1;
   top: 10px;
   left: 10px;
   width: 90%;
@@ -356,7 +356,7 @@ footer {
 }
 .featured-content-Post-Desc {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 4%;
   text-align: justify;
   color: black;
@@ -372,6 +372,8 @@ footer {
 @media screen and (max-width: 600px) {
   .row {
     flex-direction: column;
+    padding-right: 2em;
+    padding-left: 2em;
   }
 }
 @media only screen and (max-width: 1300px) {
