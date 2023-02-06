@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<html>
+
+<head data-n-head="">
+
+      <link href="https://fonts.googleapis.com/css2?family=Futura&display=swap" rel="stylesheet">
+
+      <title data-n-head="true">LW</title>
+      <meta data-n-head="true" charset="utf-8">
+      <meta data-n-head="true" name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="description" content="A Blog About a Greedy Bull and a Hungry Bear Chasing After a Jar of Honey">
+
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47983407-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-47983407-1');
+      </script>
+
+      <link rel="stylesheet" type="text/css" href="StyleSheetBlog.CSS">
+
+      <link rel="icon" type="image/x-icon" href="https://www.kartak.co/Icons/Logo/favicon.png">
+
+</head>
+
+<body>
+
+<div class="header-menu">
+  <div class="cornerlogo-block">
+    <a class="cornerlogo-content" href="https://www.kartak.co">KARTAK.CO</a>
+    <a class="cornerlogo-subcontent" href="https://www.kartak.co/Blog.html" style="margin-top:0.2em">A LONE WOLFF BLOG</a>
+    <hr style="width:100%;margin-top: -0.01em;color: black;">
+    <div class="clock">
+      <div class="display">
+      </div>
+    </div>
+    <script>setInterval(function(){
+      const clock = document.querySelector(".display");
+      let time = new Date();
+      let sec = time.getSeconds();
+      let min = time.getMinutes();
+      let hr = time.getHours();
+      let day = 'AM';
+      if(hr > 12){
+        day = 'PM';
+        hr = hr - 12;
+      }
+      if(hr == 0){
+        hr = 12;
+      }
+      if(sec < 10){
+        sec = '0' + sec;
+      }
+      if(min < 10){
+        min = '0' + min;
+      }
+      if(hr < 10){
+        hr = '0' + hr;
+      }
+      clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+    });</script>
+  </div>
+  <div class="index-container">
+    <div class="index-block">
+      <a class="index-content" href="https://www.kartak.co/Blog.html">HOME</a>
+    </div>
+    <div class="index-block">
+      <a class="index-content" href="https://www.kartak.co/Blog.html">ARCHIVE</a>
+    </div>
+    <div class="index-block">
+      <a class="index-content" href="https://www.kartak.co/About.html">ABOUT</a>
+    </div>
+    <div class="index-block_merch">
+      <a class="index-content_merch" href="https://www.kartak.co/About.html">MERCH</a>
+    </div>
+    <div class="index-block_contact">
+      <a class="index-content_contact" href="https://www.kartak.co/Contact.html">CONTACT</a>
+    </div>
+  </div>
+  <div class="dropdown-menu">
+      <button onclick="myFunction()" class="dropbtn">
+      <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+      d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+      fill="black"/>
+      <path
+      d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
+      fill="black"/>
+      <path
+      d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
+      fill="black"/></svg>
+    </button>
+    <div id="myDropdown" class="dropdown-content">
+    <a href="https://www.kartak.co/Blog.html">HOME</a>
+    <a href="https://www.kartak.co/Blog Archive.html">ARCHIVE</a>
+    <a href="https://www.kartak.co/About.html">ABOUT</a>
+    <a href="#contact">MERCH</a>
+    <a href="https://www.kartak.co/Contact.html">CONTACT</a>
+  </div>
+  <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
+  </div>
+</div>
+<div class="featured-posts">
+  <div class="columnBlog">
+    <div class="featured-block">
+      <title> META…Will You Marry Me?</title>
+      <a class="featured-content-Post-Time">February 2, 2023 | 10:30 AM EST</a>
+      <a class="featured-content-Post-Desc">
+        META…Will You Marry Me?
+Oh META...Facebook… whatever your pronouns are these days. I love you. sincerely Wolff. <br><br>
+META beat earnings, and the FOMC conference meeting squeezed the life out of most perma-bears. This time, the bears were the greedy ones. The bulls used their UNO reversal card and easily breached all upper walls. Pretty easy morning. If your favorite FURU didn't make the obvious decision this morning, go find another 20-year-old to make better financial decisions for you. But of course, make sure they have the disclaimer that they’re not financial advisors on their Twitter page. God forbid they make a mistake and you blame them for it. Oh, and make sure you take a second mortgage on your house to follow their calls. Maybe this time you'll make up for the losses caused by other 20-year-old FURUS (which were completely unavoidable). <br><br>
+Also, I’m not a financial advisor, and this post is just mockery. I had to clarify that just in case some peanut-brained gambler follows my banter. <br><br>
+I can feel the market setting up for after-hours earnings. Beat it or miss it, META will still do its own thing. I’m sticking with that bet. I’ll be a META morning-flush buyer in case the market does drop in the morning. But if we actually continue the rally in the after hours, then wait for a profit-taking dip and jump on the wagon. The wagon isn’t going to wait for anyone. and will continue to move up until we get a change in tape and some buyer exhaustion. AKA liquidation. When that happens, FOMO-ers and YOLO-ers will simply hop on a stopping wagon. The wagon will get heavy, the initial smart money passengers will get off, and the earth will open up and swallow the late suckers. AKA The drop won’t be soft. <br><br>
+Does this qualify me as a FURU? A lonely, lonely FURU Wolff. I like the sound of that. <br><br>
+Don’t be greedy!
+
+      </a>
+      </div>
+    </div>
+</div>
+
+</body>
+
+<footer>
+</footer>
+
+</html>
