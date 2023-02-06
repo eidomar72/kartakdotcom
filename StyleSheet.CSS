@@ -311,10 +311,17 @@ footer {
   padding-right: 5em;
   padding-left: 5em;
 }
+/* old
 .column {
   flex: 25%;
   padding: 5px;
   height: 15%;
+}
+*/
+.column {
+  flex: auto;
+  padding: 5px;
+  height: 600px;
 }
 .featured-container {
   display: block;
@@ -1222,4 +1229,17 @@ li {
 th, td {
   border: 1px solid;
   font-size: 0.8em;
+}
+title {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  width: 90%;
+  text-align: left;
+  color: black;
+  font-size: 1.2em;
+  font-family: 'Futura', sans-serif;
+  font-weight: bolder;
 }
