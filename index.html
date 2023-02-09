@@ -145,7 +145,97 @@
   </div>
 </div>
 <a class="page-name-row-HOME">HOME</a>
-<div class="main-page-body"></div>
+<div class="main-page-content-row">
+  <div class="main-page-content-column" style="background-color:#ccc;width: 15%;">
+  </div>
+  <div class="main-page-content-column" style="width: 30%;">
+    <table class="archivetable">
+      <tr>
+        <div class="row">
+          <div class="row-title" style="height:40px; background-color: white;">
+            <a href="https://www.kartak.co/BlogArchive/20230206-1130AM.html">Chilling With Winnie The Pooh</a>
+          </div>
+          <div class="row-date" style="background-color:white;">
+            <a>February 06, 2023 | 11:30AM EST</a>
+          </div>
+          <div class="row-description" style="background-color:white;">
+            Apple, you’re one hell of a beast!
+          </div>
+        </div>
+      </tr>
+      <tr>
+        <td><a href="https://www.kartak.co/BlogArchive/20230206-1130AM.html">Chilling With Winnie The Pooh</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.kartak.co/BlogArchive/20230203-0230PM.html">Somebody Call Newton, Apple Is Defying Gravity!</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.kartak.co/BlogArchive/20230203-1000AM.html">Shakka! We Surfing The Green Wave Bruh!</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.kartak.co/BlogArchive/20230202-1030AM.html">META…Will You Marry Me?</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.kartak.co/BlogArchive/20230201-0510PM.html">Ah, Here We Go Again - FOMC</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.kartak.co/BlogArchive/20230127.html">I Triple-Dog-Dare You Winnie!</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.kartak.co/BlogArchive/20230125.html">Guidance Who? Nothing Stoping The Rally</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.kartak.co/BlogArchive/20230124.html">Fatoush Salad For Today's Action</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.kartak.co/BlogArchive20230123.html">Bears Matter Too</a></td>
+      </tr>
+      <script>
+      // Get references to the filter select elements
+      var filter1 = document.getElementById("filter1");
+      var filter2 = document.getElementById("filter2");
+      var filter3 = document.getElementById("filter3");
+      var filter3 = document.getElementById("filter4");
+
+      // Attach event listeners to the filter select elements
+      filter1.addEventListener("change", filterTable);
+      filter2.addEventListener("change", filterTable);
+      filter3.addEventListener("change", filterTable);
+      filter4.addEventListener("change", filterTable);
+
+      function filterTable() {
+      // Get the table
+        var table = document.getElementById("archivetable");
+        // Get the rows in the table
+        var rows = table.getElementsByTagName("tr");
+        // Loop through all the rows
+        for (var i = 0; i < rows.length; i++) {
+          var row = rows[i];
+          // Check if the row is a data row (skip the header and filter rows)
+          if (i > 1) {
+            // Get the cells in the current row
+            var cells = row.getElementsByTagName("td");
+            // Check if the values in the cells match the selected filter values
+            if ((filter1.value == "" || cells[0].innerHTML == filter1.value) &&
+                (filter2.value == "" || cells[1].innerHTML == filter2.value) &&
+                (filter3.value == "" || cells[2].innerHTML == filter3.value) &&
+                (filter4.value == "" || cells[3].innerHTML == filter4.value)) {
+                  // Show the row
+                  row.style.display = "";
+                } else {
+                  // Hide the row
+                  row.style.display = "none";
+            }
+          }
+        }
+      }
+      </script>
+    </table>
+  </div>
+  <div class="main-page-content-column" style="background-color:#ccc;width: 15%;">
+  </div>
+</div>
+
 </div>
 
 <!--
@@ -157,93 +247,14 @@
         <div class="index-menu-container1">
           <div class="blogpost-writeup1-block">
             <a class="blogpost-writeup1-content">
-              <table class="archivetable">
-                <tr>
-                  <td style="width: 700px;"><a>
-                    <item>
-                      <div class="Blog-Post-Home-Page">
-                        <img class="Blog-Post-Home-Page-image" src="Imgs\Blog Posts\Img_Blog_Newest.png">
-                        <div class="Blog-Post-Home-Page-items">
-                        <a class="Blog-Post-Home-Page-title" title="Title Goes Here" href="https://kartak.co/BlogArchive/20230206-1130AM.html"> Somebody Call Newton, Apple Is Defying Gravity!</a>
-                        <div class="Blog-Post-Home-Page-pubInfo">
-                          <a class="Blog-Post-Home-Page-pubDate">February 06, 2023 | 11:30AM EST</a>
-                          <a class="Blog-Post-Home-Page-pubAuthor">&#9819; Wolff &#9819;</a>
-                        </div>
-                      <a class="Blog-Post-Home-Page-description"> Apple, you’re one hell of a beast!</a>
-                    </div>
-                    </div>
-                    </item>
-                    </a>
-                    </td>
-                </tr>
-                <tr>
-                  <td style="width: 260px;"><a href="https://www.kartak.co/BlogArchive/20230206-1130AM.html">Chilling With Winnie The Pooh</a></td>
-                </tr>
-                <tr>
-                  <td style="width: 260px;"><a href="https://www.kartak.co/BlogArchive/20230203-0230PM.html">Somebody Call Newton, Apple Is Defying Gravity!</a></td>
-                </tr>
-                <tr>
-                  <td style="width: 260px;"><a href="https://www.kartak.co/BlogArchive/20230203-1000AM.html">Shakka! We Surfing The Green Wave Bruh!</a></td>
-                </tr>
-                <tr>
-                  <td style="width: 260px;"><a href="https://www.kartak.co/BlogArchive/20230202-1030AM.html">META…Will You Marry Me?</a></td>
-                </tr>
-                <tr>
-                  <td style="width: 260px;"><a href="https://www.kartak.co/BlogArchive/20230201-0510PM.html">Ah, Here We Go Again - FOMC</a></td>
-                </tr>
-                <tr>
-                  <td style="width: 260px;"><a href="https://www.kartak.co/BlogArchive/20230127.html">I Triple-Dog-Dare You Winnie!</a></td>
-                </tr>
-                <tr>
-                  <td style="width: 260px;"><a href="https://www.kartak.co/BlogArchive/20230125.html">Guidance Who? Nothing Stoping The Rally</a></td>
-                </tr>
-                <tr>
-                  <td style="width: 260px;"><a href="https://www.kartak.co/BlogArchive/20230124.html">Fatoush Salad For Today's Action</a></td>
-                </tr>
-                <tr>
-                  <td style="width: 260px;"><a href="https://www.kartak.co/BlogArchive20230123.html">Bears Matter Too</a></td>
-                </tr>
-                <script>
-                // Get references to the filter select elements
-                var filter1 = document.getElementById("filter1");
-                var filter2 = document.getElementById("filter2");
-                var filter3 = document.getElementById("filter3");
-                var filter3 = document.getElementById("filter4");
-
-                // Attach event listeners to the filter select elements
-                filter1.addEventListener("change", filterTable);
-                filter2.addEventListener("change", filterTable);
-                filter3.addEventListener("change", filterTable);
-                filter4.addEventListener("change", filterTable);
-
-                function filterTable() {
-                // Get the table
-                  var table = document.getElementById("archivetable");
-                  // Get the rows in the table
-                  var rows = table.getElementsByTagName("tr");
-                  // Loop through all the rows
-                  for (var i = 0; i < rows.length; i++) {
-                    var row = rows[i];
-                    // Check if the row is a data row (skip the header and filter rows)
-                    if (i > 1) {
-                      // Get the cells in the current row
-                      var cells = row.getElementsByTagName("td");
-                      // Check if the values in the cells match the selected filter values
-                      if ((filter1.value == "" || cells[0].innerHTML == filter1.value) &&
-                          (filter2.value == "" || cells[1].innerHTML == filter2.value) &&
-                          (filter3.value == "" || cells[2].innerHTML == filter3.value) &&
-                          (filter4.value == "" || cells[3].innerHTML == filter4.value)) {
-                            // Show the row
-                            row.style.display = "";
-                          } else {
-                            // Hide the row
-                            row.style.display = "none";
-                      }
-                    }
-                  }
-                }
-                </script>
-              </table>
+            <div class="Blog-Post-Home-Page-items">
+            <a class="Blog-Post-Home-Page-title" title="Title Goes Here" href="https://kartak.co/BlogArchive/20230206-1130AM.html"> Somebody Call Newton, Apple Is Defying Gravity!</a>
+            <div class="Blog-Post-Home-Page-pubInfo">
+              <a class="Blog-Post-Home-Page-pubDate">February 06, 2023 | 11:30AM EST</a>
+              <a class="Blog-Post-Home-Page-pubAuthor">&#9819; Wolff &#9819;</a>
+            </div>
+            <a class="Blog-Post-Home-Page-description"> Apple, you’re one hell of a beast!</a>
+            </div>
             </a>
           </div>
         </div>

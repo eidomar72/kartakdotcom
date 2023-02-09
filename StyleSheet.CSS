@@ -250,6 +250,23 @@ footer {
   text-decoration: none;
   background: url(Imgs/img01.jpg)
 }
+/* HOME PAGE - MAIN CONTENT */
+.main-page-content-column {
+  position: relative;
+  float: left;
+  width: 16%;
+  height: 300px;
+  top: 15em;
+  left: 19%;
+
+}
+
+/* Clear floats after the columns */
+.main-page-content-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* FEATURED MENU */
 * {
@@ -1178,42 +1195,53 @@ li {
 }
 
 th, td {
-  border-top: 2px solid;
-  font-size: 0.8em;
+  width: 700px;
+  height: 100px;
+  color: black;
+  font-size: 1.3em;
+  font-family: Courier New, monospace;
+  font-weight: bolder;
+  text-decoration: none;
   background-color: #96dce4;
+  border-top: 1px solid;
+  text-align: center;
 }
-
-/* BLOG POST - MAIN PAGE */
-.Blog-Post-Home-Page-image {
-  height: 150px;
-  width: 200px;
-  margin: 10px;
+.row-title {
+  float: inherit;
+  width: 100%;
+  padding: 10px;
+  height: 40px;
+  color: black;
+  font-size: 1.3em;
+  font-family: Courier New, monospace;
+  font-weight: bolder;
+  text-decoration: none;
+  border-top: 2px solid;
 }
-.Blog-Post-Home-Page {
-  display: flex;
-}
-.Blog-Post-Home-Page-items {
-  display: grid;
-}
-.Blog-Post-Home-Page-title {
+.row-date {
+  float: inherit;
+  width: 100%;
+  padding-left: 10px;
   height: 20px;
   color: black;
-  font-size: 1.5em;
-  font-family: 'Futura', sans-serif;
-  text-decoration: underline;
-  font-weight: bold;
+  font-size: 0.8em;
+  font-family: Courier New, monospace;
+  font-weight: bolder;
+  text-decoration: none;
 }
-.Blog-Post-Home-Page-pubInfo {
-  display: flex;
-}
-.Blog-Post-Home-Page-pubAuthor {
-  margin-left: 30px;
-  font-size: 1em;
-  font-weight: bold;
-  font-family: 'Futura', sans-serif;
-}
-.Blog-Post-Home-Page-description {
+.row-description {
+  float: inherit;
+  width: 100%;
+  padding: 10px;
+  height: 100px;
   color: black;
-  font-size: 1.2em;
-  font-family: 'Futura', sans-serif;
+  font-size: 1em;
+  font-family: Courier New, monospace;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.row:after {
+  content: "";
+  display: grid;
+  clear: both;
 }
