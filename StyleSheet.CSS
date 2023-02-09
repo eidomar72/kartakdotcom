@@ -1,30 +1,29 @@
 html {
   background-color: #ABABAB;
 }
-
 head {
 
 }
-
 body{
-
+overflow-x: hidden;
 }
-
 footer {
 
 }
 
-/* MENUS */
-/* Main Page Menu */
-.header-menu {
+.main-page {
+  display: grid;
+}
+/*CORNER LOGO*/
+.main-page-header-menu {
   position: absolute;
   display: block;
-  width: 90%;
-  height: 15%;
+  width: 99%;
+  height: 125px;
 }
 .cornerlogo-block {
   display: grid;
-  margin-top: 1.5em;
+  padding-top: 1.8em;
   margin-left: 2em;
   width: 90px;
   height: 10px;
@@ -65,19 +64,19 @@ footer {
   font-family: 'Futura', sans-serif;
 }
 
+/* NAVIGATION MENU */
 /*HOME*/
 .index-container {
   display: flex;
-  position: fixed;
+  position: absolute;
   margin-top: 1em;
-  left:60%;
+  left:68%;
 }
 .index-block {
   position: relative;
-  width: 90px;
+  width: 120px;
   height: 40px;
   z-index: 1;
-  padding-right: 20px;
 }
 .index-block:before {
   content: "";
@@ -85,7 +84,6 @@ footer {
   width: 90px;
   height: 25px;
   transform: skew(0deg);
-  background: #FAF9F6;
 }
 .index-content {
   position: absolute;
@@ -94,73 +92,8 @@ footer {
   transform: translate(-50%, -50%);
   text-align: center;
   color: black;
-  font-size: 1em;
-  font-family: 'Futura', sans-serif;
-  font-style: italic;
-  font-weight: bolder;
-  text-decoration: none;
-}
-.index-content:hover {
-  color: red;
-}
-/*ARCHIVE*/
-.index-block {
-  position: relative;
-  width: 90px;
-  height: 40px;
-  z-index: 1;
-  padding-right: 20px;
-}
-.index-block:before {
-  content: "";
-  position: absolute;
-  width: 90px;
-  height: 25px;
-  transform: skew(0deg);
-  background: #FAF9F6;
-}
-.index-content {
-  position: absolute;
-  top: 35%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: black;
-  font-size: 1em;
-  font-family: 'Futura', sans-serif;
-  font-style: italic;
-  font-weight: bolder;
-  text-decoration: none;
-}
-.index-content:hover {
-  color: red;
-}
-/*ABOUT*/
-.index-block {
-  position: relative;
-  width: 90px;
-  height: 40px;
-  z-index: 1;
-  padding-right: 20px;
-}
-.index-block:before {
-  content: "";
-  position: absolute;
-  width: 90px;
-  height: 25px;
-  transform: skew(0deg);
-  background: #FAF9F6;
-}
-.index-content {
-  position: absolute;
-  top: 35%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: black;
-  font-size: 1em;
-  font-family: 'Futura', sans-serif;
-  font-style: italic;
+  font-size: 1.3em;
+  font-family: Courier New, monospace;
   font-weight: bolder;
   text-decoration: none;
 }
@@ -170,7 +103,7 @@ footer {
 /*MERCH*/
 .index-block_merch {
   position: relative;
-  width: 90px;
+  width: 120px;
   height: 40px;
   z-index: 1;
   padding-right: 20px;
@@ -181,7 +114,6 @@ footer {
   width: 90px;
   height: 25px;
   transform: skew(0deg);
-  background: #FAF9F6;
 }
 .index-content_merch {
   position: absolute;
@@ -190,9 +122,8 @@ footer {
   transform: translate(-50%, -50%);
   text-align: center;
   color: black;
-  font-size: 1em;
-  font-family: 'Futura', sans-serif;
-  font-style: italic;
+  font-size: 1.3em;
+  font-family: Courier New, monospace;
   font-weight: bolder;
   text-decoration: none;
 }
@@ -202,7 +133,7 @@ footer {
 /*CONTACT*/
 .index-block_contact {
   position: relative;
-  width: 90px;
+  width: 120px;
   height: 40px;
   z-index: 1;
   padding-right: 20px;
@@ -213,7 +144,6 @@ footer {
   width: 90px;
   height: 25px;
   transform: skew(0deg);
-  background: #FAF9F6;
 }
 .index-content_contact {
   position: absolute;
@@ -222,29 +152,33 @@ footer {
   transform: translate(-50%, -50%);
   text-align: center;
   color: black;
-  font-size: 1em;
-  font-family: 'Futura', sans-serif;
-  font-style: italic;
+  font-size: 1.3em;
+  font-family: Courier New, monospace;
   font-weight: bolder;
   text-decoration: none;
 }
 .index-content_contact:hover {
   color: red;
 }
-@media only screen and (max-width: 1300px) {
-  .index-block_contact {
-    top: 2.5em;
-    right: 21.7em;
+@media only screen and (max-width: 1900px) {
+  .index-container {
+    left:65%;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1600px) {
   .index-block_contact {
     top: 2.5em;
-    right: 16.7em;
+    right: 30em;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .index-block_contact {
+    top: 2.5em;
+    right: 22.5em;
   }
   .index-block_merch {
     top: 2.5em;
-    right: 16.8em;
+    right: 22.5em;
   }
 }
 
@@ -288,16 +222,33 @@ footer {
 .dropdown-content a:hover {
   color: red;}
 .show {display: block;}
-
-@media only screen and (min-width: 740px) {
+@media only screen and (min-width: 900px) {
   .dropdown-menu {
     display: none;
   }
 }
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 900px) {
   .index-container {
     display: none;
   }
+}
+
+/* PAGE NAME ROW */
+.page-name-row-HOME {
+  display: grid;
+  position: absolute;
+  align-content: center;
+  top: 3.5em;
+  left: -5px;
+  width: 105%;
+  height: 100px;
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+  font-family: Courier New, monospace;
+  font-weight: bolder;
+  text-decoration: none;
+  background: url(Imgs/img01.jpg)
 }
 
 /* FEATURED MENU */
