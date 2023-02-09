@@ -1195,6 +1195,7 @@ li {
 }
 
 th, td {
+  float: inherit;
   width: 700px;
   height: 100px;
   color: black;
@@ -1207,10 +1208,9 @@ th, td {
   text-align: center;
 }
 .row-title {
-  float: inherit;
   width: 100%;
   padding: 10px;
-  height: 40px;
+  height: 20%;
   color: black;
   font-size: 1.3em;
   font-family: Courier New, monospace;
@@ -1219,10 +1219,9 @@ th, td {
   border-top: 2px solid;
 }
 .row-date {
-  float: inherit;
   width: 100%;
   padding-left: 10px;
-  height: 20px;
+  height: 10%;
   color: black;
   font-size: 0.8em;
   font-family: Courier New, monospace;
@@ -1230,10 +1229,9 @@ th, td {
   text-decoration: none;
 }
 .row-description {
-  float: inherit;
   width: 100%;
   padding: 10px;
-  height: 100px;
+  height: 40%;
   color: black;
   font-size: 1em;
   font-family: Courier New, monospace;
