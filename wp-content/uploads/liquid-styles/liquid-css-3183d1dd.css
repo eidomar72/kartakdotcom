@@ -8,11 +8,11 @@ body{font-weight:400;line-height:1.9;font-size:18px;color:#999999;}
 body.single-post .blog-single-title{font-family:inherit;}
 body.single-post .content{font-weight:400;line-height:2;font-size:18px;color:#404041;}
 
-.h1,h1{font-family:Source Serif Pro;font-weight:400;line-height:1.5em;font-size:58px;color:#000000;}
-.h2,h2{font-family:Source Sans Pro;line-height:1.375em;letter-spacing:-0.025em;font-size:45px;color:#000000;}
+.h1,h1{font-weight:400;line-height:1.5em;font-size:58px;color:#000000;}
+.h2,h2{line-height:1.375em;letter-spacing:-0.025em;font-size:45px;color:#000000;}
 
-.h3,h3{font-family:Source Sans Pro;line-height:1.7em;font-size:30px;color:#000000;}.h4,h4{font-family:Source Sans Pro;line-height:1.7em;font-size:25px;color:#000000;}
+.h3,h3{line-height:1.7em;font-size:30px;color:#000000;}.h4,h4{line-height:1.7em;font-size:25px;color:#000000;}
 
-.h5,h5{font-family:Source Sans Pro;line-height:2em;font-size:20px;color:#000000;}.h6,h6{font-family:Source Sans Pro;line-height:2;font-size:16px;color:#000000;}
+.h5,h5{line-height:2em;font-size:20px;color:#000000;}.h6,h6{line-height:2;font-size:16px;color:#000000;}
 
 .titlebar-inner h1{}.titlebar-inner p{}
