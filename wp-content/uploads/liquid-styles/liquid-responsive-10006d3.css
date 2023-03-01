@@ -1642,11 +1642,9 @@
 					color: #fff !important;
 				}
 			}
-			
+
 			@media screen and (max-width: 1199px) {
-				body {
-					overflow-x: hidden;
-				}
+				
 				.lqd-sticky-bg-spacer,
 				.lqd-sticky-bg-wrap,
 				.lqd-sticky-bg {

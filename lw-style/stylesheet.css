@@ -1,0 +1,140 @@
+  body {
+    overflow-x: hidden;
+  }
+
+  .logo-default {
+    height: 110px;
+    width: 140px;
+    margin-top: -15px;
+  }
+
+  @media only screen and (max-width: 665px) {
+    .vc_column-inner {
+      margin-top: 3% !important;
+    }
+    .featured_posts_title {
+      margin-top: 0px !important;
+    }
+    .featured_post_1, .featured_post_2{
+      width: 350px;
+      height: 140px;
+      border-bottom: 1px dotted;
+    }
+    .featured_post_3, .featured_post_4, .featured_post_5, .featured_post_6, .featured_post_7{
+      display: none;
+    }
+    .most_read_title, .most_read_section, .spacer01, .spacer02{
+      display: none;
+    }
+    .recent_posts_title {
+      margin-top: 55px;
+      text-align: left;
+      margin-left: 15px;
+    }
+    .more_reads_title {
+      font-size: 20px !important;
+      text-align: center;
+      margin-left: 15px;
+    }
+    .external_links {
+      margin-left: 15px;
+    }
+  }
+  .kwb_459647{
+    margin-bottom: 5% !important;
+    padding-top: 5% !important;
+    padding-right: 15% !important;
+    padding-bottom: 5% !important;
+    padding-left: 5% !important;
+    background-color: white !important;
+    width: 160px;
+    height: 170px;
+  }
+  .kwb_152386{
+    margin-bottom: 5% !important;
+    padding-top: 5% !important;
+    padding-right: 15% !important;
+    padding-bottom: 5% !important;
+    padding-left: 5% !important;
+    background-color: white !important;
+    width: 160px;
+    height: 170px;
+  }
+  .ld-fh.txt {
+    font-size: 15px;
+  }
+  .mainbar-wrap {
+    border-bottom: 3px solid;
+    margin-bottom: 10px;
+  }
+
+  .ld_header_menu_63eb501889184.main-nav > li > a{
+		font-size:16px;color:rgb(64, 64, 65);}
+	.ld_header_menu_63eb501889184.main-nav > li > a:hover{
+		color:rgb(0, 0, 0);
+		}
+
+    .kwb_1235846{
+      padding-bottom: 6px;
+      border-bottom: 1px solid #000;
+      font-family: "BWHaasGrotesk-55Roman-Web",Helvetica,Arial,sans-serif;
+      text-align: left;
+      font-size: 24px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      color: red;
+    }
+    .kwb_15647362{
+      padding-bottom: 6px;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-align: left;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.1;
+      text-transform: uppercase;
+      color: red;
+    }
+    .kwb_15647362:hover{
+      cursor: pointer;
+    }
+    .liquid-blog-item-inner:hover {
+      cursor: pointer;
+      background-image: url("assets/icons/logo/Wolff_Logo_with_Text.png");
+      background-size: cover;
+      transition: 0.1s;
+      opacity: 0.75;
+    }
+    .kwb_96355132{
+      float: left;
+      height: 50px;
+      width: 50px;
+    }
+    .kwb_96385421 {
+      float: left;
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.5);
+      margin-left: 20px;
+      font-family: 'Source Sans Pro', sans-serif;
+      line-height: 20px;
+      padding-top: 5px;
+    }
+    .spacer_63{height:12px;}
+    .kwb_56863254{
+      padding-bottom: 6px;
+      border-bottom: 1px solid #000;
+      font-family: "BWHaasGrotesk-55Roman-Web",Helvetica,Arial,sans-serif;
+      text-align: left;
+      font-size: 24px;
+      font-weight: lighter;
+      text-transform: uppercase;
+      color: red;
+    }
+    .ld_fancy_heading_63eb5018ad5b2 p{font-size:12px;line-height:30px;font-weight:700;letter-spacing:0.1em;color:rgb(0, 0, 0);}
+    .ld_fancy_heading_63eb5018ad5b2 .lqd-highlight-inner{height:0.275em;bottom:0px;}
+    .ld_fancy_heading_63eb5018ada92 p{font-size:12px;line-height:30px;font-weight:700;letter-spacing:0.1em;color:rgb(0, 0, 0);}
+    .ld_fancy_heading_63eb5018ada92 .lqd-highlight-inner{height:0.275em;bottom:0px;}
+    .ld_fancy_heading_63eb5018addf8 p{font-size:12px;line-height:30px;font-weight:700;letter-spacing:0.1em;color:rgb(0, 0, 0);}
+    .ld_fancy_heading_63eb5018addf8 .lqd-highlight-inner{height:0.275em;bottom:0px;}
+    .main-footer {background-color: #0e0f14;color: #808291;padding-top: 100px;padding-bottom: 60px}
+    .main-footer a:not(.btn) { color: #808291 }
+    .main-footer a:not(.btn):hover { color: #ffffff }
