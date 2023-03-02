@@ -3,9 +3,8 @@
   }
 
   .logo-default {
-    height: 110px;
-    width: 140px;
-    margin-top: -15px;
+    height: 70px;
+    width: 360px;
   }
 
   @media only screen and (max-width: 665px) {
@@ -64,8 +63,9 @@
     font-size: 15px;
   }
   .mainbar-wrap {
-    border-bottom: 3px solid;
+    border-bottom: 1px solid;
     margin-bottom: 10px;
+    background-color: rgb(179, 197, 199)
   }
 
   .ld_header_menu_63eb501889184.main-nav > li > a{
@@ -148,19 +148,6 @@
     .ld_fancy_heading_63eb5018c0e37 h3{font-size:18px;color:rgb(255, 255, 255);}
     .ld_fancy_heading_63eb5018c0e37 .lqd-highlight-inner{height:0.275em;bottom:0px;}
     .ld_spacer_63eb5018c0f47{height:18px;}
-
-    /*!
-     * Bootstrap v3.3.7 (http://getbootstrap.com)
-     * Copyright 2011-2017 Twitter, Inc.
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-     *//*!
-     * Generated using the Bootstrap Customizer (https://getbootstrap.com/docs/3.3/customize/?id=1be474de61c0629256765ac76fef2ce8)
-     * Config saved to config.json and https://gist.github.com/1be474de61c0629256765ac76fef2ce8
-     *//*!
-     * Bootstrap v3.3.7 (http://getbootstrap.com)
-     * Copyright 2011-2016 Twitter, Inc.
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-     *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
     html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
     body{margin:0}

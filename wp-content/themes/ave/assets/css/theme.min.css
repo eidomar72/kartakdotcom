@@ -16,7 +16,7 @@
 .nav-trigger.collapsed .bar:first-child:before,.nav-trigger.collapsed .bar:first-child:after,.nav-trigger.collapsed .bar:last-child:before,.nav-trigger.collapsed .bar:last-child:after,.nav-trigger.collapsed .bar:nth-child(2):before,.nav-trigger.collapsed .bar:nth-child(2):after{transform:rotate(0) translate(0, 0)}
 .nav-trigger.collapsed.style-mobile .bar:first-child,.nav-trigger.collapsed.style-mobile .bar:last-child{transition-delay:0.15s}
 .nav-trigger.collapsed.style-mobile .bar:nth-child(2){width:16px}
-.navbar-brand{display:inline-flex;height:auto;padding:30px 0;line-height:normal;float:none;order:0;flex-shrink:0;transition:none}
+.navbar-brand{display:inline-flex;height:auto;padding:10px 0;line-height:normal;float:none;order:0;flex-shrink:0;transition:none}
 .navbar-brand img{transition:opacity 0.3s, visibiliy 0.3s;max-width:inherit}.navbar-brand .logo-sticky{display:none}
 .navbar-brand .logo-light,.navbar-brand .logo-dark{position:absolute;top:0;left:0;opacity:0;visibility:hidden}
 .navbar-brand:hover .navbar-brand-hover{width:100%}
