@@ -1644,8 +1644,39 @@
 				}
 			}
 
+			@media screen and (max-width: 750px) {
+				.feat-posts {
+					width: 100% !important;
+					height: 100px !important;
+					overflow-y: hidden;
+					}
+				.feat-post-05 {
+					display: none;
+					}
+				.feat-posts-title {
+					font-size: 20px;
+					font-weight: normal;
+					float: left;
+					height: 90px !important;
+					margin-top: -10px;
+					}
+				.feat-posts-category {
+					margin-top: 5px;
+					margin-bottom: 0px;
+				}
+				}
 			@media screen and (max-width: 1199px) {
-
+				.the-expansionist {
+					height: 230px;
+					margin-top: 10px;
+				}
+				.feat-posts {
+					width: 180px;
+					height: 200px;
+					}
+				.feat-post-06, .feat-post-07 {
+					display: none;
+					}
 				.lqd-sticky-bg-spacer,
 				.lqd-sticky-bg-wrap,
 				.lqd-sticky-bg {
