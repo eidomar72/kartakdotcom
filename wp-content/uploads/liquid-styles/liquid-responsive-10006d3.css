@@ -1650,6 +1650,11 @@
 					height: 100px !important;
 					overflow-y: hidden;
 					}
+					.the-expansionist {
+		        height: 20% !important;
+						width: 100% !important;
+		        margin-top: 10px;
+		      }
 				.feat-post-05 {
 					display: none;
 					}
