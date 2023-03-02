@@ -7,7 +7,8 @@
 					.container {
 						width: 1170px;
 					}
-				}@media screen and (min-width: 1200px) {
+				}
+@media screen and (min-width: 1200px) {
 				.lqd-stack-active-row-dark .main-header:not(.header-fullscreen):not(.header-side) .mainbar-wrap:not(.is-stuck) .social-icon a {
 					color: rgba(255, 255, 255, 0.7) !important;
 				}
@@ -1644,7 +1645,7 @@
 			}
 
 			@media screen and (max-width: 1199px) {
-				
+
 				.lqd-sticky-bg-spacer,
 				.lqd-sticky-bg-wrap,
 				.lqd-sticky-bg {
@@ -2001,7 +2002,7 @@
 					display: none;
 				}
 				.main-header .navbar-brand {
-					padding: 22px 0;
+					padding: 0px 0;
 					max-width: none !important;
 				}
 				.main-header .mobile-logo-default ~ .logo-default {
@@ -2313,9 +2314,6 @@
 				}
 				[data-mobile-nav-scheme=dark] .submenu-expander {
 					background-color: rgba(255, 255, 255, 0.05);
-				}
-				[data-mobile-header-scheme=light] .navbar-header {
-					background-color: #fff;
 				}
 				[data-mobile-header-scheme=light] .navbar-header .ld-module-trigger-icon {
 					color: #000;
