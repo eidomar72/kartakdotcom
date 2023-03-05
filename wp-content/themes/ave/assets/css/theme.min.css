@@ -162,7 +162,7 @@
 .liquid-blog-item-timeline.liquid-blog-scheme-dark .liquid-lp-details{color:rgba(0,0,0,0.35)}
 .liquid-blog-item-timeline:hover{box-shadow:0 20px 70px rgba(0,0,0,0.12)}
 .liquid-blog-item-gray{min-height:350px;background-color:rgb(179,197,199,0.75);box-shadow:0 0 0 rgba(0,0,0,0.15);transition:box-shadow 0.3s}
-.liquid-blog-item-gray .liquid-blog-item-inner{display:flex;flex-direction:column;justify-content:space-between;min-height:inherit;padding:40px}
+.liquid-blog-item-gray .liquid-blog-item-inner{display:flex;flex-direction:column;justify-content:space-between;min-height:inherit;padding:40px;}
 .liquid-blog-item-gray .liquid-lp-title{font-size:22px;line-height:1.5454545455em;font-weight:400;letter-spacing:0}
 .liquid-blog-item-gray .liquid-lp-excerpt{font-size:16px;line-height:1.5em;color:#9B9B9B}
 .liquid-blog-grid .masonry-item:first-child .liquid-blog-item-gray{border-radius:4px 0 0 4px}
