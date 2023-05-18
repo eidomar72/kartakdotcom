@@ -7122,6 +7122,7 @@ a:active {
 }
 
 .footer {
+  position: fixed;
   display: flex;
   padding-top: 5px;
   left: 0;
