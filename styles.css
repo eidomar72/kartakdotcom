@@ -7053,6 +7053,7 @@ output span{
   justify-content: center;
 }
 
+
 .page-wrapper {
   position: relative;
   display: flex;
@@ -7083,6 +7084,7 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px;
 }
 
 .write-up {
@@ -7101,4 +7103,14 @@ article {
 .article-section {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
 }
