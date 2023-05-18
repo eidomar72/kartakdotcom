@@ -31,7 +31,7 @@ html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%}
-article, aside, footer, header, nav, section {
+aside, footer, header, nav, section {
     display: block;
 }
 h1 {
@@ -200,7 +200,7 @@ template {
     background: #fff url(data:image/png;
     base64, iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTExIDc5LjE1ODMyNSwgMjAxNS8wOS8xMC0wMToxMDoyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzY3MkJEN0U2N0M1MTFFNkIyQkNFMjQwODEwMDIxNzEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzY3MkJEN0Y2N0M1MTFFNkIyQkNFMjQwODEwMDIxNzEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NjcyQkQ3QzY3QzUxMUU2QjJCQ0UyNDA4MTAwMjE3MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3NjcyQkQ3RDY3QzUxMUU2QjJCQ0UyNDA4MTAwMjE3MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pve6J3kAAAAzSURBVHjaYvz//z8D0UDsMwMjSRoYP5Gq4SPNbRjVMEQ1fCRDg+in/6+J1AJUxsgAEGAA31BAJMS0GYEAAAAASUVORK5CYII=) repeat top left;
 }
-html, body, div, article, section, main, footer, header, form, fieldset, legend, pre, code, a, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, textarea, table, td, th, tr, input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="text"], input[type="url"], .border-box {
+html, body, div, section, main, footer, header, form, fieldset, legend, pre, code, a, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, textarea, table, td, th, tr, input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="text"], input[type="url"], .border-box {
     box-sizing: border-box;
 }
 .aspect-ratio {
@@ -7006,4 +7006,99 @@ output span{
          url("fonts/lineto-simple-regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+}
+
+.site-header {}
+.site-header-desktop {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 200px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.site-header-desktop-primary {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 200px;
+}
+.site-header-desktop-primary_container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: 1.4rem;
+  padding-left: 1.4rem;
+  width: 100%;
+  font-size: 35px;
+  font-weight: bold;
+}
+.nav-container {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(25,25,25);
+  align-items: center;
+  justify-content: center;
+}
+
+.page-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-wrapper {
+  position: relative;
+  display: grid;
+  width: 70%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+article {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(212,212,212);
+  padding-bottom: 30px;
+}
+
+.article-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.write-up {
+  padding-top: 30px;
+  color: rgb(212,212,212);
+  font-family: sans-serif;
+  text-align: left;
+  font-size: 16px;
+  line-height: 26px;
+}
+.article-section-title {
+  font-weight: bold;
+  font-size: 17px;
+  padding-top: 20px;
+}
+.article-section {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
