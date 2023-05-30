@@ -100,6 +100,9 @@ audio:not([controls]) {
     display: none;
     height: 0;
 }
+li {
+  list-style-type:none;
+}
 img {
     border-style: none;
 }
@@ -2266,6 +2269,15 @@ code, .code {
 .fs-normal-m {
     font-style: normal;
 }
+
+@media only screen and (min-width: 800px) {
+  .article-img {
+    display: flex !important;}
+  ul {
+    text-align: center;
+  }
+}
+
 }@media screen and (min-width: 60em) {
     .i-l {
     font-style: italic;
@@ -4226,6 +4238,9 @@ code, .code {
 .ph7 {
     padding-left: 16rem;
     padding-right: 16rem;
+}
+.w-brdr {
+  border-color: white;
 }
 .ma0 {
     margin: 0;
@@ -7075,7 +7090,10 @@ output span{
   height: auto;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 3px;
+  border-color: white;
 }
 
 article {
@@ -7087,10 +7105,11 @@ article {
 
 .article-img {
   display: grid;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border: 2px;
   padding-top: 10px;
+  text-align: center;
 }
 
 .write-up {
