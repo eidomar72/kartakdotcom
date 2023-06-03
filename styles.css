@@ -7176,7 +7176,12 @@ a:active {
   right: 0;
   top: 0;
 }
-
+.google-ad-top-anchor {
+  display: inline;
+  height: 15%;
+  width: 100%;
+  background-color: red;
+}
 
 @media screen and (max-width: 60em) {
   .wraper-footer {
