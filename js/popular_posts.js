@@ -1,61 +1,31 @@
 // Replace with your view ID.
 var VIEW_ID = '47983407';
 
-// Query the API and print the results to the page.
-function queryReports() {
-  gapi.client.request({
-    path: '/v4/reports:batchGet',
-    root: 'https://analyticsreporting.googleapis.com/',
-    method: 'POST',
-    body: {
-      reportRequests: [
-        {
-          viewId: VIEW_ID,
-          dateRanges: [
-            {
-              startDate: '7daysAgo',
-              endDate: 'today'
-            }
-          ],
-          metrics: [
-            {
-              expression: 'ga:sessions'
-            }
-          ]
-        }
-      ]
-    }
-  }).then(displayResults, console.error.bind(console));
-}
-
 // Fetch popularity data from Google Analytics
      function fetchPopularityData() {
-       gapi.client.analyticsreporting.reports
-         .batchGet({
-           requestBody: {
-             reportRequests: [
-               {
-                 viewId: 'YOUR_VIEW_ID',
-                 dateRanges: [
-                   {
-                     startDate: 'YOUR_START_DATE', // e.g., '2023-01-01'
-                     endDate: 'YOUR_END_DATE', // e.g., '2023-05-31'
-                   },
-                 ],
-                 metrics: [
-                   { expression: 'ga:pageviews' }, // Adjust the metric based on your needs
-                 ],
-                 dimensions: [
-                   { name: 'ga:pagePath' }, // Adjust the dimension based on your needs
-                 ],
-                 orderBys: [
-                   { fieldName: 'ga:pageviews', sortOrder: 'DESCENDING' },
-                 ],
-                 pageSize: 3, // Number of top popular posts to fetch
-               },
-             ],
-           },
-         })
+       gapi.client.request({
+         path: '/v4/reports:batchGet',
+         root: 'https://analyticsreporting.googleapis.com/',
+         method: 'POST',
+         body: {
+           reportRequests: [
+             {
+               viewId: VIEW_ID,
+               dateRanges: [
+                 {
+                   startDate: '7daysAgo',
+                   endDate: 'today'
+                 }
+               ],
+               metrics: [
+                 {
+                   expression: 'ga:sessions'
+                 }
+               ]
+             }
+           ]
+         }
+       })
          .then((response) => {
            const popularityData = response.result.reports[0].data.rows;
 
