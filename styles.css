@@ -7194,8 +7194,8 @@ a:active {
   }
 }
 
-@media screen and (max-width: 1020px) {
-  .google-ad-right-anchor {
+@media screen and (max-width: 865px) {
+  .google-ad-top-anchor {
     display: none;
   }
 }
