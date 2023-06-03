@@ -35,4 +35,13 @@ var VIEW_ID = '47983407';
        })
          .then((response) => {
            const popularityData = response.result.reports[0].data.rows;
+
+           // Combine popularity data with blog data
+            const blogsWithPopularity = blogs.map((blog) => {
+              const matchingRow = popularityData.find((row) => row.dimensions[0] === blog.url);
+              const popularity = matchingRow ? +matchingRow.metrics[0].values[0] : 0;
+
+              return { ...blog, popularity };
+              console.log(blog);
+            });
          }
