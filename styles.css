@@ -7180,7 +7180,6 @@ a:active {
   display: inline;
   height: 15%;
   width: 100%;
-  background-color: red;
 }
 
 @media screen and (max-width: 60em) {
