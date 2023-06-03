@@ -11,8 +11,12 @@
     <meta name="robots" content="index,follow">
     <meta name="keywords" content="stock market, investing, finance, trading, stocks, market analysis, portfolio management, stock tips, market trends, financial news">
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="https://apis.google.com/js/analytics.js"></script>
-    <script>window.onload = function() {getTop3BlogArticles();};</script>
+
+    <meta name="google-signin-client_id" content="846109528598-l0p4tk1hdg14b24rgcbvtf6kdreel06f.apps.googleusercontent.com">
+      <meta name="google-signin-scope" content="https://www.googleapis.com/auth/analytics.readonly">
+
+
+
     <!-- .favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="wolff-logo\Wolff_white_background.png">
     <!-- /.favicon -->
@@ -131,56 +135,20 @@ A Wolff Brands - Website
       <div class="barba-container mt3" data-namespace="home">
         <div class="toc">
 
-          <h1>POPULAR</h1>
+          <!-- The Sign-in button. This will run `queryReports()` on success. -->
+          <p class="g-signin2" data-onsuccess="queryReports"></p>
+
+          <!-- The API response will be printed here. -->
+          <textarea cols="80" rows="20" id="query-output"></textarea>
+
+
+          <h1 style="display:none;">POPULAR</h1>
             <ul id="popular-posts"></ul>
-            <script>
-            function getTop3BlogArticles() {
-              // Get the Google Analytics API client.
-              var analytics = google.analytics();
 
-              // Create a request object.
-              var request = analytics.request('ga', 'get', {
-                ids: 'ga:47983407',
-                dimensions: 'ga:pageviews',
-                sort: '-ga:pageviews',
-                filters: 'ga:type==blog',
-                max: 3
-              });
-
-              // Send the request.
-              request.send(function(response) {
-                // Get the results.
-                var results = response.data;
-
-                // Create a list of the top three blog articles.
-                var top3Articles = [];
-                for (var i = 0; i < results.length && i < 3; i++) {
-                  top3Articles.push({
-                    title: results[i].title,
-                    pageviews: results[i].pageviews
-                  });
-                }
-
-                // Display the top three blog articles.
-                var div = document.getElementById('popular-posts');
-                for (var i = 0; i < top3Articles.length; i++) {
-                  var article = top3Articles[i];
-                  var li = document.createElement('li');
-                  li.innerHTML = article.title + ' (' + article.pageviews + ' views)';
-                  div.appendChild(li);
-                }
-              });
-            }
-
-            // Call the getTop3BlogArticles function.
-            getTop3BlogArticles();
-
-
-            </script>
-          <h1>FEATURED</h1>
+          <h1 style="display:none;">FEATURED</h1>
             <div id="feat-container"></div>
 
-          <h1>LATEST</h1>
+          <h1 style="display:none;">LATEST</h1>
             <div id="blog-container"></div>
 
           <section class="sub-footer">
@@ -197,9 +165,12 @@ A Wolff Brands - Website
     <script src="js/barba.min.js"></script>
     <script src="js/highlight.min.js" charset="utf-8"></script>
     <script src="js/twig.min.js"></script>
-    <script src="js/newest_posts.js"></script>
-    <script src="js/featured_posts.js"></script>
+    <script src="js/popular_posts.js"></script>
+    <!--script src="js/newest_posts.js"></script>
+    <script src="js/featured_posts.js"></script-->
     <script src="js/master.js" charset="utf-8"></script>
+    <script src="https://apis.google.com/js/client.js?onload=authorize"></script>
+    <script src="https://apis.google.com/js/client:platform.js"></script>
 
   </body>
 

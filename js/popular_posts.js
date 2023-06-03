@@ -1,40 +1,34 @@
-function getTop3BlogArticles() {
-  // Get the Google Analytics API client.
-  var analytics = google.analytics();
+// Replace with your view ID.
+var VIEW_ID = '47983407';
 
-  // Create a request object.
-  var request = analytics.request('ga', 'get', {
-    ids: 'ga:47983407',
-    dimensions: 'ga:pageviews',
-    sort: '-ga:pageviews',
-    filters: 'ga:type==blog',
-    max: 3
-  });
-
-  // Send the request.
-  request.send(function(response) {
-    // Get the results.
-    var results = response.data;
-
-    // Create a list of the top three blog articles.
-    var top3Articles = [];
-    for (var i = 0; i < results.length && i < 3; i++) {
-      top3Articles.push({
-        title: results[i].title,
-        pageviews: results[i].pageviews
-      });
+// Query the API and print the results to the page.
+function queryReports() {
+  gapi.client.request({
+    path: '/v4/reports:batchGet',
+    root: 'https://analyticsreporting.googleapis.com/',
+    method: 'POST',
+    body: {
+      reportRequests: [
+        {
+          viewId: VIEW_ID,
+          dateRanges: [
+            {
+              startDate: '7daysAgo',
+              endDate: 'today'
+            }
+          ],
+          metrics: [
+            {
+              expression: 'ga:sessions'
+            }
+          ]
+        }
+      ]
     }
-
-    // Display the top three blog articles.
-    var div = document.getElementById('popular-posts');
-    for (var i = 0; i < top3Articles.length; i++) {
-      var article = top3Articles[i];
-      var li = document.createElement('li');
-      li.innerHTML = article.title + ' (' + article.pageviews + ' views)';
-      div.appendChild(li);
-    }
-  });
+  }).then(displayResults, console.error.bind(console));
 }
 
-// Call the getTop3BlogArticles function.
-getTop3BlogArticles();
+function displayResults(response) {
+  var formattedJson = JSON.stringify(response.result, null, 2);
+  document.getElementById('query-output').value = formattedJson;
+}
