@@ -16,6 +16,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="wolff-logo\Wolff_white_background.png">
     <!-- /.favicon -->
 
+    <script src="https://apis.google.com/js/api.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTNE5GSX3J"></script>
     <script>
@@ -130,6 +131,9 @@ A Wolff Brands - Website
       <div class="barba-container mt3" data-namespace="home">
         <div class="toc">
 
+          <h1>POPULAR</h1>
+            <div id="popular-posts"></div>
+
           <h1>FEATURED</h1>
             <div id="feat-container"></div>
 
@@ -152,37 +156,8 @@ A Wolff Brands - Website
     <script src="js/twig.min.js"></script>
     <script src="js/newest_posts.js"></script>
     <script src="js/featured_posts.js"></script>
+    <script src="js/popular_posts.js"></script>
     <script src="js/master.js" charset="utf-8"></script>
-    <script>
-      js.ert.setup(function() {
-        js.ert.track(document.querySelector('main'));
-      });
-      window.addEventListener('load', function() {
-        // shuffle:
-        function shuffle(array) {
-          var idx = array.length;
-          while (0 !== idx) {
-            var r = Math.floor(Math.random() * idx);
-            idx -= 1;
-            var t = array[idx];
-            array[idx] = array[r];
-            array[r] = t;
-          }
-          return array;
-        }
-        var s = shuffle(['hi', 'yo', 'ciao', 'viva', 'salut', 'hello', 'grüezi', 'prosit', 'olà olà', 'bonjour', 'namaste', 'guten Tag', 'shaba-daba', 'go to hell', 'buona notte', 'buenas dias', 'hasta la victoria', 'ooooooooooooooooooooh', '“we love coders”', '“I love doggos”', 'that life is life', 'that you liked your dinner', 'that Gilgamesh is your father', 'that you don’t want to write me', 'that it’s time for a new haircut', 'that sex or fox are better than fax', 'that it’s common to say it’s common', 'that aaaah is not the same as ooooh', 'that blue is your favourite color', 'that gold is your favourite color', 'that gray is your favourite color', 'that four has four letters', 'that five has four letters', 'that nine has four letters', 'that π is close to, but not exactly 3.1415', 'that slick worms eat silk', 'that sheep sings while ship sinks', 'that gold is fish and golf is dish', 'that you saw a cat sleeping in a box', 'that the fly flies and the flies fly', ]);
-        var c = 0;
-
-        function swap() {
-          c = ++c % s.length;
-          var e = document.querySelector('main .swapper');
-          e.innerText = s[c];
-          js.ert.refresh();
-        }
-        swap();
-        setInterval(swap, 9000);
-      });
-    </script>
   </body>
 
 <footer>
