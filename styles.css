@@ -6785,12 +6785,18 @@ blockquote {
     margin: 0;
     padding-left: 1em;
 }
+.toc {
+  display: block;
+  z-index: 999;
+}
 .toc a {
-    transition: all .4s linear;
+    transition: all .2s linear;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
 .toc a:hover {
+    background-color: #ff41b4;
+    color: #fff;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
@@ -7161,6 +7167,22 @@ a:active {
   justify-content: space-around;
   align-items: center;
 }
+.google-ad-right-anchor {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 15%;
+  justify-content: right;
+  right: 0;
+  top: 0;
+  background-color: red;
+}
+.google-ad-top-anchor {
+  display: inline;
+  height: 15%;
+  width: 100%;
+  background-color: red;
+}
 
 @media screen and (max-width: 60em) {
   .wraper-footer {
@@ -7170,6 +7192,16 @@ a:active {
 
 @media screen and (min-width: 60em) {
   .wraper-footer2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .google-ad-top-anchor {
+    display: none;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .google-ad-right-anchor {
     display: none;
   }
 }
