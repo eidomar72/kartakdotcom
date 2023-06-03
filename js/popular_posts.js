@@ -1,55 +1,91 @@
+function getTop3BlogArticles() {
+
+
 // Replace with your view ID.
 var VIEW_ID = '47983407';
 
 // Fetch popularity data from Google Analytics
-function queryReports() {
-  gapi.client.request({
-    path: '/v4/reports:batchGet',
-    root: 'https://analyticsreporting.googleapis.com/',
-    method: 'POST',
-    body: {
-      reportRequests: [
-        {
-          viewId: VIEW_ID,
-          dateRanges: [
-            {
-              startDate: '7daysAgo',
-              endDate: 'today'
-            }
-          ],
-          metrics: [
-            {
-              expression: 'ga:sessions'
-            }
-          ]
-        }
-      ]
-    }
-  }).then((response) => {
-    const popularityData = response.result.reports[0].data.rows;
+  function queryReports() {
+    gapi.client.request({
+      path: '/v4/reports:batchGet',
+      root: 'https://analyticsreporting.googleapis.com/',
+      method: 'POST',
+      body: {
+        reportRequests: [
+          {
+            viewId: VIEW_ID,
+            dateRanges: [
+              {
+                startDate: '7daysAgo',
+                endDate: 'today'
+              }
+            ],
+            metrics: [
+              {
+                expression: 'ga:pageviews'
+              }
+            ],
+            dimensions: [
+              {
+                name: 'ga:pageTitle'
+              },
+              {
+                name: 'ga:pagePath'
+              }
+            ],
+            orderBys: [
+              {
+                fieldName: 'ga:pageviews',
+                sortOrder: 'DESCENDING'
+              }
+            ],
+            pageSize: 3
+          }
+        ]
+      }
+    }).then(function(response) {
+      var results = response.result.reports[0].data.rows;
 
-    // Combine popularity data with blog data
-    const blogsWithPopularity = blogs.map((blog) => {
-      const matchingRow = popularityData.find((row) => row.dimensions[0] === blog.url);
-      const popularity = matchingRow ? +matchingRow.metrics[0].values[0] : 0;
+      // Create a list of the top three blog articles.
+      var top3Articles = [];
+      for (var i = 0; i < results.length; i++) {
+        var article = {
+          title: results[i].dimensions[0],
+          pageviews: results[i].metrics[0].values[0]
+        };
+        top3Articles.push(article);
+      }
 
-      return { ...blog, popularity };
+      // Display the top three blog articles.
+      var div = document.getElementById('top3Articles');
+      for (var i = 0; i < top3Articles.length; i++) {
+        var article = top3Articles[i];
+        var li = document.createElement('li');
+        li.innerHTML = article.title + ' (' + article.pageviews + ' pageviews)';
+        div.appendChild(li);
+
+        // Log the title to the console
+        console.log(article.title);
+      }
+    }, function(reason) {
+      console.error('Error: ' + reason.result.error.message);
     });
+  }
 
-    // Sort the blogs by popularity (descending order)
-    const sortedBlogs = blogsWithPopularity.sort((a, b) => b.popularity - a.popularity);
-
-    // Display the top popular posts
-    const popularPostsElement = document.getElementById('popular-posts');
-    sortedBlogs.slice(0, 3).forEach((blog) => {
-      const listItem = document.createElement('li');
-      const link = document.createElement('a');
-      link.href = blog.url;
-      link.textContent = blog.title;
-      listItem.appendChild(link);
-      popularPostsElement.appendChild(listItem);
+  // Load the Google Analytics Reporting API client library.
+  gapi.load('client:auth2', function() {
+    gapi.client.init({
+      apiKey: 'AIzaSyDAa8Z7rvfkAaEvGrAEcsGUhA9hGLQwoKE'
+    }).then(function() {
+      return gapi.client.load('https://content.googleapis.com/discovery/v1/apis/analyticsreporting/v4/rest');
+    }).then(function() {
+      // Call the queryReports function to fetch popularity data and display the top three blog articles.
+      queryReports();
+    }, function(reason) {
+      console.error('Error: ' + reason.result.error.message);
     });
-  }).catch((error) => {
-    console.error('Error fetching popularity data:', error);
   });
 }
+
+// Call the getTop3BlogArticles function.
+getTop3BlogArticles();
