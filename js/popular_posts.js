@@ -1,11 +1,9 @@
 function getTop3BlogArticles() {
 
-
-// Replace with your view ID.
-var VIEW_ID = '47983407';
-
 // Fetch popularity data from Google Analytics
   function queryReports() {
+    console.log('Fetching popularity data from Google Analytics...');
+
     gapi.client.request({
       path: '/v4/reports:batchGet',
       root: 'https://analyticsreporting.googleapis.com/',
@@ -13,7 +11,7 @@ var VIEW_ID = '47983407';
       body: {
         reportRequests: [
           {
-            viewId: VIEW_ID,
+            viewId: '47983407',
             dateRanges: [
               {
                 startDate: '7daysAgo',
@@ -44,6 +42,8 @@ var VIEW_ID = '47983407';
         ]
       }
     }).then(function(response) {
+      console.log('Popularity data fetched successfully.');
+
       var results = response.result.reports[0].data.rows;
 
       // Create a list of the top three blog articles.
@@ -56,16 +56,16 @@ var VIEW_ID = '47983407';
         top3Articles.push(article);
       }
 
+      console.log('Top three articles:');
+      console.log(top3Articles);
+
       // Display the top three blog articles.
-      var div = document.getElementById('popular-posts');
+      var div = document.getElementById('top3Articles');
       for (var i = 0; i < top3Articles.length; i++) {
         var article = top3Articles[i];
         var li = document.createElement('li');
         li.innerHTML = article.title + ' (' + article.pageviews + ' pageviews)';
         div.appendChild(li);
-
-        // Log the title to the console
-        console.log(article.title);
       }
     }, function(reason) {
       console.error('Error: ' + reason.result.error.message);
@@ -73,12 +73,16 @@ var VIEW_ID = '47983407';
   }
 
   // Load the Google Analytics Reporting API client library.
+  console.log('Loading Google Analytics Reporting API...');
+
   gapi.load('client:auth2', function() {
     gapi.client.init({
       apiKey: 'AIzaSyDAa8Z7rvfkAaEvGrAEcsGUhA9hGLQwoKE'
     }).then(function() {
       return gapi.client.load('https://content.googleapis.com/discovery/v1/apis/analyticsreporting/v4/rest');
     }).then(function() {
+      console.log('Google Analytics Reporting API loaded successfully.');
+
       // Call the queryReports function to fetch popularity data and display the top three blog articles.
       queryReports();
     }, function(reason) {
