@@ -1,6 +1,5 @@
 function getTop3BlogArticles() {
-
-// Fetch popularity data from Google Analytics
+  // Fetch popularity data from Google Analytics
   function queryReports() {
     console.log('Fetching popularity data from Google Analytics...');
 
@@ -60,7 +59,7 @@ function getTop3BlogArticles() {
       console.log(top3Articles);
 
       // Display the top three blog articles.
-      var div = document.getElementById('top3Articles');
+      var div = document.getElementById('popular-posts');
       for (var i = 0; i < top3Articles.length; i++) {
         var article = top3Articles[i];
         var li = document.createElement('li');
@@ -77,19 +76,24 @@ function getTop3BlogArticles() {
 
   gapi.load('client:auth2', function() {
     gapi.client.init({
-      apiKey: 'AIzaSyDAa8Z7rvfkAaEvGrAEcsGUhA9hGLQwoKE'
-    }).then(function() {
-      return gapi.client.load('https://content.googleapis.com/discovery/v1/apis/analyticsreporting/v4/rest');
+      clientId: '846109528598-l0p4tk1hdg14b24rgcbvtf6kdreel06f.apps.googleusercontent.com',
+      discoveryDocs: ['https://analyticsreporting.googleapis.com/$discovery/rest?version=v4'],
+      scope: 'https://www.googleapis.com/auth/analytics.readonly'
     }).then(function() {
       console.log('Google Analytics Reporting API loaded successfully.');
 
+      // Authenticate with Google OAuth2.
+      return gapi.auth2.getAuthInstance().signIn();
+    }).then(function() {
+      console.log('User authenticated.');
+
       // Call the queryReports function to fetch popularity data and display the top three blog articles.
       queryReports();
-    }, function(reason) {
-      console.error('Error: ' + reason.result.error.message);
+    }).catch(function(error) {
+      console.error('Error: ' + error);
     });
   });
-}
+  }
 
-// Call the getTop3BlogArticles function.
-getTop3BlogArticles();
+  // Call the getTop3BlogArticles function.
+  getTop3BlogArticles();
