@@ -8,9 +8,7 @@ function getTop3BlogArticles() {
     dimensions: 'ga:pageviews',
     sort: '-ga:pageviews',
     filters: 'ga:type==blog',
-    max: 3,
-    client_email: 'client_email@example.com',
-    client_secret: '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'
+    max: 3
   });
 
   // Send the request.
@@ -28,7 +26,7 @@ function getTop3BlogArticles() {
     }
 
     // Display the top three blog articles.
-    var div = document.getElementById('top3Articles');
+    var div = document.getElementById('popular-posts');
     for (var i = 0; i < top3Articles.length; i++) {
       var article = top3Articles[i];
       var li = document.createElement('li');
