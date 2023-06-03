@@ -57,7 +57,7 @@ var VIEW_ID = '47983407';
       }
 
       // Display the top three blog articles.
-      var div = document.getElementById('top3Articles');
+      var div = document.getElementById('popular-posts');
       for (var i = 0; i < top3Articles.length; i++) {
         var article = top3Articles[i];
         var li = document.createElement('li');
