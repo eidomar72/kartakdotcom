@@ -156,7 +156,7 @@ A Wolff Brands - Website
                 });
 
                 // Display the latest 3 blogs
-                const blogContainer = document.getElementById('blog-constainer');
+                const blogContainer = document.getElementById('blog-container');
 
                 for (let i = 0; i < 3 && i < blogs.length; i++) {
                   const blog = blogs[i];
@@ -168,11 +168,12 @@ A Wolff Brands - Website
 
                   // Set the text content of the blog title and content
                   titleElement.textContent = blog.title;
-                  //contentElement.textContent = blog.content;
+                  contentElement.textContent = blog.content;
+
 
                   // Append the blog title and content elements to the main container
                   blogElements.appendChild(titleElement);
-                  blogElement.appendChild(contentElement);
+                  blogElements.appendChild(contentElement);
                   blogContainer.appendChild(blogElements);
 
                 }
