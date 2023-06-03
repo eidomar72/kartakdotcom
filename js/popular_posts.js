@@ -53,8 +53,3 @@ function queryReports() {
     console.error('Error fetching popularity data:', error);
   });
 }
-
-function displayResults(response) {
-  var formattedJson = JSON.stringify(response.result, null, 2);
-  document.getElementById('query-output').value = formattedJson;
-}
