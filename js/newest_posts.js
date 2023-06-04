@@ -43,6 +43,7 @@ function parseAndDisplayBlogs() {
         titleLink.href = blog.url;
         titleLink.textContent = blog.title;
 
+
         // Set the text content of the content element
         contentElement.textContent = blog.content;
 
@@ -52,6 +53,11 @@ function parseAndDisplayBlogs() {
 
         // Append the blog element to the main container
         blogContainer.appendChild(blogElement);
+
+        if (i < 2) {
+          // Add spacing between each title (adjust the value according to your preference)
+          blogContainer.appendChild(document.createElement('hr'));
+        }
       }
     })
     .catch(error => {

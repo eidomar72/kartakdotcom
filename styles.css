@@ -2278,6 +2278,10 @@ code, .code {
   }
 }
 
+ul {
+  padding-inline-start: 0;
+}
+
 }@media screen and (min-width: 60em) {
     .i-l {
     font-style: italic;
@@ -2747,6 +2751,9 @@ code, .code {
 }
 .mw7 {
     max-width: 48rem;
+}
+.mw7p5 {
+    max-width: 54rem;
 }
 .mw8 {
     max-width: 64rem;
@@ -6797,7 +6804,6 @@ blockquote {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     font-size: 18px;
-
 }
 .toc a:hover {
     background-color: #ff41b4;
@@ -6977,7 +6983,7 @@ hr {
     display: block;
     height: var(--line-height);
     margin: 0;
-    padding: 0;
+    padding: 0.8rem;
     border: none;
 }
 
@@ -7203,4 +7209,8 @@ a:active {
   .google-ad-top-anchor {
     display: none;
   }
+}
+
+ul {
+  padding-inline-start: 0;
 }
