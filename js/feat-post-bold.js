@@ -13,7 +13,7 @@ function parseAndDisplayBlogs() {
 
       blogElements.forEach(blogElement => {
         const linkElement = blogElement.querySelector('a');
-        const titleElement = blogElement.querySelector('.featured-title');
+        const titleElement = blogElement.querySelector('.blog-bold');
         const contentElement = blogElement.querySelector('.blog-content');
         const dateElement = blogElement.querySelector('.blog-date');
 
@@ -30,12 +30,12 @@ function parseAndDisplayBlogs() {
       });
 
       // Display the latest 3 blogs
-      const blogContainer = document.getElementById('feat-container');
+      const blogContainer = document.getElementById('blog-feat-bold');
 
-      for (let i = 0; i < 2 && i < blogs.length; i++) {
+      for (let i = 0; i < 1 && i < blogs.length; i++) {
         const blog = blogs[i];
 
-        // Create HTML elements for the blog title and content
+        // Create HTML elements for the blog title, content, and date
         const blogElement = document.createElement('div');
         const titleElement = document.createElement('h2');
         const contentElement = document.createElement('p');
@@ -50,13 +50,20 @@ function parseAndDisplayBlogs() {
         // Set the text content of the content element
         contentElement.textContent = blog.content;
 
-        // Append the title link and content elements to the blog element
+        // Append the title link, content, and date elements to the blog element
         blogElement.appendChild(titleLink);
         blogElement.appendChild(contentElement);
         blogElement.appendChild(dateElement);
 
         // Append the blog element to the main container
         blogContainer.appendChild(blogElement);
+
+        if (i < 2) {
+          // Add spacing between each title (adjust the value according to your preference)
+          const spacingElement = document.createElement('div');
+          spacingElement.classList.add('spacing');
+          blogContainer.appendChild(spacingElement);
+        }
       }
     })
     .catch(error => {

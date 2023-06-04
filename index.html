@@ -110,10 +110,11 @@ A Wolff Brands - Website
       <div class="ph4 pv0-l w-100 w-auto-l flex flex-column-l justify-between items-center">
         <div class="vh-50-l flex items-end">
           <a href="https://kartak.co/" class="no-underline">
-            <h1 class="f4 f3-l ma0">Kartak</h1>
-            <hr class="f4 f3-l ma0">A Stock Market Trading Journal</hr>
+            <h1 class="f4 f3-l ma0 kartak">Kartak</h1>
+            <p style="font-size: 15px;" class="f4 f3-l ma0 moto">A Stock Market Trading Journal</p>
           </a>
         </div>
+
 
         <div class="fixed-l bottom-0 left-0 justify-center items-center ma4-l">
           <div class="wraper-footer">
@@ -130,16 +131,23 @@ A Wolff Brands - Website
       </div>
 
     </div>
-
+    <section class="sub-footer">
+      <div class="wraper-footer2">
+        <a href="blog.html" target=""><span class="hover-bg-hot-pink hover-white">Blog</span></a>
+        <a href="about.html" target="_blank"><span class="hover-bg-hot-pink hover-white">About</span></a>
+      </div>
+    </section>
     <div id="barba-wrapper" class="z-9999">
 
       <div class="barba-container mt3" data-namespace="home">
         <div class="toc">
-          <div class="inline-flex">
-            <img class="ml2 inline-flex" width="auto" height="250px" src="imgs\landing-page.jpg">
-            <div class="flex-column mw6 bt bb">
-              <h1 class="ml4 bb">FEATURED</h1>
-                <div class="ml4 inline-flex mw7 gp1 pt4 hljs-strong" id="feat-container"></div>
+          <div class="top-container inline-flex">
+            <img class="ml2 inline-flex top-feat-img" width="auto" height="250px" src="publications\may\riding-waves.jpg">
+            <div class="featured-title flex-column mw6 bb">
+              <h1 class="ml4 bb" style="display: none;">FEATURED</h1>
+              <div class="ml4 inline-flex mw7 gp1 pt4 hljs-strong blog-feat-bold" id="blog-feat-bold"></div>
+              <div class="spacing-02"></div>
+              <div class="ml4 inline-flex mw7 gp1 pt4 f6" id="feat-container"></div>
             </div>
           </div>
 
@@ -150,21 +158,17 @@ A Wolff Brands - Website
 
             <div class="inline-flex">
               <div class="mw7p5 bt bb inline-flex">
-                <h1 class="ml3 bb mw6 self-center rotate-270 red">LATEST</h1>
+                <h1 class="ml3 bb mw6 self-center rotate-270 red latest-title">LATEST</h1>
                   <ul class="self-center mw6 hljs-strong" id="blog-container" style="text-align:left"></ul>
-                    <a href="https://www.webull.com/activity?inviteCode=te0LESunYvxp&inviteSource=wb_inf&source=Eidomar" target="_blank"><img class="mb0 inline-flex self-center" width="auto" height="250px" src="imgs\webull-banner-hor.png"></a>
+                    <!--a class="self-center" href="https://www.webull.com/activity?inviteCode=te0LESunYvxp&inviteSource=wb_inf&source=Eidomar" target="_blank"><img class="mb0 inline-flex self-center" width="300px" height="200px" src="imgs\webull-banner-hor.png"></a-->
               </div>
             </div>
-
-
-          <section class="sub-footer">
-            <div class="wraper-footer2">
-              <a href="blog.html" target=""><span class="hover-bg-hot-pink hover-white">Blog</span></a>
-              <a href="about.html" target="_blank"><span class="hover-bg-hot-pink hover-white">About</span></a>
-              <a href="privacy-policy.html" target="_blank"><span style="" class="hover-bg-hot-pink hover-white">Privacy Policy</span></a>
-              <a href="terms-and-conditions.html" target="_blank"><span class="hover-bg-hot-pink hover-white footer-text term-and-conditions">Term and Conditions</span></a>
-            </div>
-          </section>
+            <section class="sub-footer">
+              <div class="wraper-footer2">
+                <a href="privacy-policy.html" target="_blank"><span style="" class="hover-bg-hot-pink hover-white">Privacy Policy</span></a>
+                <a href="terms-and-conditions.html" target="_blank"><span class="hover-bg-hot-pink hover-white footer-text term-and-conditions">Term and Conditions</span></a>
+              </div>
+            </section>
       </div>
     </div></div>
 
@@ -177,6 +181,7 @@ A Wolff Brands - Website
     <!--script src="js/popular_posts.js"></script-->
     <script src="js/newest_posts.js"></script>
     <script src="js/featured_posts.js"></script>
+    <script src="js/feat-post-bold.js"></script>
     <script src="js/master.js" charset="utf-8"></script>
 
 
