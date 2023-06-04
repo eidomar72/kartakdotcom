@@ -4242,6 +4242,9 @@ code, .code {
 .w-brdr {
   border-color: white;
 }
+.gp1 {
+  grid-gap: 2rem;
+}
 .ma0 {
     margin: 0;
 }
@@ -6793,6 +6796,8 @@ blockquote {
     transition: all .2s linear;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
+    font-size: 18px;
+
 }
 .toc a:hover {
     background-color: #ff41b4;

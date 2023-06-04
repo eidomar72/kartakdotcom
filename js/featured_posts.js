@@ -30,7 +30,7 @@ function parseAndDisplayBlogs() {
       // Display the latest 3 blogs
       const blogContainer = document.getElementById('feat-container');
 
-      for (let i = 0; i < 2 && i < blogs.length; i++) {
+      for (let i = 0; i < 3 && i < blogs.length; i++) {
         const blog = blogs[i];
 
         // Create HTML elements for the blog title and content
